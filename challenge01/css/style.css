@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #E6EFF6;
+}
+
+.card {
+  overflow: hidden;
+  margin: 3rem;
+  background-color: white;
+  width: 700px;
+  -webkit-box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.card .cta {
+  padding: 2.5rem 3rem;
+}
+
+.card .cta h2 {
+  color: #2BB3B1;
+  margin-top: 0;
+}
+
+.card .cta .garantee {
+  color: #BFDF32;
+}
+
+.card .cta p {
+  color: #98a6bd;
+  margin-top: 0.7rem;
+}
+
+.details {
+  color: #f0ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details h3 {
+  margin-top: 0;
+}
+
+.details .price {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 2.5rem 3rem;
+  width: 50%;
+  float: left;
+  border-bottom-left-radius: 7px;
+  padding-right: 2rem;
+  background-color: #2BB3B1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.details .price .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details .price .payment .amount {
+  font-size: 3rem;
+}
+
+.details .price .payment .rate {
+  margin-left: 1rem;
+  opacity: 0.5;
+}
+
+.details .price p {
+  color: #bdffff;
+}
+
+.details .price .btn {
+  text-align: center;
+  border-radius: 7px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #BFDF32;
+}
+
+.details .why-us {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 2.5rem 3rem;
+  width: 50%;
+  float: right;
+  padding-left: 2rem;
+  background-color: #4ABEBD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.details .why-us ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.details .why-us p {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  color: rgba(240, 255, 255, 0.6);
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
+$font-stack:    'Open Sans', sans-serif;
+
+$border-radius-size: 7px;
+$primary-color: #2BB3B1;
+$secondary-color: #BFDF32;
+$text-color: #f0ffff;
+$padding-x:3rem;
+$padding-y:2.5rem;
+
+
+// reset
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-stack;
+    background-color: #E6EFF6;
+}
+
+.card {
+    overflow: hidden;
+    margin: 3rem;
+    background-color: white;
+    width: 700px;
+    box-shadow: 5px 15px 30px 5px rgba($color: #000000, $alpha: 0.3);
+    border-radius: $border-radius-size;
+    .cta {
+        padding: $padding-y $padding-x;
+        h2 {
+            color: $primary-color;
+            margin-top: 0;
+        }
+
+        .garantee {
+            color: $secondary-color;
+        }
+
+        p {
+            color: 	#98a6bd;
+            margin-top: 0.7rem;
+        }
+    }
+}
+
+.details {
+    color: $text-color;
+    display: flex;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .price {
+        align-items: stretch;
+        padding: $padding-y $padding-x;
+        width: 50%;
+        float: left;
+        border-bottom-left-radius: $border-radius-size;
+        padding-right: 2rem;
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        .payment {
+            display: flex;
+            align-items:center;
+            .amount {
+                font-size: 3rem;
+            }
+
+            .rate {
+                margin-left: 1rem;
+                opacity: 0.5;
+            }
+        }
+    
+        p {
+            color: darken($text-color,  10%);
+        }
+
+        .btn {
+            text-align: center;
+            border-radius: $border-radius-size;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            width: 100%;
+            background-color: $secondary-color;
+        }
+    }
+
+    .why-us {
+        align-items: stretch;
+        padding: $padding-y $padding-x;
+        width: 50%;
+        float: right;
+        padding-left: 2rem;
+        background-color: #4ABEBD;
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+            line-height: 1.3rem;
+            color: rgba( $text-color, 0.6);
+        }
+    }
+
+
+}
