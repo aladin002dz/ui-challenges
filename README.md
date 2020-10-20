@@ -1,1 +1,2 @@
-# ui-challenges
+# UI Challenges
+Challenges from https://www.frontendmentor.io/

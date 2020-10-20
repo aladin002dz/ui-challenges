@@ -1,0 +1,10 @@
+
+// reset
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Raleway&display=swap');
+$headers-font: 'Poppins', sans-serif;
+$content-font: 'Raleway', sans-serif;
