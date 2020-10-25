@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6rem;
+}
+
+.container {
+  margin: 2rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "card1 card1 card2 card5" "card3 card4 card4 card5";
+  grid-gap: 2rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (285px)[2];
+      grid-template-rows: repeat(2, 285px);
+  max-width: 1115px;
+  margin: 10rem auto;
+}
+
+.card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card1;
+}
+
+.card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card2;
+}
+
+.card3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card3;
+}
+
+.card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: card4;
+}
+
+.card5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: card5;
+}
+
+body {
+  background-color: #edf2f8;
+  color: white;
+}
+
+.card1 {
+  background-color: #733fc8;
+}
+
+.card1 img {
+  border: 3px solid #a17bd0;
+}
+
+.card2 {
+  background-color: #49556b;
+}
+
+.card3,
+.card5 {
+  background-color: white;
+  color: #53565d;
+}
+
+.card4 {
+  background-color: #18202d;
+}
+
+.card4 img {
+  border: 3px solid #a17bd0;
+}
+
+.card {
+  border-radius: 7px;
+  padding: 1.2rem 1.8rem;
+}
+
+.card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-header img {
+  border-radius: 50%;
+  margin-right: 0.78rem;
+}
+
+.card .card-header h2 {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card .card-header h3 {
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin: 0.09rem 0 0 0;
+  opacity: 0.7;
+}
+
+.card .sample {
+  font-size: 0.78rem;
+  margin-top: 1.8rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.48rem;
+  margin-top: 1.8rem;
+  opacity: 0.9;
+  line-height: 0.9rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+}

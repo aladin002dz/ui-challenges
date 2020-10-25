@@ -1,4 +1,4 @@
-# UI Challenges
+# Web UI Challenges
 Challenges from https://www.frontendmentor.io/
 
 ## Previews
