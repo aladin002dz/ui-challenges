@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-  margin: 2rem;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "card1 card1 card2 card5" "card3 card4 card4 card5";
@@ -106,6 +105,7 @@ body {
 .card .card-header img {
   border-radius: 50%;
   margin-right: 0.91rem;
+  height: 2.1rem;
 }
 
 .card .card-header h2 {
@@ -135,7 +135,36 @@ body {
   opacity: 0.7;
 }
 
+.card1 .sample {
+  position: relative;
+  background-color: transparent;
+}
+
+.card1 .sample .quotes {
+  position: absolute;
+  top: -75px;
+  right: 50px;
+  z-index: -1;
+}
+
+.card1 .sample .quotes img {
+  border: none;
+  border-radius: 0;
+  height: 100px;
+}
+
 .attribution {
   text-align: center;
   font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5";
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+    margin: 6rem 1.5rem;
+  }
 }
