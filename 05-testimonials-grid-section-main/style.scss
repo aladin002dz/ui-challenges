@@ -116,23 +116,25 @@ body {
         opacity: 0.7;
     }
 }
-
-.card1 .sample {
+/*
+.card1 {
   position: relative;
-  background-color: transparent;
-
-  .quotes {
-    position: absolute;
-    top:-75px;
-    right: 50px;
-    z-index: -1;
-
-    img {
-      border: none;
-      border-radius: 0;
-      height: 100px;
-    }
+  .card-header {
+    background: transparent;
+    z-index: 1;
   }
+  .sample{
+    background: transparent;
+  }
+  .p {
+    background: transparent;
+  }
+}*/
+
+.card1 {
+  background-image:url('../images/bg-pattern-quotation.svg');
+  background-repeat:no-repeat;
+  background-position:80% 0;
 }
 
 
