@@ -62,35 +62,30 @@ body {
   color: white;
 }
 
-.card1 {
-  background-color: #733fc8;
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.card1 img {
-  border: 3px solid #a17bd0;
-}
-
-.card2 {
-  background-color: #49556b;
-}
-
-.card3,
-.card5 {
-  background-color: white;
-  color: #53565d;
-}
-
-.card4 {
-  background-color: #18202d;
-}
-
-.card4 img {
-  border: 3px solid #a17bd0;
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card {
   border-radius: 7px;
   padding: 2.1rem 2.1rem;
+  opacity: 0;
+  -webkit-animation: show 2s linear forwards;
+          animation: show 2s linear forwards;
 }
 
 .card .card-header {
@@ -135,20 +130,42 @@ body {
   opacity: 0.7;
 }
 
-/*
 .card1 {
-  position: relative;
-  .card-header {
-    background: transparent;
-    z-index: 1;
-  }
-  .sample{
-    background: transparent;
-  }
-  .p {
-    background: transparent;
-  }
-}*/
+  background-color: #733fc8;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.card1 img {
+  border: 3px solid #a17bd0;
+}
+
+.card2 {
+  background-color: #49556b;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.card3,
+.card5 {
+  background-color: white;
+  color: #53565d;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-box-shadow: 0px 35px 82px -28px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 35px 82px -28px rgba(0, 0, 0, 0.21);
+}
+
+.card4 {
+  background-color: #18202d;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.card4 img {
+  border: 3px solid #a17bd0;
+}
+
 .card1 {
   background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
