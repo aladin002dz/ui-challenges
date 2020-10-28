@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --modarate-voilet: hsl(263, 55%, 52%);
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --Light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: var(--Light-gray);
+}
+
+.card {
+  max-width: 40rem;
+  min-height: 30rem;
+  margin: 10rem auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.cta {
+  padding: 3rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.cta h1 {
+  color: var(--cyan);
+}
+
+.cta h2 {
+  color: var(--bright-yellow);
+}
+
+.cta p {
+  color: var(--grayish-blue);
+}
+
+.payment {
+  background-color: var(--cyan);
+  color: var(--Light-gray);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.payment h2 {
+  font-size: 1.2rem;
+}
+
+.payment .price {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 3rem;
+  border-bottom-left-radius: .3rem;
+}
+
+.payment .price .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment .price .amount .highlight {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.payment .price .amount .rate {
+  opacity: 0.7;
+}
+
+.payment .price .btn {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: var(--bright-yellow);
+}
+
+.payment .motivation {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 3rem;
+  border-bottom-right-radius: .3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+}
