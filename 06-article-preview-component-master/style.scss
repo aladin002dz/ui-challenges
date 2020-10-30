@@ -1,0 +1,91 @@
+// reset
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+$Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$Grayish-Blue: hsl(212, 23%, 69%);
+$Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+body {
+  background-color: $Light-Grayish-Blue;
+}
+
+$border-radius-size: 10px;
+
+.card {
+  background-color: white;
+  display: flex;
+  height: 280px;
+  width: 730px;
+  margin: 260px auto;
+  border-radius: $border-radius-size;
+  img {
+    border-top-left-radius: $border-radius-size;
+    border-bottom-left-radius: $border-radius-size;
+  }
+  .h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .content {
+    padding: 40px;
+    line-height: 1.5;
+    color: $Very-Dark-Grayish-Blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  img {
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  .name {
+    font-weight: 700;
+  }
+
+  .date {
+    opacity: 0.7;
+  }
+
+}
+
+
+.share-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $Light-Grayish-Blue;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 375px) {
+}
