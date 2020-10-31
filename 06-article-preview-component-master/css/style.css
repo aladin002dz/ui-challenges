@@ -22,6 +22,7 @@ body {
   display: flex;
   height: 280px;
   width: 730px;
+  min-width: 730px;
   margin: 260px auto;
   border-radius: 10px;
 }
@@ -95,4 +96,27 @@ body {
 .attribution {
   text-align: center;
   font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 70px 30px;
+    width: 330px;
+    min-width: 330px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .card > img {
+    width: 330px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .card .card-footer {
+    margin-top: 1rem;
+  }
 }

@@ -28,6 +28,7 @@ $border-radius-size: 10px;
   display: flex;
   height: 280px;
   width: 730px;
+  min-width: 730px;
   margin: 260px auto;
   border-radius: $border-radius-size;
   img {
@@ -88,4 +89,23 @@ $border-radius-size: 10px;
 }
 
 @media only screen and (max-width: 375px) {
+
+  .card {
+    flex-direction: column;
+    margin: 70px 30px;
+    width: 330px;
+    min-width: 330px;
+    height: auto;
+    border-radius: $border-radius-size;
+    > img {
+      width: 330px;
+      border-top-left-radius: $border-radius-size;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: $border-radius-size;
+    }
+
+    .card-footer {
+      margin-top: 1rem;
+    }
+  }
 }
