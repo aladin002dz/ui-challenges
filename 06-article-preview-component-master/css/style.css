@@ -93,6 +93,26 @@ body {
   padding-top: 7px;
 }
 
+.social-link {
+  width: auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #48556a;
+  color: #ecf2f8;
+  padding: 16px 35px;
+}
+
+.social-link div {
+  margin-right: 18px;
+  opacity: .7;
+}
+
+.social-link a {
+  margin-right: 12px;
+}
+
 .attribution {
   text-align: center;
   font-size: 0.7rem;
