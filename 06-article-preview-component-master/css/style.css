@@ -27,7 +27,7 @@ body {
   border-radius: 10px;
 }
 
-.card img {
+.card > img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -85,15 +85,21 @@ body {
 }
 
 .share-btn {
+  position: relative;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #ecf2f8;
   text-align: center;
   padding-top: 7px;
+  cursor: pointer;
 }
 
 .social-link {
+  z-index: 10;
+  position: absolute;
+  top: -80px;
+  left: -124px;
   width: auto;
   border-radius: 10px;
   display: -webkit-box;
@@ -106,11 +112,28 @@ body {
 
 .social-link div {
   margin-right: 18px;
-  opacity: .7;
+  opacity: 0.7;
+  letter-spacing: 0.4em;
 }
 
 .social-link a {
   margin-right: 12px;
+}
+
+.display-none {
+  display: none;
+}
+
+.social-link::before {
+  content: "";
+  border-style: solid;
+  border-width: 14px;
+  border-color: #48556a transparent transparent transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  top: 56px;
 }
 
 .attribution {

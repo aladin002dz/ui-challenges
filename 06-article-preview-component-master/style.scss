@@ -31,7 +31,7 @@ $border-radius-size: 10px;
   min-width: 730px;
   margin: 260px auto;
   border-radius: $border-radius-size;
-  img {
+  > img {
     border-top-left-radius: $border-radius-size;
     border-bottom-left-radius: $border-radius-size;
   }
@@ -70,35 +70,56 @@ $border-radius-size: 10px;
   .date {
     opacity: 0.7;
   }
-
 }
 
-
 .share-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: $Light-Grayish-Blue;
-    text-align: center;
-    padding-top: 7px;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $Light-Grayish-Blue;
+  text-align: center;
+  padding-top: 7px;
+  cursor: pointer;;
+}
+
+.social-link {
+  z-index: 10;
+  position: absolute;
+  top:-80px;
+  left:-124px;
+  width: auto;
+  border-radius: $border-radius-size;
+  display: flex;
+  background-color: $Very-Dark-Grayish-Blue;
+  color: $Light-Grayish-Blue;
+  padding: 16px 35px;
+  div {
+    margin-right: 18px;
+    opacity: 0.7;
+    letter-spacing: 0.4em;
   }
 
-  .social-link {
-    width: auto;
-    border-radius: $border-radius-size;
-    display: flex;
-    background-color: $Very-Dark-Grayish-Blue;
-    color: $Light-Grayish-Blue;
-    padding: 16px 35px;
-    div {
-      margin-right: 18px;
-      opacity: .7;
-    }
-
-    a {
-      margin-right: 12px;
-    }
+  a {
+    margin-right: 12px;
   }
+}
+
+.display-none {
+  display: none;
+}
+
+.social-link::before {
+  content: "";
+  border-style: solid;
+  border-width: 14px;
+  border-color: $Very-Dark-Grayish-Blue transparent transparent  transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  top: 56px;
+}
 
 .attribution {
   text-align: center;
@@ -106,7 +127,6 @@ $border-radius-size: 10px;
 }
 
 @media only screen and (max-width: 375px) {
-
   .card {
     flex-direction: column;
     margin: 70px 30px;
