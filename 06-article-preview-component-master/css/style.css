@@ -54,6 +54,7 @@ body {
 }
 
 .card-footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,8 +99,8 @@ body {
 .social-link {
   z-index: 10;
   position: absolute;
-  top: -80px;
-  left: -124px;
+  top: -75px;
+  left: 215px;
   width: auto;
   border-radius: 10px;
   display: -webkit-box;
@@ -161,5 +162,37 @@ body {
   }
   .card .card-footer {
     margin-top: 1rem;
+  }
+  .share-btn {
+    z-index: 999;
+  }
+  .social-link {
+    z-index: 10;
+    position: absolute;
+    top: -80px;
+    left: -124px;
+    width: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #48556a;
+    color: #ecf2f8;
+    padding: 16px 35px;
+  }
+  .social-link div {
+    margin-right: 18px;
+    opacity: 0.7;
+    letter-spacing: 0.4em;
+  }
+  .social-link a {
+    margin-right: 12px;
+  }
+  .display-none-mobile {
+    display: none;
+  }
+  .social-link::before {
+    content: none;
   }
 }
