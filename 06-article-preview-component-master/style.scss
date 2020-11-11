@@ -128,6 +128,7 @@ $border-radius-size: 10px;
 }
 
 @media only screen and (max-width: 375px) {
+
   .card {
     flex-direction: column;
     margin: 70px 30px;
@@ -152,29 +153,16 @@ $border-radius-size: 10px;
   }
 
   .social-link {
-    z-index: 10;
-    position: absolute;
-    top: -80px;
-    left: -124px;
-    width: auto;
-    border-bottom-left-radius: $border-radius-size;
-    border-bottom-right-radius: $border-radius-size;
-    display: flex;
-    background-color: $Very-Dark-Grayish-Blue;
-    color: $Light-Grayish-Blue;
-    padding: 16px 35px;
-    div {
-      margin-right: 18px;
-      opacity: 0.7;
-      letter-spacing: 0.4em;
-    }
-
-    a {
-      margin-right: 12px;
-    }
+    position: relative;
+    top: -12px;
+    left: -29px;
   }
 
   .display-none-mobile {
+    display: none;
+  }
+
+  .display-mobile {
     display: none;
   }
 
