@@ -75,7 +75,7 @@ $border-radius-size: 10px;
 
 .share-btn {
   position: relative;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: $Light-Grayish-Blue;
@@ -146,6 +146,10 @@ $border-radius-size: 10px;
     .card-footer {
       margin-top: 1rem;
     }
+
+    .content {
+      padding: 32px 32px 12px 32px;
+    }
   }
 
   .share-btn {
@@ -154,8 +158,8 @@ $border-radius-size: 10px;
 
   .social-link {
     position: relative;
-    top: -12px;
-    left: -29px;
+    top: 2px;
+    left: -33px;
   }
 
   .display-none-mobile {
@@ -169,4 +173,5 @@ $border-radius-size: 10px;
   .social-link::before {
     content: none;
   }
+
 }

@@ -87,7 +87,7 @@ body {
 
 .share-btn {
   position: relative;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #ecf2f8;
@@ -163,13 +163,16 @@ body {
   .card .card-footer {
     margin-top: 1rem;
   }
+  .card .content {
+    padding: 32px 32px 12px 32px;
+  }
   .share-btn {
     z-index: 999;
   }
   .social-link {
     position: relative;
-    top: -12px;
-    left: -29px;
+    top: 2px;
+    left: -33px;
   }
   .display-none-mobile {
     display: none;
