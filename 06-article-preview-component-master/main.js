@@ -4,4 +4,7 @@ document.querySelector(".share-btn").onclick = function() {
 
     // on mobile display
     document.querySelector(".author").classList.toggle("display-none-mobile");
+
+    document.querySelector(".card-footer").classList.toggle("active");
+
 }

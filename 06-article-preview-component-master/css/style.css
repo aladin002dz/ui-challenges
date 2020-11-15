@@ -154,6 +154,10 @@ body {
     height: auto;
     border-radius: 10px;
   }
+  .card .h1, .card p {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .card > img {
     width: 330px;
     border-top-left-radius: 10px;
@@ -162,9 +166,15 @@ body {
   }
   .card .card-footer {
     margin-top: 1rem;
+    padding: 0 32px 12px 32px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .card .active {
+    background-color: #48556a;
   }
   .card .content {
-    padding: 32px 32px 12px 32px;
+    padding: 32px 0px 0px 0px;
   }
   .share-btn {
     z-index: 999;
@@ -172,7 +182,7 @@ body {
   .social-link {
     position: relative;
     top: 2px;
-    left: -33px;
+    left: -28px;
   }
   .display-none-mobile {
     display: none;

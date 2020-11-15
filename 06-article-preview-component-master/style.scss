@@ -130,6 +130,12 @@ $border-radius-size: 10px;
 @media only screen and (max-width: 375px) {
 
   .card {
+
+    .h1, p {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
     flex-direction: column;
     margin: 70px 30px;
     width: 330px;
@@ -145,10 +151,17 @@ $border-radius-size: 10px;
 
     .card-footer {
       margin-top: 1rem;
+      padding: 0 32px 12px 32px;
+      border-bottom-left-radius: $border-radius-size;
+      border-bottom-right-radius: $border-radius-size;
+    }
+
+    .active {
+      background-color: $Very-Dark-Grayish-Blue;
     }
 
     .content {
-      padding: 32px 32px 12px 32px;
+      padding: 32px 0px 0px 0px;
     }
   }
 
@@ -159,7 +172,7 @@ $border-radius-size: 10px;
   .social-link {
     position: relative;
     top: 2px;
-    left: -33px;
+    left: -28px;
   }
 
   .display-none-mobile {
