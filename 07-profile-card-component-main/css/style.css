@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #19a2ae;
+  position: relative;
+  text-align: center;
+  color: #2d3248;
+  background-image: url("../images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+  width: 350px;
+  border-radius: 14px;
+  background-color: white;
+  position: relative;
+  margin: 170px auto;
+}
+
+.card .header {
+  height: 140px;
+  background: url("../images/bg-pattern-card.svg") no-repeat center;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  position: relative;
+}
+
+.card .header .profile-img {
+  width: 112px;
+  border-radius: 50%;
+  background: white;
+  padding: 6px;
+  position: absolute;
+  top: 84px;
+  left: 120px;
+}
+
+.card .name {
+  margin-top: 75px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.card .name .age {
+  font-weight: 400;
+}
+
+.card .location {
+  margin-bottom: 24px;
+}
+
+.social-info {
+  border-top: solid 1px #969696;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 46px;
+}
+
+.number {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1rem;
+}
