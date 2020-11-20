@@ -16,9 +16,13 @@ body {
   position: relative;
   text-align: center;
   color: #2d3248;
-  background-image: url("../images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
-  background-position: left top, right bottom;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
+  background-position: top -526px left -328px, bottom -644px right -253px;
+}
+
+.location, .age, .type {
+  color: #6a6f81;
 }
 
 .card {
@@ -84,4 +88,12 @@ body {
   position: fixed;
   bottom: 0;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -642px left -728px, bottom -502px right -799px;
+  }
 }
