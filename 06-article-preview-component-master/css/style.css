@@ -148,7 +148,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 70px 30px;
+    margin: 70px auto;
     width: 330px;
     min-width: 330px;
     height: auto;
