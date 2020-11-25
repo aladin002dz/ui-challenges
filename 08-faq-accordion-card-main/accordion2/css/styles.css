@@ -6,9 +6,8 @@
   padding: 0 20px;
   max-height: 0;
   overflow: hidden;
-  will-change: max-height;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
   opacity: 0;
 }
 
