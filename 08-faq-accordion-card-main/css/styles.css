@@ -1,0 +1,18 @@
+.title {
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+  opacity: 0;
+}
+
+.open .content {
+  padding: 0 20px 20px;
+  height: 80px;
+  opacity: 1;
+}
