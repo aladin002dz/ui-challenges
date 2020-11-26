@@ -19,7 +19,6 @@ body {
 }
 
 .card {
-  z-index: -3;
   background-color: white;
   border-radius: 14px;
   display: -webkit-box;
@@ -27,13 +26,13 @@ body {
   display: flex;
   margin: 130px auto;
   width: 920px;
-  height: 510px;
+  min-height: 510px;
   position: relative;
 }
 
 .illustration {
   position: relative;
-  width: 462px;
+  width: 450px;
 }
 
 .illustration img {
@@ -60,8 +59,14 @@ body {
 }
 
 .questions {
-  width: 462px;
+  width: 450px;
   padding: 70px 12px;
+  z-index: 2;
+  position: relative;
+}
+
+.tab {
+  padding: 0;
 }
 
 /* Accordion styles */
@@ -72,8 +77,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em;
-  z-index: 999;
+  padding: 16px;
+  cursor: pointer;
 }
 
 /* Icon */
