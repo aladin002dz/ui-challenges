@@ -11,7 +11,8 @@ $soft-magenta: hsl(300, 69%, 71%);
 
 body {
   background-image: url("../images/bg-desktop.svg");
-  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
   background-color: $violet;
   color: white;
   font-family: "Open Sans";
@@ -31,7 +32,7 @@ h1 {
 main {
   display: flex;
   justify-content: center;
-  margin: 100px 80px 30px 80px;
+  margin: 60px 80px 30px 80px;
   .illustration {
     margin-right: 60px;
   }
@@ -58,7 +59,30 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      &:hover {
+        background-color: $soft-magenta;
+        color: white !important;
+        cursor: pointer;
+      }
     }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: end;
+  margin: auto 80px;
+  a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 1px white;
   }
 }
 
