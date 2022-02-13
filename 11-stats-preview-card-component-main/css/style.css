@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  /* Control over elements sizing */
+  box-sizing: border-box;
+  /* Remove preset browser spacing */
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography **************************************/
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  /*
+    font-family: 'Inter', sans-serif;
+  */
+}
+
+/* Colors *****************************************/
+/* Primary */
+/* Neutral */
+body {
+  background-color: #090b1a;
+}
+
+.card {
+  background-color: #1b1938;
+}
+
+.card h1,
+.card .stats {
+  color: white;
+}
+
+.card .accent {
+  color: #aa5cdb;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card .stats .content {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Components *****************************************/
+.image-fluid {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/* Layout *****************************************/
+.container {
+  margin: 85px 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.card .details {
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */

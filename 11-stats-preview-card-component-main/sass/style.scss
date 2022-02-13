@@ -1,0 +1,12 @@
+* {
+  /* Control over elements sizing */
+  box-sizing: border-box;
+  /* Remove preset browser spacing */
+  margin: 0;
+  padding: 0;
+}
+
+@import "./typography";
+@import "./colors";
+@import "./components";
+@import "./layout";

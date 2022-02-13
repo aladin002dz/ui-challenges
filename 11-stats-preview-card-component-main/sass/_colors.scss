@@ -1,0 +1,34 @@
+/* Colors *****************************************/
+/* Primary */
+$very-dark-blue: hsl(233, 47%, 7%);
+$dark-desaturated-blue: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+
+/* Neutral */
+$white: hsl(0, 0%, 100%);
+$slightly-transparent-white1: hsla(0, 0%, 100%, 0.75);
+$slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+
+body {
+  background-color: $very-dark-blue;
+}
+
+.card {
+  background-color: $dark-desaturated-blue;
+  h1,
+  .stats {
+    color: $white;
+  }
+
+  .accent {
+    color: $soft-violet;
+  }
+
+  p {
+    color: $slightly-transparent-white1;
+  }
+
+  .stats .content {
+    color: $slightly-transparent-white2;
+  }
+}
