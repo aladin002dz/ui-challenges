@@ -4,9 +4,16 @@ $violet: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
 
 * {
+  /* Control over elements size */
+  box-sizing: border-box;
+  /* Remove browser spacing preset */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 5.56vw;
+  margin-right: 5.56vw;
 }
 
 body {
@@ -19,26 +26,40 @@ body {
 }
 
 header {
-  margin-left: 80px;
-  margin-top: 60px;
-}
-
-h1 {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 2.5rem;
+  margin-left: 5.56vw;
+  margin-top: 7.5vh;
+  img {
+    width: 14.5%;
+    min-width: 200px;
+  }
 }
 
 main {
   display: flex;
-  justify-content: center;
-  margin: 60px 80px 30px 80px;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 7.5vh;
+  margin-bottom: 3.7vh;
   .illustration {
-    margin-right: 60px;
+    width: 47%;
+    img {
+      min-width: 400px;
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   .details {
+    width: 47%;
+    min-width: 400px;
     padding-top: 40px;
+
+    h1 {
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
 
     p {
       font-size: 1.1rem;
@@ -71,7 +92,6 @@ main {
 .social-links {
   display: flex;
   justify-content: end;
-  margin: auto 80px;
   a {
     margin-left: 1rem;
     color: white;
@@ -83,6 +103,10 @@ main {
     width: 40px;
     border-radius: 50%;
     border: solid 1px white;
+    &:hover {
+      color: $soft-magenta;
+      border-color: $soft-magenta;
+    }
   }
 }
 
@@ -96,9 +120,56 @@ footer {
     font-size: 11px;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $soft-magenta;
   }
 }
 
+/***********************************************************************************/
+/* Mobile Display ******************************************************************/
+/***********************************************************************************/
 @media (max-width: 375px) {
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  header {
+    margin-top: 80px;
+    img {
+      width: 32%;
+    }
+  }
+  main {
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    justify-content: center;
+    .illustration {
+      width: 100%;
+      margin: 0;
+      img {
+        min-width: auto;
+      }
+    }
+    .details {
+      min-width: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 40px;
+    position: relative;
+  }
 }
