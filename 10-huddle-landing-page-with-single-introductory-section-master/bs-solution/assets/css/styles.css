@@ -1,0 +1,16 @@
+@media (min-width: 1400px) {
+  img {
+    margin-top: -20PX;
+  }
+}
+
+h1 {
+  margin-top: 4%;
+}
+
+@media (min-width: 1200px) {
+  div {
+    margin-top: 3%;
+  }
+}
+
