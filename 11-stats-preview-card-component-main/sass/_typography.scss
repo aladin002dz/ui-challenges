@@ -3,7 +3,18 @@
 body {
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
-  /*
-    font-family: 'Inter', sans-serif;
-  */
+}
+
+.heading,
+h1 {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 180%;
+}
+
+p {
+  font-size: 95%;
+  line-height: 1.6;
 }

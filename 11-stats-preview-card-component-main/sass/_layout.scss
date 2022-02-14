@@ -8,9 +8,53 @@
   flex-direction: column-reverse;
   .details {
     text-align: center;
+    margin: 40px 35px;
+    p {
+      margin: 25px 0;
+    }
   }
 }
+
 .stats {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    max-width: 1110px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    .details {
+      margin: 0;
+      text-align: left;
+      //padding: 7% 11% 0% 7%;
+      padding: 80px 120px 65px 75px;
+      .stats {
+        margin-top: 80px;
+      }
+    }
+
+    .illustration {
+      border: 2px solid red;
+      width: 48%;
+      overflow: hidden;
+      img {
+        min-height: 100%;
+        max-width: auto;
+        width: auto;
+      }
+    }
+  }
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

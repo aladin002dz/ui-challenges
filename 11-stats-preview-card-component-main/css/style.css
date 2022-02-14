@@ -11,9 +11,20 @@
 body {
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
-  /*
-    font-family: 'Inter', sans-serif;
-  */
+}
+
+.heading,
+h1 {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 180%;
+}
+
+p {
+  font-size: 95%;
+  line-height: 1.6;
 }
 
 /* Colors *****************************************/
@@ -49,9 +60,24 @@ body {
   max-width: 100%;
 }
 
+.stat {
+  margin-top: 20px;
+}
+
+.stat .heading {
+  font-size: 200%;
+  font-weight: 700;
+}
+
+.stat .content {
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .attribution a {
@@ -70,10 +96,52 @@ body {
 
 .card .details {
   text-align: center;
+  margin: 40px 35px;
+}
+
+.card .details p {
+  margin: 25px 0;
 }
 
 .stats {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    max-width: 1110px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .card .details {
+    margin: 0;
+    text-align: left;
+    padding: 80px 120px 65px 75px;
+  }
+  .card .details .stats {
+    margin-top: 80px;
+  }
+  .card .illustration {
+    border: 2px solid red;
+    width: 48%;
+    overflow: hidden;
+  }
+  .card .illustration img {
+    min-height: 100%;
+    max-width: auto;
+    width: auto;
+  }
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */

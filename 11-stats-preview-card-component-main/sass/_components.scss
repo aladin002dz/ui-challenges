@@ -3,9 +3,22 @@
   max-width: 100%;
 }
 
+.stat {
+  margin-top: 20px;
+  .heading {
+    font-size: 200%;
+    font-weight: 700;
+  }
+  .content {
+    margin-top: 7px;
+    text-transform: uppercase;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: $slightly-transparent-white2;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
