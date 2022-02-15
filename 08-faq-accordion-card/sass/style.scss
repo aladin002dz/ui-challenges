@@ -1,0 +1,17 @@
+* {
+  /* Remove preset browser spacing */
+  padding: 0;
+  margin: 0;
+  /* Control over elements sizing */
+  box-sizing: border-box;
+}
+
+@import "colors";
+@import "typography";
+@import "components";
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "./bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
