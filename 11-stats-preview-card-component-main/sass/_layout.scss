@@ -1,4 +1,6 @@
 /* Layout *****************************************/
+$radius: 20px;
+
 .container {
   margin: 85px 25px;
 }
@@ -6,11 +8,26 @@
 .card {
   display: flex;
   flex-direction: column-reverse;
+  border-radius: $radius;
   .details {
     text-align: center;
     margin: 40px 35px;
     p {
       margin: 25px 0;
+    }
+  }
+
+  .illustration {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    img {
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: multiply;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      //object-fit: cover;
     }
   }
 }
@@ -21,6 +38,12 @@
 }
 
 @media (min-width: 375px) {
+  /*
+    keeping the same layout until medium screen size
+  */
+}
+
+@media (min-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
@@ -33,6 +56,7 @@
     justify-content: space-between;
     align-items: stretch;
     .details {
+      width: 52%;
       margin: 0;
       text-align: left;
       //padding: 7% 11% 0% 7%;
@@ -43,9 +67,11 @@
     }
 
     .illustration {
-      border: 2px solid red;
-      width: 48%;
+      width: 47%;
       overflow: hidden;
+      border-top-left-radius: 0;
+      border-top-right-radius: $radius;
+      border-bottom-right-radius: $radius;
       img {
         min-height: 100%;
         max-width: auto;
