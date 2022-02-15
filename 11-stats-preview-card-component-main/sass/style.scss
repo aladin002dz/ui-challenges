@@ -1,9 +1,11 @@
-* {
+*,
+*::before,
+*::after {
+  /* Remove preset browser spacing */
+  padding: 0;
+  margin: 0;
   /* Control over elements sizing */
   box-sizing: border-box;
-  /* Remove preset browser spacing */
-  margin: 0;
-  padding: 0;
 }
 
 @import "./typography";

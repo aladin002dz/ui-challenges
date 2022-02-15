@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-* {
+*,
+*::before,
+*::after {
+  /* Remove preset browser spacing */
+  padding: 0;
+  margin: 0;
   /* Control over elements sizing */
   box-sizing: border-box;
-  /* Remove preset browser spacing */
-  margin: 0;
-  padding: 0;
 }
 
 /* Typography **************************************/
@@ -16,6 +18,7 @@ body {
 .heading,
 h1 {
   font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -31,7 +34,7 @@ p {
 /* Primary */
 /* Neutral */
 body {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #090b1a;
 }
 
 .card {
@@ -53,10 +56,6 @@ body {
 
 .card .illustration {
   background-color: #aa5cdb;
-}
-
-.card .illustration img {
-  z-index: -10;
 }
 
 .card .stats .content {
@@ -100,7 +99,9 @@ body {
 .card {
   display: flex;
   flex-direction: column-reverse;
-  border-radius: 20px;
+  align-items: stretch;
+  border-radius: 0.25rem;
+  min-width: 260px;
 }
 
 .card .details {
@@ -113,17 +114,24 @@ body {
 }
 
 .card .illustration {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  display: flex;
+  align-items: stretch;
+  /* had to use this make the image completely fit the parent element*/
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.card .illustration picture {
+  width: 100%;
 }
 
 .card .illustration img {
   width: 100%;
   height: 100%;
   mix-blend-mode: multiply;
-  background-size: cover;
-  background-repeat: no-repeat;
   opacity: 0.8;
+  object-fit: cover;
 }
 
 .stats {
@@ -163,13 +171,11 @@ body {
     width: 47%;
     overflow: hidden;
     border-top-left-radius: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
   }
   .card .illustration img {
-    min-height: 100%;
-    max-width: auto;
-    width: auto;
+    height: 100%;
   }
   .stats {
     flex-direction: row;

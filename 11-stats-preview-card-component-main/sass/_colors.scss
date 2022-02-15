@@ -10,8 +10,7 @@ $slightly-transparent-white1: hsla(0, 0%, 100%, 0.75);
 $slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
 
 body {
-  //background-color: $very-dark-blue;
-  background-color: $slightly-transparent-white2;
+  background-color: $very-dark-blue;
 }
 
 .card {
@@ -31,9 +30,6 @@ body {
 
   .illustration {
     background-color: $soft-violet;
-    img {
-      z-index: -10;
-    }
   }
 
   .stats .content {
