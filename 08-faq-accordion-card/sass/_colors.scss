@@ -17,3 +17,14 @@ $dark-grayish-blue: hsl(240, 6%, 50%);
 
 /*Dividers*/
 $light-grayish-blue: hsl(240, 5%, 91%);
+html {
+  min-height: 100%;
+}
+body {
+  height: 100%;
+  background-image: linear-gradient($soft-violet, $soft-blue);
+}
+
+.card {
+  background-color: white;
+}

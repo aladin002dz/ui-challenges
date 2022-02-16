@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .illustration {
+    width: 48%;
+    position: relative;
+    picture {
+      position: absolute;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content {
+    width: 48%;
+  }
+}

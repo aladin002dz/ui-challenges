@@ -1,4 +1,12 @@
+.card {
+  max-width: 920px;
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0.25rem;
+  width: 100%;
+  text-align: center;
   font-size: 11px;
   text-align: center;
   a {
