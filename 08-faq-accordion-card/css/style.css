@@ -29,6 +29,22 @@ body {
   max-width: 920px;
 }
 
+.card .accordion-item {
+  /*
+    transition: height 5s;
+    overflow: hidden;*/
+}
+
+.card .accordion-item .accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s;
+}
+
+.card .accordion-item-open .accordion-body {
+  max-height: 100px;
+}
+
 .attribution {
   position: absolute;
   bottom: 0.25rem;

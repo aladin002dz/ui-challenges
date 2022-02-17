@@ -1,5 +1,18 @@
 .card {
   max-width: 920px;
+
+  .accordion-item {
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 2s;
+    }
+  }
+  .accordion-item-open {
+    .accordion-body {
+      max-height: 100px;
+    }
+  }
 }
 
 .attribution {
