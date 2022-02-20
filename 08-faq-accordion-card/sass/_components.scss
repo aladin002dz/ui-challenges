@@ -1,16 +1,35 @@
 .card {
-  max-width: 920px;
-
+  box-shadow: 1px 11px 28px -3px rgba(0, 0, 0, 0.65);
+  h1 {
+    font-size: 250%;
+  }
   .accordion-item {
+    border-bottom: 1px solid $light-grayish-blue;
+    padding: 20px 0;
+    .accordion-header {
+      font-size: 120%;
+      transition: font-weight 2s;
+    }
     .accordion-body {
+      padding-top: 10px;
       max-height: 0;
       overflow: hidden;
       transition: max-height 2s;
     }
+
+    img {
+      transition: transform 0.5s;
+    }
   }
   .accordion-item-open {
+    .accordion-header {
+      font-weight: 700;
+    }
     .accordion-body {
-      max-height: 100px;
+      max-height: 50px;
+    }
+    img {
+      transform: rotate(180deg);
     }
   }
 }
@@ -23,6 +42,7 @@
   font-size: 11px;
   text-align: center;
   a {
-    color: hsl(228, 45%, 44%);
+    //color: hsl(228, 45%, 44%);
+    color: azure;
   }
 }

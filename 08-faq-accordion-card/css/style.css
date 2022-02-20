@@ -20,29 +20,54 @@ body {
   background-color: white;
 }
 
+h1 {
+  color: #6565e7;
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
 }
 
 .card {
-  max-width: 920px;
+  box-shadow: 1px 11px 28px -3px rgba(0, 0, 0, 0.65);
+}
+
+.card h1 {
+  font-size: 250%;
 }
 
 .card .accordion-item {
-  /*
-    transition: height 5s;
-    overflow: hidden;*/
+  border-bottom: 1px solid #e7e7e9;
+  padding: 20px 0;
+}
+
+.card .accordion-item .accordion-header {
+  font-size: 120%;
+  transition: font-weight 2s;
 }
 
 .card .accordion-item .accordion-body {
+  padding-top: 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 2s;
 }
 
+.card .accordion-item img {
+  transition: transform 0.5s;
+}
+
+.card .accordion-item-open .accordion-header {
+  font-weight: 700;
+}
+
 .card .accordion-item-open .accordion-body {
-  max-height: 100px;
+  max-height: 50px;
+}
+
+.card .accordion-item-open img {
+  transform: rotate(180deg);
 }
 
 .attribution {
@@ -55,7 +80,7 @@ body {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: azure;
 }
 
 body {
@@ -65,25 +90,81 @@ body {
 }
 
 .card {
+  max-width: 920px;
+  height: 510px;
+  border-radius: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.card picture {
+  overflow: hidden;
+}
+
 .card .illustration {
-  width: 48%;
+  width: 450px;
+  height: 500px;
   position: relative;
 }
 
-.card .illustration picture {
+.card .illustration img {
   position: absolute;
 }
 
-.card .illustration picture img {
+.card .illustration .illustration-box img {
+  z-index: 3;
+  top: 59%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.card .illustration .illustration-main {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card .illustration .illustration-main .illustration-image {
   width: 100%;
 }
 
+.card .illustration .illustration-main .illustration-image img {
+  top: 13%;
+  left: -21%;
+  z-index: 2;
+}
+
+.card .illustration .bg-pattern {
+  width: 100%;
+}
+
+.card .illustration .bg-pattern img {
+  width: 450px;
+  top: 12.5%;
+  left: -17%;
+  z-index: 1;
+}
+
 .card .content {
-  width: 48%;
+  width: 450px;
+}
+
+.card .content h1 {
+  margin-bottom: 17px;
+}
+
+.card .content .accordion {
+  max-width: 350px;
+}
+
+.card .content .accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

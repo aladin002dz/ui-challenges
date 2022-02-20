@@ -1,8 +1,9 @@
 var accordionHeaders = document.getElementsByClassName("accordion-header");
-var toggleAccordionItem = function (e) {
-  e.target.parentElement.classList.toggle("accordion-item-open");
+var toggleAccordionItem = function (target) {
+  document.getElementById(target).classList.toggle("accordion-item-open");
 };
 
 for (accordionHeader of accordionHeaders) {
-  accordionHeader.addEventListener("click", toggleAccordionItem);
+  let target = accordionHeader.getAttribute("data-target");
+  accordionHeader.addEventListener("click", () => toggleAccordionItem(target));
 }

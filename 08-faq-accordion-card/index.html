@@ -19,26 +19,28 @@
     <div class="card">
       <div class="illustration">
         <!-- the box -->
-        <picture>
+        <picture class="illustration-box">
           <source
             media="(min-width:376px)"
             srcset="./images/illustration-box-desktop.svg"
           />
           <img src="./images/illustration-box-desktop.svg" alt="box" />
         </picture>
-        <!-- the illustration -->
-        <picture>
-          <source
-            media="(min-width:376px)"
-            srcset="./images/illustration-woman-online-desktop.svg"
-          />
-          <img
-            src="./images/illustration-woman-online-mobile.svg"
-            alt="illustration"
-          />
-        </picture>
+        <div class="illustration-main">
+          <!-- the illustration -->
+          <picture class="illustration-image">
+            <source
+              media="(min-width:376px)"
+              srcset="./images/illustration-woman-online-desktop.svg"
+            />
+            <img
+              src="./images/illustration-woman-online-mobile.svg"
+              alt="illustration"
+            />
+          </picture>
+        </div>
         <!-- the background -->
-        <picture>
+        <picture class="bg-pattern">
           <source
             media="(min-width:376px)"
             srcset="./images/bg-pattern-desktop.svg"
@@ -47,125 +49,72 @@
         </picture>
       </div>
       <div class="content">
+        <h1>FAQ</h1>
         <div class="accordion">
-          <div class="accordion-item">
-            <div class="accordion-header">
-              How many team members can I invite?
+          <div class="accordion-item" id="accordion-item1">
+            <div class="accordion-header" data-target="accordion-item1">
+              <div>How many team members can I invite?</div>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
             </div>
+
             <div class="accordion-body">
               You can invite up to 2 additional users on the Free plan. There is
               no limit on team members for the Premium plan.
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What is the maximum file upload size?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                No more than 2GB. All files in your account must fit your
-                allotted storage space.
-              </div>
+          <div class="accordion-item" id="accordion-item2">
+            <div class="accordion-header" data-target="accordion-item2">
+              <div>What is the maximum file upload size?</div>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="accordion-body">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                How do I reset my password?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Click “Forgot password” from the login page or “Change password”
-                from your profile page. A reset link will be emailed to you.
-              </div>
+          <div class="accordion-item" id="accordion-item3">
+            <div class="accordion-header" data-target="accordion-item3">
+              <div>How do I reset my password?</div>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="accordion-body">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Can I cancel my subscription?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </div>
+          <div class="accordion-item" id="accordion-item4">
+            <div class="accordion-header" data-target="accordion-item4">
+              <div>Can I cancel my subscription?</div>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="accordion-body" id="answer4">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Do you provide additional support?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                Chat and email support is available 24/7. Phone lines are open
-                during normal business hours.
-              </div>
+          <div class="accordion-item" id="accordion-item5">
+            <div class="accordion-header" data-target="accordion-item5">
+              <div>Do you provide additional support?</div>
+              <img src="./images/icon-arrow-down.svg" alt="arrow" />
+            </div>
+            <div class="accordion-body">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="attribution position-absolute bottom-0 w-100 text-center mb-2">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a
+        href="https://github.com/aladin002dz/ui-challenges/tree/main/08-faq-accordion-card"
+        >Mahfoudh Arous</a
+      >.
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
