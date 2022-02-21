@@ -217,6 +217,21 @@ body {
     left: 0;
     z-index: 2;
   }
+  .card .illustration .bg-pattern {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: -70%;
+    /*left: 26%;*/
+    left: 34%;
+    overflow: visible;
+  }
+  .card .illustration .bg-pattern img {
+    width: 100%;
+    top: 12.5%;
+    left: -17%;
+    z-index: 1;
+  }
   .card .content {
     width: 280px;
   }
@@ -228,44 +243,15 @@ body {
 
 @media (max-width: 376px) {
   .card .illustration .illustration-main {
-    /*
-        overflow: visible;
-        position: relative;
-        */
     width: 73%;
-    /*
-        margin: auto;
-        height: 100%;
-        */
   }
   .card .illustration .illustration-main .illustration-image {
-    /*
-          position: absolute;
-          */
     top: -123%;
-    /*
-          width: 100%;
-          img {
-            width: 100%;
-            top: -50%;
-            left: 0;
-            z-index: 2;
-          }
-          */
   }
   .card .illustration .bg-pattern {
-    position: absolute;
     width: 73%;
-    height: 100%;
     top: -21px;
     left: 26%;
-    overflow: visible;
-  }
-  .card .illustration .bg-pattern img {
-    width: 100%;
-    top: 12.5%;
-    left: -17%;
-    z-index: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
