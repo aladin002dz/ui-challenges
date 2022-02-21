@@ -103,10 +103,12 @@ body {
       .illustration-main {
         overflow: visible;
         position: relative;
-        width: 100%;
+        width: 50%;
+        margin: auto;
         height: 100%;
         .illustration-image {
           position: absolute;
+          top: -200%;
           width: 100%;
           img {
             width: 100%;
@@ -116,22 +118,61 @@ body {
           }
         }
       }
-
-      .bg-pattern {
-        width: 100%;
-        img {
-          width: 450px;
-          top: 12.5%;
-          left: -17%;
-          z-index: 1;
-        }
-      }
     }
+
     .content {
       width: 280px;
       h1 {
         width: 100%;
         text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  .card {
+    .illustration {
+      .illustration-main {
+        /*
+        overflow: visible;
+        position: relative;
+        */
+        width: 73%;
+        /*
+        margin: auto;
+        height: 100%;
+        */
+
+        .illustration-image {
+          /*
+          position: absolute;
+          */
+          top: -123%;
+          /*
+          width: 100%;
+          img {
+            width: 100%;
+            top: -50%;
+            left: 0;
+            z-index: 2;
+          }
+          */
+        }
+      }
+
+      .bg-pattern {
+        position: absolute;
+        width: 73%;
+        height: 100%;
+        top: -21px;
+        left: 26%;
+        overflow: visible;
+        img {
+          width: 100%;
+          top: 12.5%;
+          left: -17%;
+          z-index: 1;
+        }
       }
     }
   }
