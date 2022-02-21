@@ -34,6 +34,16 @@
   }
 }
 
+@media (max-width: 992px) {
+  .card {
+    .content {
+      .accordion-header {
+        font-size: 115%;
+      }
+    }
+  }
+}
+
 .attribution {
   position: absolute;
   bottom: 0.25rem;
@@ -42,7 +52,6 @@
   font-size: 11px;
   text-align: center;
   a {
-    //color: hsl(228, 45%, 44%);
-    color: azure;
+    color: gainsboro;
   }
 }

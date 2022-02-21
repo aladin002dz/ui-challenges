@@ -70,6 +70,12 @@ body {
   transform: rotate(180deg);
 }
 
+@media (max-width: 992px) {
+  .card .content .accordion-header {
+    font-size: 115%;
+  }
+}
+
 .attribution {
   position: absolute;
   bottom: 0.25rem;
@@ -80,7 +86,11 @@ body {
 }
 
 .attribution a {
-  color: azure;
+  color: gainsboro;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -166,5 +176,60 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-right: 1rem;
+}
+
+@media (max-width: 992px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    width: 87%;
+    min-width: 328px;
+  }
+  .card picture {
+    overflow: visible;
+  }
+  .card .illustration {
+    width: 100%;
+    height: 130px;
+    position: relative;
+  }
+  .card .illustration img {
+    position: absolute;
+  }
+  .card .illustration .illustration-box {
+    display: none;
+  }
+  .card .illustration .illustration-main {
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .card .illustration .illustration-main .illustration-image {
+    position: absolute;
+    width: 100%;
+  }
+  .card .illustration .illustration-main .illustration-image img {
+    width: 100%;
+    top: -50%;
+    left: 0;
+    z-index: 2;
+  }
+  .card .illustration .bg-pattern {
+    width: 100%;
+  }
+  .card .illustration .bg-pattern img {
+    width: 450px;
+    top: 12.5%;
+    left: -17%;
+    z-index: 1;
+  }
+  .card .content {
+    width: 280px;
+  }
+  .card .content h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
