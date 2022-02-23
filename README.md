@@ -11,4 +11,5 @@ Challenges from https://www.frontendmentor.io/
 [Challenge 08](https://aladin002dz.github.io/ui-challenges/08-faq-accordion-card/)  
 [Challenge 10](https://aladin002dz.github.io/ui-challenges/10-huddle-landing-page-with-single-introductory-section-master/)  
 [Challenge 11](https://aladin002dz.github.io/ui-challenges/11-stats-preview-card-component-main/)  
+[Challenge 12](https://aladin002dz.github.io/ui-challenges/12-3-column-preview-card-component/)  
 [Challenge 13](https://aladin002dz.github.io/ui-challenges/13-qr-code-component/)
