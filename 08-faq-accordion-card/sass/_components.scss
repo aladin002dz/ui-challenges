@@ -24,6 +24,7 @@
   .accordion-item-open {
     .accordion-header {
       font-weight: 700;
+      cursor: pointer;
     }
     .accordion-body {
       max-height: 50px;

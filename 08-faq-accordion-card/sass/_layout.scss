@@ -10,7 +10,7 @@ body {
 
 .card {
   max-width: 920px;
-  height: 510px;
+  min-height: 510px;
   border-radius: 1.2rem;
   display: flex;
   justify-content: space-between;
