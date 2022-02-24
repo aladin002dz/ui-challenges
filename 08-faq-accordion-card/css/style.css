@@ -209,7 +209,7 @@ body {
   }
   .card .illustration .illustration-main .illustration-image {
     position: absolute;
-    top: -200%;
+    top: -112%;
     width: 100%;
   }
   .card .illustration .illustration-main .illustration-image img {
@@ -222,8 +222,7 @@ body {
     position: absolute;
     width: 50%;
     height: 100%;
-    top: -70%;
-    /*left: 26%;*/
+    top: -25%;
     left: 34%;
     overflow: visible;
   }
@@ -247,7 +246,7 @@ body {
     width: 73%;
   }
   .card .illustration .illustration-main .illustration-image {
-    top: -123%;
+    top: -86%;
   }
   .card .illustration .bg-pattern {
     width: 73%;
