@@ -65,11 +65,18 @@ body {
 .cards-container .btn {
   border-radius: 3rem;
   text-decoration: none;
-  background-color: var(--transparent-white);
+  background-color: var(--very-light-gray);
   display: block;
   width: 150px;
   padding: 1rem 0;
   text-align: center;
+}
+
+.cards-container .btn:hover {
+  cursor: pointer;
+  color: var(--very-light-gray) !important;
+  background-color: transparent;
+  border: 2px solid var(--very-light-gray);
 }
 
 .cards-container .card:first-child {
