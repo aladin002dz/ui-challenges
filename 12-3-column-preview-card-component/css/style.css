@@ -25,12 +25,13 @@ h3 {
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: var(--very-light-gray);
+  padding: 0 2rem;
 }
 
 .cards-container {
@@ -38,6 +39,8 @@ body {
   max-width: 920px;
   border-radius: 15px;
   color: var(--very-light-gray);
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
 .cards-container img {
@@ -81,8 +84,6 @@ body {
 
 .cards-container .card:first-child {
   background-color: var(--bright-orange);
-  border-bottom-left-radius: var(--border-radius);
-  border-top-left-radius: var(--border-radius);
 }
 
 .cards-container .card:first-child .btn {
@@ -99,8 +100,6 @@ body {
 
 .cards-container .card:last-child {
   background-color: var(--very-dark-cyan);
-  border-bottom-right-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
 }
 
 .cards-container .card:last-child .btn {
@@ -121,7 +120,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    height: auto;
+    padding: 0 1rem;
   }
   .cards-container {
     margin: 3rem auto;
@@ -138,13 +137,9 @@ body {
     margin-bottom: 45px;
   }
   .cards-container .card:first-child {
-    border-top-right-radius: var(--border-radius);
-    border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: 0;
   }
   .cards-container .card:last-child {
-    border-bottom-right-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
     border-top-right-radius: 0;
   }
   .attribution {

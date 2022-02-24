@@ -28,12 +28,13 @@ h3 {
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: var(--very-light-gray);
+  padding: 0 2rem;
 }
 
 .cards-container {
@@ -41,6 +42,8 @@ body {
   max-width: 920px;
   border-radius: 15px;
   color: var(--very-light-gray);
+  border-radius: var(--border-radius);
+  overflow: hidden;
   img {
     height: 40px;
     width: 65px;
@@ -78,8 +81,6 @@ body {
 
   .card:first-child {
     background-color: var(--bright-orange);
-    border-bottom-left-radius: var(--border-radius);
-    border-top-left-radius: var(--border-radius);
     .btn {
       color: var(--bright-orange);
     }
@@ -92,8 +93,6 @@ body {
   }
   .card:last-child {
     background-color: var(--very-dark-cyan);
-    border-bottom-right-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
     .btn {
       color: var(--very-dark-cyan);
     }
@@ -114,7 +113,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    height: auto;
+    padding: 0 1rem;
   }
 
   .cards-container {
@@ -131,14 +130,10 @@ body {
       }
     }
     .card:first-child {
-      border-top-right-radius: var(--border-radius);
-      border-top-left-radius: var(--border-radius);
       border-bottom-left-radius: 0;
     }
 
     .card:last-child {
-      border-bottom-right-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius);
       border-top-right-radius: 0;
     }
   }
