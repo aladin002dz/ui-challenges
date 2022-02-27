@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Colors *************************/
+/* Primary */
+/* Neutral */
+/* Typography ********************/
+Body {
+  font-size: 18px;
+  background-color: #0d192b;
+  min-height: 100vh;
+}
+
+/*
+Font
+Weights: 300, 400, 600
+*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  max-width: 500px;
+  background-color: #14253d;
+  color: #8bacda;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-between {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.white {
+  color: white;
+}
+
+/*
+.justify-content-between {
+  justify-content: start;
+}
+*/
+/* Start styling the attriution */
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.attribution a {
+  color: #8bacda;
+}
+
+.attribution a:hover {
+  color: #00fff7;
+  transition: color 0.3s;
+}
+/*# sourceMappingURL=style.css.map */

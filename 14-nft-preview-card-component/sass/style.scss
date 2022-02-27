@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Colors *************************/
+/* Primary */
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+/* Neutral */
+$very-dark-blue1: hsl(217, 54%, 11%); //main BG
+$very-dark-blue2: hsl(216, 50%, 16%); //card BG
+$very-dark-blue: hsl(215, 32%, 27%); //line
+
+/* Typography ********************/
+Body {
+  font-size: 18px;
+  background-color: $very-dark-blue1;
+  min-height: 100vh;
+}
+
+/*
+Font
+Weights: 300, 400, 600
+*/
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  max-width: 500px;
+  background-color: $very-dark-blue2;
+  color: $soft-blue;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-between {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.white {
+  color: white;
+}
+
+/*
+.justify-content-between {
+  justify-content: start;
+}
+*/
+
+/* Start styling the attriution */
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+
+  a {
+    color: $soft-blue;
+    &:hover {
+      color: $cyan;
+      transition: color 0.3s;
+    }
+  }
+}
