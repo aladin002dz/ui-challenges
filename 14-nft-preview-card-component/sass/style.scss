@@ -16,7 +16,6 @@ $very-dark-blue1: hsl(217, 54%, 11%); //main BG
 $very-dark-blue2: hsl(216, 50%, 16%); //card BG
 $very-dark-blue: hsl(215, 32%, 27%); //line
 
-/* Typography ********************/
 Body {
   font-size: 18px;
   background-color: $very-dark-blue1;
@@ -37,9 +36,59 @@ main {
 }
 
 .card {
-  max-width: 500px;
+  width: 352px;
+  padding: 25px;
+  border-radius: 1rem;
   background-color: $very-dark-blue2;
   color: $soft-blue;
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .heading {
+    color: white;
+    font-size: 123%;
+    font-weight: 600;
+    margin-top: 1.1rem;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 23px;
+    line-height: 1.5;
+  }
+
+  #etherium-value {
+    img {
+      height: 18px;
+      width: 11px;
+      margin-right: 0.5rem;
+    }
+    font-size: 90%;
+  }
+
+  #etherium-timing {
+    img {
+      height: 18px;
+      width: 18px;
+      margin-right: 0.5rem;
+    }
+    font-size: 90%;
+  }
+
+  #author {
+    margin-top: 24px;
+    border-top: 1px solid white;
+    padding-top: 19px;
+    margin-bottom: 11px;
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-right: 16px;
+    }
+    font-size: 91%;
+  }
 }
 
 .d-flex {
@@ -56,13 +105,6 @@ main {
   color: white;
 }
 
-/*
-.justify-content-between {
-  justify-content: start;
-}
-*/
-
-/* Start styling the attriution */
 .attribution {
   position: absolute;
   bottom: 1rem;
@@ -78,4 +120,7 @@ main {
       transition: color 0.3s;
     }
   }
+}
+
+@media screen and (max-width: 375px) {
 }

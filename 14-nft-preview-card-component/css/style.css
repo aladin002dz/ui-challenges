@@ -9,7 +9,6 @@
 /* Colors *************************/
 /* Primary */
 /* Neutral */
-/* Typography ********************/
 Body {
   font-size: 18px;
   background-color: #0d192b;
@@ -29,9 +28,65 @@ main {
 }
 
 .card {
-  max-width: 500px;
+  width: 352px;
+  padding: 25px;
+  border-radius: 1rem;
   background-color: #14253d;
   color: #8bacda;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card .heading {
+  color: white;
+  font-size: 123%;
+  font-weight: 600;
+  margin-top: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.card p {
+  margin-bottom: 23px;
+  line-height: 1.5;
+}
+
+.card #etherium-value {
+  font-size: 90%;
+}
+
+.card #etherium-value img {
+  height: 18px;
+  width: 11px;
+  margin-right: 0.5rem;
+}
+
+.card #etherium-timing {
+  font-size: 90%;
+}
+
+.card #etherium-timing img {
+  height: 18px;
+  width: 18px;
+  margin-right: 0.5rem;
+}
+
+.card #author {
+  margin-top: 24px;
+  border-top: 1px solid white;
+  padding-top: 19px;
+  margin-bottom: 11px;
+  font-size: 91%;
+}
+
+.card #author img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 16px;
 }
 
 .d-flex {
@@ -48,12 +103,6 @@ main {
   color: white;
 }
 
-/*
-.justify-content-between {
-  justify-content: start;
-}
-*/
-/* Start styling the attriution */
 .attribution {
   position: absolute;
   bottom: 1rem;
