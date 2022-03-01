@@ -33,11 +33,39 @@ main {
   border-radius: 1rem;
   background-color: #14253d;
   color: #8bacda;
+  position: relative;
 }
 
-.card img {
+.card > a > img {
+  display: block;
   width: 100%;
+  height: 100%;
+}
+
+.card #overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+}
+
+.card > a {
+  position: relative;
+  display: inline-block;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.card > a:hover #overlay {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .card .heading {
@@ -51,6 +79,15 @@ main {
 .card p {
   margin-bottom: 23px;
   line-height: 1.5;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #00fff7;
 }
 
 .card #etherium-value {
@@ -75,7 +112,7 @@ main {
 
 .card #author {
   margin-top: 24px;
-  border-top: 1px solid white;
+  border-top: 1px solid #2f415b;
   padding-top: 19px;
   margin-bottom: 11px;
   font-size: 91%;
@@ -119,5 +156,21 @@ main {
 .attribution a:hover {
   color: #00fff7;
   transition: color 0.3s;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 24px;
+  }
+  .card {
+    width: 325px;
+  }
+  .card p {
+    margin-bottom: 12px;
+  }
+  .card #author {
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
