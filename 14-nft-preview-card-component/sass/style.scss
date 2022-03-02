@@ -61,6 +61,7 @@ main {
     justify-content: center;
     background-color: hsla(178, 100%, 50%, 0.5);
     opacity: 0;
+    transition: opacity 0.3s;
   }
   > a {
     position: relative;
@@ -69,7 +70,6 @@ main {
     overflow: hidden;
     &:hover #overlay {
       opacity: 1;
-      transition: opacity 0.3s;
     }
   }
   .heading {
@@ -87,6 +87,7 @@ main {
   a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
     &:hover {
       color: $cyan;
     }

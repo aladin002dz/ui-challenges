@@ -54,6 +54,7 @@ main {
   justify-content: center;
   background-color: rgba(0, 255, 247, 0.5);
   opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .card > a {
@@ -65,7 +66,6 @@ main {
 
 .card > a:hover #overlay {
   opacity: 1;
-  transition: opacity 0.3s;
 }
 
 .card .heading {
@@ -84,6 +84,7 @@ main {
 .card a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .card a:hover {
