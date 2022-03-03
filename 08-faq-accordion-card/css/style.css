@@ -45,6 +45,7 @@ body {
 .card .accordion-item .accordion-header {
   font-size: 120%;
   transition: font-weight 2s;
+  cursor: pointer;
 }
 
 .card .accordion-item .accordion-body {
@@ -60,7 +61,6 @@ body {
 
 .card .accordion-item-open .accordion-header {
   font-weight: 700;
-  cursor: pointer;
 }
 
 .card .accordion-item-open .accordion-body {
