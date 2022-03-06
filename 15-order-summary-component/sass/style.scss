@@ -35,14 +35,15 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 48%;
   background-color: $pale-blue;
+  padding: 0 1.5rem;
   .order-card {
-    width: 28rem;
+    max-width: 28rem;
+    min-width: 20rem;
     border-radius: 1.2rem;
     overflow: hidden;
     background-color: white;
     .card-body {
       text-align: center;
-      //margin: 0 4.8rem;
       padding: 0 3rem;
       padding-bottom: 3rem;
       .heading {
@@ -50,9 +51,11 @@ body {
         font-weight: 900;
         margin-top: 2.5rem;
         margin-bottom: 1.1rem;
+        color: $dark-blue;
       }
 
       p {
+        color: $desaturated-blue;
         line-height: 1.6;
       }
 
@@ -62,12 +65,22 @@ body {
         padding: 1.3rem;
         background-color: $very-pale-blue;
         border-radius: 0.5rem;
+        color: $dark-blue;
         img {
           margin-right: 1.2rem;
         }
         .plan-type {
           font-weight: 900;
           margin-bottom: 0.15rem;
+        }
+        a {
+          color: $dark-blue;
+          text-decoration: underline;
+          transition: color 0.2s, underline 0.2s;
+          &:hover {
+            text-decoration: none;
+            color: rgb(118, 108, 241);
+          }
         }
       }
       a {
@@ -86,6 +99,18 @@ body {
         text-align: center;
         border-radius: 0.5rem;
         margin-bottom: 2rem;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: rgb(118, 108, 241);
+        }
+      }
+
+      .cancel-order {
+        color: $desaturated-blue;
+        transition: color 0.3s;
+        &:hover {
+          color: $dark-blue;
+        }
       }
     }
   }
@@ -123,4 +148,39 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+
+  .hero-container {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    .order-card {
+      img {
+        height: 10rem;
+      }
+      .card-body {
+        text-align: center;
+        padding: 0 1.5rem;
+        padding-bottom: 1.8rem;
+        .plan {
+          margin-top: 1.3rem;
+          margin-bottom: 1rem;
+          img {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1.2rem;
+          }
+        }
+
+        p,
+        .plan,
+        .btn,
+        .cancel-order {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }

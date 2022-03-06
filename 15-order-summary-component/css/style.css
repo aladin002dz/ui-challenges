@@ -25,10 +25,12 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 48%;
   background-color: #e0e8ff;
+  padding: 0 1.5rem;
 }
 
 .hero-container .order-card {
-  width: 28rem;
+  max-width: 28rem;
+  min-width: 20rem;
   border-radius: 1.2rem;
   overflow: hidden;
   background-color: white;
@@ -45,9 +47,11 @@ body {
   font-weight: 900;
   margin-top: 2.5rem;
   margin-bottom: 1.1rem;
+  color: #1f2f56;
 }
 
 .hero-container .order-card .card-body p {
+  color: #7280a7;
   line-height: 1.6;
 }
 
@@ -57,6 +61,7 @@ body {
   padding: 1.3rem;
   background-color: #f5f7ff;
   border-radius: 0.5rem;
+  color: #1f2f56;
 }
 
 .hero-container .order-card .card-body .plan img {
@@ -66,6 +71,17 @@ body {
 .hero-container .order-card .card-body .plan .plan-type {
   font-weight: 900;
   margin-bottom: 0.15rem;
+}
+
+.hero-container .order-card .card-body .plan a {
+  color: #1f2f56;
+  text-decoration: underline;
+  transition: color 0.2s, underline 0.2s;
+}
+
+.hero-container .order-card .card-body .plan a:hover {
+  text-decoration: none;
+  color: #766cf1;
 }
 
 .hero-container .order-card .card-body a {
@@ -85,6 +101,20 @@ body {
   text-align: center;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
+  transition: background-color 0.3s;
+}
+
+.hero-container .order-card .card-body .btn:hover {
+  background-color: #766cf1;
+}
+
+.hero-container .order-card .card-body .cancel-order {
+  color: #7280a7;
+  transition: color 0.3s;
+}
+
+.hero-container .order-card .card-body .cancel-order:hover {
+  color: #1f2f56;
 }
 
 .d-flex {
@@ -112,5 +142,39 @@ body {
 
 .attribution a:hover {
   transition: color 0.3s;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+  .hero-container {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+  }
+  .hero-container .order-card img {
+    height: 10rem;
+  }
+  .hero-container .order-card .card-body {
+    text-align: center;
+    padding: 0 1.5rem;
+    padding-bottom: 1.8rem;
+  }
+  .hero-container .order-card .card-body .plan {
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .hero-container .order-card .card-body .plan img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.2rem;
+  }
+  .hero-container .order-card .card-body p,
+  .hero-container .order-card .card-body .plan,
+  .hero-container .order-card .card-body .btn,
+  .hero-container .order-card .card-body .cancel-order {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
