@@ -34,7 +34,7 @@ body {
   border-radius: 1.2rem;
   overflow: hidden;
   background-color: white;
-  box-shadow: -3px 20px 52px -11px rgba(0, 0, 0, 0.3);
+  box-shadow: -3px 20px 52px -11px rgba(0, 0, 0, 0.75);
 }
 
 .hero-container .order-card .card-body {
@@ -103,7 +103,6 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   transition: background-color 0.3s;
-  box-shadow: -3px 20px 52px -11px rgba(0, 0, 0, 0.3);
 }
 
 .hero-container .order-card .card-body .btn:hover {
