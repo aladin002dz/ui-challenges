@@ -1,120 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
-/* Colors ************************/
+/* Colors *************************/
 /* Primary */
 /* Neutral */
-/**********************************/
-body {
-  font-size: 16px;
+Body {
+  font-size: 18px;
+  background-color: #0d192b;
   min-height: 100vh;
 }
 
-.hero-container {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../images/pattern-background-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 48%;
-  background-color: #e0e8ff;
-  padding: 0 1.5rem;
 }
 
-.hero-container .order-card {
-  max-width: 28rem;
-  min-width: 20rem;
-  border-radius: 1.2rem;
-  overflow: hidden;
-  background-color: white;
+.card {
+  width: 352px;
+  padding: 25px;
+  border-radius: 1rem;
+  background-color: #14253d;
+  color: #8bacda;
+  position: relative;
 }
 
-.hero-container .order-card .card-body {
-  text-align: center;
-  padding: 0 3rem;
-  padding-bottom: 3rem;
-}
-
-.hero-container .order-card .card-body .heading {
-  font-size: 175%;
-  font-weight: 900;
-  margin-top: 2.5rem;
-  margin-bottom: 1.1rem;
-  color: #1f2f56;
-}
-
-.hero-container .order-card .card-body p {
-  color: #7280a7;
-  line-height: 1.6;
-}
-
-.hero-container .order-card .card-body .plan {
-  margin-top: 1.3rem;
-  margin-bottom: 2.3rem;
-  padding: 1.3rem;
-  background-color: #f5f7ff;
-  border-radius: 0.5rem;
-  color: #1f2f56;
-}
-
-.hero-container .order-card .card-body .plan img {
-  margin-right: 1.2rem;
-}
-
-.hero-container .order-card .card-body .plan .plan-type {
-  font-weight: 900;
-  margin-bottom: 0.15rem;
-}
-
-.hero-container .order-card .card-body .plan a {
-  color: #1f2f56;
-  text-decoration: underline;
-  transition: color 0.2s, underline 0.2s;
-}
-
-.hero-container .order-card .card-body .plan a:hover {
-  text-decoration: none;
-  color: #766cf1;
-}
-
-.hero-container .order-card .card-body a {
+.card > a > img {
   display: block;
-  font-weight: 900;
+  width: 100%;
+  height: 100%;
 }
 
-.hero-container .order-card .card-body > a {
-  text-decoration: none;
-  color: #1f2f56;
+.card #overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.hero-container .order-card .card-body .btn {
-  background-color: #3829e0;
+.card > a {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card > a:hover #overlay {
+  opacity: 1;
+}
+
+.card .heading {
   color: white;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-  transition: background-color 0.3s;
+  font-size: 123%;
+  font-weight: 600;
+  margin-top: 1.1rem;
+  margin-bottom: 16px;
 }
 
-.hero-container .order-card .card-body .btn:hover {
-  background-color: #766cf1;
+.card p {
+  margin-bottom: 23px;
+  line-height: 1.5;
 }
 
-.hero-container .order-card .card-body .cancel-order {
-  color: #7280a7;
+.card a {
+  color: white;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.hero-container .order-card .card-body .cancel-order:hover {
-  color: #1f2f56;
+.card a:hover {
+  color: #00fff7;
+}
+
+.card #etherium-value {
+  font-size: 90%;
+  color: #00fff7;
+}
+
+.card #etherium-value img {
+  height: 18px;
+  width: 11px;
+  margin-right: 0.5rem;
+}
+
+.card #etherium-timing {
+  font-size: 90%;
+}
+
+.card #etherium-timing img {
+  height: 18px;
+  width: 18px;
+  margin-right: 0.5rem;
+}
+
+.card #author {
+  margin-top: 24px;
+  border-top: 1px solid #2f415b;
+  padding-top: 19px;
+  margin-bottom: 11px;
+  font-size: 91%;
+}
+
+.card #author img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 16px;
 }
 
 .d-flex {
@@ -140,41 +147,28 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.attribution a {
+  color: #8bacda;
+}
+
 .attribution a:hover {
+  color: #00fff7;
   transition: color 0.3s;
 }
 
 @media screen and (max-width: 375px) {
   body {
-    font-size: 12px;
+    padding: 24px;
   }
-  .hero-container {
-    background-image: url("../images/pattern-background-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 40%;
+  .card {
+    width: 325px;
   }
-  .hero-container .order-card img {
-    height: 10rem;
+  .card p {
+    margin-bottom: 12px;
   }
-  .hero-container .order-card .card-body {
-    text-align: center;
-    padding: 0 1.5rem;
-    padding-bottom: 1.8rem;
-  }
-  .hero-container .order-card .card-body .plan {
-    margin-top: 1.3rem;
-    margin-bottom: 1rem;
-  }
-  .hero-container .order-card .card-body .plan img {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1.2rem;
-  }
-  .hero-container .order-card .card-body p,
-  .hero-container .order-card .card-body .plan,
-  .hero-container .order-card .card-body .btn,
-  .hero-container .order-card .card-body .cancel-order {
-    font-size: 0.9rem;
+  .card #author {
+    margin-top: 19px;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
