@@ -14,3 +14,4 @@ Challenges from https://www.frontendmentor.io/
 [Challenge 12](https://aladin002dz.github.io/ui-challenges/12-3-column-preview-card-component/)  
 [Challenge 13](https://aladin002dz.github.io/ui-challenges/13-qr-code-component/)  
 [Challenge 14](https://aladin002dz.github.io/ui-challenges/14-nft-preview-card-component/)
+[Challenge 15](https://aladin002dz.github.io/ui-challenges/15-order-summary-component/)
