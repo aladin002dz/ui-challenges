@@ -24,7 +24,7 @@ $very-light-gray: hsl(0, 0%, 98%);
 
 main {
   text-align: center;
-  padding: 0 7rem;
+  padding: 0 1rem;
   padding-top: 5rem;
   min-height: 100vh;
   width: 100%;
@@ -43,8 +43,10 @@ h1 {
 }
 
 .description {
-  width: 34rem;
-  margin: 1rem auto;
+  max-width: 34rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   color: $grayish-blue;
 }
 .card-container {
@@ -112,6 +114,42 @@ h1 {
     transition: color 0.3s;
     &:hover {
       color: $cyan;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding-top: 4rem;
+
+    h2,
+    h1 {
+      font-size: 163%;
+    }
+  }
+
+  .card {
+    width: 19rem;
+    height: 14rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    .icon {
+      margin-top: 1.5rem;
+      height: 3.5rem;
     }
   }
 }
