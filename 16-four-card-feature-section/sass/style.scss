@@ -158,10 +158,14 @@ h1 {
     display: block;
     .card {
       margin: 1rem auto;
+      margin-bottom: 1.3rem;
     }
   }
   main {
-    padding-top: 4rem;
+    padding-top: 5rem;
+    .description {
+      font-size: 100%;
+    }
 
     h2,
     h1 {
@@ -169,11 +173,13 @@ h1 {
     }
   }
 
+  .card-container {
+    margin-top: 5rem;
+  }
+
   .card {
     width: 19rem;
     height: 14rem;
-    margin-bottom: 0;
-    margin-top: 1rem;
     .icon {
       margin-top: 1.5rem;
       height: 3.5rem;

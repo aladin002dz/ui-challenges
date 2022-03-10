@@ -148,19 +148,24 @@ h1 {
   }
   .card-container .card {
     margin: 1rem auto;
+    margin-bottom: 1.3rem;
   }
   main {
-    padding-top: 4rem;
+    padding-top: 5rem;
+  }
+  main .description {
+    font-size: 100%;
   }
   main h2,
   main h1 {
     font-size: 163%;
   }
+  .card-container {
+    margin-top: 5rem;
+  }
   .card {
     width: 19rem;
     height: 14rem;
-    margin-bottom: 0;
-    margin-top: 1rem;
   }
   .card .icon {
     margin-top: 1.5rem;
