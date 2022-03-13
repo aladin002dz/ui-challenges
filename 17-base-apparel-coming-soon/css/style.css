@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.attribution a {
+  transition: color 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* color ****************************/
+/* primary */
+/* neutral */
+/*
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/
+/*# sourceMappingURL=style.css.map */

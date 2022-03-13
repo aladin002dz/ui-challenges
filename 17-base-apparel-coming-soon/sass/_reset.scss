@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  //gap: var($gap, 1rem);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  //color: $very-dark-blue;
+
+  a {
+    //color: $blue;
+    transition: color 0.3s;
+    &:hover {
+      //color: $cyan;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
