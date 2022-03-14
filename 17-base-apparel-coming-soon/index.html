@@ -32,18 +32,36 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form action="#">
-          <input type="email" placeholder="Email address" />
-          <div class="form-icon-error">
-            <img src="./images/icon-error.svg" alt="icon-error" />
+        <form action="#" onsubmit="return validateForm()">
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email address"
+              required
+            />
+            <div class="form-icon-error">
+              <img src="./images/icon-error.svg" alt="icon-error" />
+            </div>
+            <button type="submit" class="form-button">
+              <img src="images/icon-arrow.svg" alt="button" />
+            </button>
           </div>
-          <button type="submit" class="form-button">
-            <img src="images/icon-arrow.svg" alt="button" />
-          </button>
+
+          <div class="invalid-feedback">
+            Please enter a valide email address!
+          </div>
         </form>
       </div>
     </div>
-
+    <script>
+      function validateForm() {
+        let emailInput = document.getElementById("email").value;
+        const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!emailPattern.test(emailInput)) {
+        }
+      }
+    </script>
     <footer>
       <p class="attribution">
         Challenge by
