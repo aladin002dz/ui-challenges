@@ -8,6 +8,13 @@ Body {
   min-height: 100vh;
 }
 
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 .flex {
   display: flex;
   //gap: var($gap, 1rem);
