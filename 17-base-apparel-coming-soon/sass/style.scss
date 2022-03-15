@@ -26,6 +26,9 @@ $dark-grayish-red: hsl(0, 6%, 24%);
   .image {
     img {
       width: 100%;
+      max-height: 45vh;
+      object-fit: cover;
+      object-position: top;
     }
   }
   .details {
@@ -70,32 +73,34 @@ $dark-grayish-red: hsl(0, 6%, 24%);
           padding: 1rem;
           width: 100%;
           outline: $soft-red;
-
-          /***********************************/
-          //background-image: url("../images/icon-error.svg") !important;
-          //background-color: white !important;
-          background-repeat: no-repeat;
-          background-position: right 4.5rem center;
-          background-size: 1rem 1rem;
-          /***********************************/
-
           &::placeholder {
             color: $desaturated-red;
           }
         }
-
+        .error-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: -55%;
+          display: none;
+        }
         button {
-          background-image: linear-gradient(
-            135deg,
-            $desaturated-red,
-            $soft-red
-          );
           border: none;
           border-radius: 30px;
           appearance: none;
           transition: all 0.2s ease;
           padding: 0.9rem 1.8rem;
           margin-left: -20%;
+          background-image: linear-gradient(
+            135deg,
+            $desaturated-red,
+            $soft-red
+          );
+          box-shadow: 5px 5px 17px 5px hsla(0, 36%, 70%, 0.5);
+          &:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 17px 10px hsla(0, 36%, 70%, 0.5);
+          }
         }
       }
 
@@ -110,39 +115,87 @@ $dark-grayish-red: hsl(0, 6%, 24%);
       }
 
       &.invalid {
+        .error-icon {
+          display: flex;
+        }
         .invalid-feedback {
           display: block;
         }
       }
-      /*
-      input:-webkit-autofill,
-      input:-webkit-autofill:focus,
-      input:-internal-autofill-selected {
-        transition: background-color 600000s 0s, color 600000s 0s;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    /* hero grid layout **********************/
+    display: grid;
+    grid-template-areas:
+      "logo heroimage"
+      "details heroimage";
+    grid-template-columns: 53% auto;
+    grid-template-rows: 10rem auto;
+    .logo {
+      grid-area: logo;
+      align-self: center;
+    }
+    .image {
+      grid-area: heroimage;
+    }
+    .details {
+      grid-area: details;
+    }
+    /***********************/
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: left top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 60% 100%; /* Resize the background image to cover the entire container */
+
+    padding-left: 9rem;
+    .logo {
+      margin-left: 1rem;
+      img {
+        height: 2rem;
       }
-      input:-webkit-autofill,
-      input:-webkit-autofill:hover,
-      input:-webkit-autofill:focus,
-      input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    .image {
+      picture {
+        img {
+          height: 100vh;
+          max-height: 100vh;
+        }
       }
-      input:-webkit-autofill {
-        -webkit-text-fill-color: yellow !important;
+    }
+    .details {
+      text-align: left;
+      padding-top: 4.2rem;
+      padding-left: 1rem;
+      .heading-brown {
+        font-size: 400%;
+        letter-spacing: 1.15rem;
       }
-*/
-      #email.invalid,
-      #email.invalid:-internal-autofill-selected {
-        border: 1px solid #ce9797 !important;
-        border-radius: 1.5rem !important;
-        color: #dc3545 !important;
-        padding: 1rem !important;
-        width: 100% !important;
-        outline: #f96262 !important;
-        background-repeat: no-repeat !important;
-        background-position: right 4.5rem center !important;
-        background-size: 1rem 1rem !important;
-        background-color: transparent !important;
-        background-image: url(../images/icon-error.svg) !important;
+
+      .heading {
+        font-size: 410%;
+        letter-spacing: 1.15rem;
+        line-height: 1.1;
+      }
+
+      p {
+        padding-inline: 0;
+        width: 65%;
+        line-height: 1.75;
+        font-size: 100%;
+      }
+      form {
+        margin-inline: 0;
+        margin-top: 3rem;
+        width: 65%;
+        .form-group {
+          button {
+            padding: 0.9rem 2.5rem;
+          }
+        }
       }
     }
   }
