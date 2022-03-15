@@ -101,27 +101,49 @@ body {
   margin-top: 2rem;
   position: relative;
   margin-inline: 1.2rem;
+  /*
+      input:-webkit-autofill,
+      input:-webkit-autofill:focus,
+      input:-internal-autofill-selected {
+        transition: background-color 600000s 0s, color 600000s 0s;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      }
+      input:-webkit-autofill {
+        -webkit-text-fill-color: yellow !important;
+      }
+*/
 }
 
 .hero .details form .form-group {
   display: flex;
   align-items: stretch;
+  justify-content: space-between;
 }
 
-.hero .details form input {
+.hero .details form .form-group input {
   border: 1px solid #ce9797;
   border-radius: 1.5rem;
   color: #ce9797;
   padding: 1rem;
   width: 100%;
   outline: #f96262;
+  /***********************************/
+  background-repeat: no-repeat;
+  background-position: right 4.5rem center;
+  background-size: 1rem 1rem;
+  /***********************************/
 }
 
-.hero .details form input::placeholder {
+.hero .details form .form-group input::placeholder {
   color: #ce9797;
 }
 
-.hero .details form button {
+.hero .details form .form-group button {
   background-image: linear-gradient(135deg, #ce9797, #f96262);
   border: none;
   border-radius: 30px;
@@ -138,5 +160,25 @@ body {
   color: #dc3545;
   text-align: left;
   margin-left: 1rem;
+  display: none;
+}
+
+.hero .details form.invalid .invalid-feedback {
+  display: block;
+}
+
+.hero .details form #email.invalid,
+.hero .details form #email.invalid:-internal-autofill-selected {
+  border: 1px solid #ce9797 !important;
+  border-radius: 1.5rem !important;
+  color: #dc3545 !important;
+  padding: 1rem !important;
+  width: 100% !important;
+  outline: #f96262 !important;
+  background-repeat: no-repeat !important;
+  background-position: right 4.5rem center !important;
+  background-size: 1rem 1rem !important;
+  background-color: transparent !important;
+  background-image: url(../images/icon-error.svg) !important;
 }
 /*# sourceMappingURL=style.css.map */

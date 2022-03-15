@@ -32,34 +32,36 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form action="#" onsubmit="return validateForm()">
+        <form id="form1" action="#" onsubmit="return validateForm()">
           <div class="form-group">
-            <input
-              type="email"
-              id="email"
-              placeholder="Email address"
-              required
-            />
-            <div class="form-icon-error">
-              <img src="./images/icon-error.svg" alt="icon-error" />
-            </div>
+            <input type="email" id="email" placeholder="Email address" />
             <button type="submit" class="form-button">
               <img src="images/icon-arrow.svg" alt="button" />
             </button>
           </div>
 
           <div class="invalid-feedback">
-            Please enter a valide email address!
+            Please enter a valid email address!
           </div>
         </form>
       </div>
     </div>
     <script>
       function validateForm() {
+        this.preventDefault;
+        document.getElementById("form1").classList.remove("invalid");
+        document.getElementById("email").classList.remove("invalid");
         let emailInput = document.getElementById("email").value;
         const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (!emailPattern.test(emailInput)) {
+          document.getElementById("form1").classList.add("invalid");
+          document.getElementById("email").classList.add("invalid");
+          console.log("invalid!");
+          return;
         }
+        document.getElementById("form1").classList.remove("invalid");
+        document.getElementById("email").classList.remove("invalid");
+        console.log("valid!");
       }
     </script>
     <footer>
