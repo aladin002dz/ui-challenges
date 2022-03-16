@@ -1,3 +1,6 @@
+/* color ****************************/
+/* primary */
+/* neutral */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 * {
   box-sizing: border-box;
@@ -26,10 +29,17 @@ picture {
   width: 100%;
   text-align: center;
   font-size: 0.875rem;
+  text-decoration: none;
+  color: #413a3a;
 }
 
 .attribution a {
+  color: #f96262;
   transition: color 0.3s;
+}
+
+.attribution a:hover {
+  color: #413a3a;
 }
 
 @media (max-width: 1200px) {
@@ -43,9 +53,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* color ****************************/
-/* primary */
-/* neutral */
 /*
 ### Gradients
 
@@ -141,12 +148,13 @@ body {
   padding: 0.9rem 1.8rem;
   margin-left: -20%;
   background-image: linear-gradient(135deg, #ce9797, #f96262);
-  box-shadow: 5px 5px 17px 5px rgba(206, 151, 151, 0.5);
+  box-shadow: 5px 5px 17px 5px rgba(249, 98, 98, 0.5);
 }
 
 .hero .details form .form-group button:hover {
   cursor: pointer;
-  box-shadow: 5px 5px 17px 10px rgba(206, 151, 151, 0.5);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  box-shadow: 5px 5px 17px 10px rgba(249, 98, 98, 0.5);
 }
 
 .hero .details form .invalid-feedback {
