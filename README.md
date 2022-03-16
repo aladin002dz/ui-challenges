@@ -34,12 +34,6 @@ Challenges from https://www.frontendmentor.io/
 
 [Link](https://aladin002dz.github.io/ui-challenges/08-faq-accordion-card/)
 
-### Challenge8
-
-<img src="./08-faq-accordion-card/design/desktop-preview.jpg" alt="preview challenge 8" width="200"/>
-
-[Link](https://aladin002dz.github.io/ui-challenges/08-faq-accordion-card/)
-
 ### Challenge10
 
 <img src="./10-huddle-landing-page-with-single-introductory-section-master/design/desktop-preview.jpg" alt="preview challenge 10" width="200"/>
