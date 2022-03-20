@@ -1,0 +1,78 @@
+/* Colors ***********************************/
+/* Primary */
+/* Secondary */
+/* Neutral */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.attribution a {
+  transition: color 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+i {
+  font-size: 1rem;
+  color: black;
+  padding: 1rem;
+  height: 3rem;
+  width: 3rem;
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+/*# sourceMappingURL=style.css.map */
