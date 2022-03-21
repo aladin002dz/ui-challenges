@@ -7,26 +7,49 @@ body {
 }
 
 .container {
+  /*
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  */
   height: 100vh;
+  padding-top: 7rem;
+  text-align: center;
 }
 
-i {
-  font-size: 1rem;
-  color: black;
-  padding: 1rem;
-  height: 3rem;
-  width: 3rem;
+.logo {
+  display: grid;
+  place-content: center;
+  img {
+    height: 1rem;
+  }
+}
 
-  font-family: "Font Awesome 6 Brands";
-  font-weight: 400;
+.heading {
+  margin-top: 3rem;
+  font-size: 110%;
+  span {
+    font-weight: 700;
+  }
+}
 
-  -webkit-font-smoothing: antialiased;
-  display: var(--fa-display, inline-block);
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
+.social {
+  padding-inline: 7.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  a {
+    //color: $blue;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid $pale-blue;
+    display: grid;
+    place-content: center;
+    svg {
+      fill: $blue;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 }

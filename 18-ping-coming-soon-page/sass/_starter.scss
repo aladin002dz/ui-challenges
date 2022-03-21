@@ -17,7 +17,10 @@ picture {
 
 .flex {
   display: flex;
-  //gap: var($gap, 1rem);
+}
+
+a {
+  text-decoration: none;
 }
 
 .attribution {
