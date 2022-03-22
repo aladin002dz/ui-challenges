@@ -63,6 +63,8 @@ body {
 
 .illustration {
   margin-top: 4.5rem;
+  margin-inline: auto;
+  max-width: 40rem;
 }
 
 .social {
@@ -94,6 +96,7 @@ body {
 }
 
 footer {
+  margin-top: 4rem;
   padding-inline: 1rem;
   text-align: center;
 }
