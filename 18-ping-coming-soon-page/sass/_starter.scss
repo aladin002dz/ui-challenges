@@ -24,14 +24,11 @@ a {
 }
 
 .attribution {
-  //position: absolute;
-  //bottom: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
-  color: $very-dark-blue;
-
   a {
     color: $blue;
     transition: color 0.3s;

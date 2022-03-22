@@ -7,14 +7,11 @@ body {
 }
 
 .container {
-  /*
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  */
   padding-top: 5.3rem;
   text-align: center;
   padding-inline: 1rem;
+  max-width: 40rem;
+  margin-inline: auto;
 }
 
 .logo {
@@ -28,8 +25,10 @@ body {
 .heading {
   margin-top: 2.5rem;
   font-size: 110%;
+  color: $gray;
   span {
     font-weight: 700;
+    color: $very-dark-blue;
   }
 }
 
@@ -49,8 +48,6 @@ body {
   }
   input[type="text"] {
     margin-top: 1.9rem;
-    border-radius: 1.5rem;
-    padding: 0.65rem;
     border: 1px solid $pale-blue;
   }
   input[type="submit"] {
@@ -58,13 +55,19 @@ body {
     color: white;
     border: none;
     background-color: $blue;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 1px hsla(223, 87%, 63%, 0.37);
+    transition: box-shadow 0.3s;
+    &:hover {
+      background-color: hsla(223, 87%, 63%, 0.8);
+      box-shadow: 10px 10px 15px 1px hsla(223, 87%, 63%, 0.37);
+    }
   }
 }
 
 .illustration {
   margin-top: 4.5rem;
   margin-inline: auto;
-  max-width: 40rem;
 }
 
 .social {
@@ -72,20 +75,28 @@ body {
   padding-inline: 6.5rem;
   margin-inline: auto;
   width: 100%;
+  max-width: 20.5rem;
   display: flex;
   justify-content: space-between;
   a {
-    //color: $blue;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     border: 1px solid $pale-blue;
     display: grid;
     place-content: center;
+    transition: all 0.3s;
     svg {
       fill: $blue;
       width: 1rem;
       height: 1rem;
+    }
+    &:hover {
+      background-color: $blue;
+      border: 1px solid $blue;
+      svg {
+        fill: white;
+      }
     }
   }
 }
@@ -93,10 +104,62 @@ body {
 .licence {
   margin-top: 1.65rem;
   font-size: 50%;
+  color: $gray;
 }
 
 footer {
   margin-top: 4rem;
   padding-inline: 1rem;
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-inline: 0;
+  }
+
+  .logo {
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  .heading {
+    margin-top: 3rem;
+    font-size: 240%;
+  }
+
+  #mail-form {
+    margin-top: 1rem;
+    padding-inline: 0;
+    label {
+      font-size: 100%;
+    }
+    input {
+      display: inline;
+      padding: 1.15rem;
+      border-radius: 2rem;
+      font-size: 85%;
+    }
+    input[type="text"] {
+      margin-top: 2.75rem;
+      margin-right: 2%;
+      width: 66%;
+    }
+    input[type="submit"] {
+      width: 31%;
+    }
+  }
+
+  .illustration {
+    margin-top: 5rem;
+  }
+
+  .social {
+    margin-top: 4.5rem;
+  }
+
+  .licence {
+    font-size: 60%;
+  }
 }

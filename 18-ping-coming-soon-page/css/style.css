@@ -6,6 +6,7 @@
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
+  color: #151f29;
 }
 
 * {
@@ -34,11 +35,11 @@ a {
 }
 
 .attribution {
+  margin-bottom: 1rem;
   width: 100%;
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
-  color: #151f29;
 }
 
 .attribution a {
@@ -63,14 +64,11 @@ body {
 }
 
 .container {
-  /*
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  */
   padding-top: 5.3rem;
   text-align: center;
   padding-inline: 1rem;
+  max-width: 40rem;
+  margin-inline: auto;
 }
 
 .logo {
@@ -85,10 +83,12 @@ body {
 .heading {
   margin-top: 2.5rem;
   font-size: 110%;
+  color: #969696;
 }
 
 .heading span {
   font-weight: 700;
+  color: #151f29;
 }
 
 #mail-form {
@@ -111,8 +111,6 @@ body {
 
 #mail-form input[type="text"] {
   margin-top: 1.9rem;
-  border-radius: 1.5rem;
-  padding: 0.65rem;
   border: 1px solid #c2d3ff;
 }
 
@@ -121,12 +119,19 @@ body {
   color: white;
   border: none;
   background-color: #4f7df3;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px 1px rgba(79, 125, 243, 0.37);
+  transition: box-shadow 0.3s;
+}
+
+#mail-form input[type="submit"]:hover {
+  background-color: rgba(79, 125, 243, 0.8);
+  box-shadow: 10px 10px 15px 1px rgba(79, 125, 243, 0.37);
 }
 
 .illustration {
   margin-top: 4.5rem;
   margin-inline: auto;
-  max-width: 40rem;
 }
 
 .social {
@@ -134,6 +139,7 @@ body {
   padding-inline: 6.5rem;
   margin-inline: auto;
   width: 100%;
+  max-width: 20.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -145,6 +151,7 @@ body {
   border: 1px solid #c2d3ff;
   display: grid;
   place-content: center;
+  transition: all 0.3s;
 }
 
 .social a svg {
@@ -153,14 +160,67 @@ body {
   height: 1rem;
 }
 
+.social a:hover {
+  background-color: #4f7df3;
+  border: 1px solid #4f7df3;
+}
+
+.social a:hover svg {
+  fill: white;
+}
+
 .licence {
   margin-top: 1.65rem;
   font-size: 50%;
+  color: #969696;
 }
 
 footer {
   margin-top: 4rem;
   padding-inline: 1rem;
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-inline: 0;
+  }
+  .logo img {
+    height: 1.5rem;
+  }
+  .heading {
+    margin-top: 3rem;
+    font-size: 240%;
+  }
+  #mail-form {
+    margin-top: 1rem;
+    padding-inline: 0;
+  }
+  #mail-form label {
+    font-size: 100%;
+  }
+  #mail-form input {
+    display: inline;
+    padding: 1.15rem;
+    border-radius: 2rem;
+    font-size: 85%;
+  }
+  #mail-form input[type="text"] {
+    margin-top: 2.75rem;
+    margin-right: 2%;
+    width: 66%;
+  }
+  #mail-form input[type="submit"] {
+    width: 31%;
+  }
+  .illustration {
+    margin-top: 5rem;
+  }
+  .social {
+    margin-top: 4.5rem;
+  }
+  .licence {
+    font-size: 60%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
