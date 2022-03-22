@@ -12,9 +12,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   */
-  height: 100vh;
-  padding-top: 7rem;
+  padding-top: 5.3rem;
   text-align: center;
+  padding-inline: 1rem;
 }
 
 .logo {
@@ -26,15 +26,49 @@ body {
 }
 
 .heading {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   font-size: 110%;
   span {
     font-weight: 700;
   }
 }
 
+#mail-form {
+  margin-top: 0.75rem;
+  padding-inline: 1.65rem;
+  text-align: center;
+  label {
+    font-size: 60%;
+  }
+  input {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 0.65rem;
+  }
+  input[type="text"] {
+    margin-top: 1.9rem;
+    border-radius: 1.5rem;
+    padding: 0.65rem;
+    border: 1px solid $pale-blue;
+  }
+  input[type="submit"] {
+    margin-top: 0.6rem;
+    color: white;
+    border: none;
+    background-color: $blue;
+  }
+}
+
+.illustration {
+  margin-top: 4.5rem;
+}
+
 .social {
-  padding-inline: 7.5rem;
+  margin-top: 7.5rem;
+  padding-inline: 6.5rem;
+  margin-inline: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -52,4 +86,14 @@ body {
       height: 1rem;
     }
   }
+}
+
+.licence {
+  margin-top: 1.65rem;
+  font-size: 50%;
+}
+
+footer {
+  padding-inline: 1rem;
+  text-align: center;
 }

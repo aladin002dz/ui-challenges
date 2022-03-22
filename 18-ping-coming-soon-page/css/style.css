@@ -40,19 +40,26 @@ a {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
+  color: #151f29;
 }
 
 .attribution a {
+  color: #4f7df3;
   transition: color 0.3s;
 }
 
+.attribution a:hover {
+  color: #ff5263;
+}
+
+/*
 @media (max-width: 1200px) {
   .attribution {
     position: relative;
     margin-bottom: 1rem;
   }
 }
-
+*/
 body {
   text-align: center;
 }
@@ -63,9 +70,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   */
-  height: 100vh;
-  padding-top: 7rem;
+  padding-top: 5.3rem;
   text-align: center;
+  padding-inline: 1rem;
 }
 
 .logo {
@@ -78,7 +85,7 @@ body {
 }
 
 .heading {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   font-size: 110%;
 }
 
@@ -86,8 +93,46 @@ body {
   font-weight: 700;
 }
 
+#mail-form {
+  margin-top: 0.75rem;
+  padding-inline: 1.65rem;
+  text-align: center;
+}
+
+#mail-form label {
+  font-size: 60%;
+}
+
+#mail-form input {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 0.65rem;
+}
+
+#mail-form input[type="text"] {
+  margin-top: 1.9rem;
+  border-radius: 1.5rem;
+  padding: 0.65rem;
+  border: 1px solid #c2d3ff;
+}
+
+#mail-form input[type="submit"] {
+  margin-top: 0.6rem;
+  color: white;
+  border: none;
+  background-color: #4f7df3;
+}
+
+.illustration {
+  margin-top: 4.5rem;
+}
+
 .social {
-  padding-inline: 7.5rem;
+  margin-top: 7.5rem;
+  padding-inline: 6.5rem;
+  margin-inline: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -106,5 +151,15 @@ body {
   fill: #4f7df3;
   width: 1rem;
   height: 1rem;
+}
+
+.licence {
+  margin-top: 1.65rem;
+  font-size: 50%;
+}
+
+footer {
+  padding-inline: 1rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

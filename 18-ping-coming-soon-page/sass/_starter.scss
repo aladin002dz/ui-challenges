@@ -30,20 +30,22 @@ a {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
-  //color: $dark-grayish-red;
+  color: $very-dark-blue;
 
   a {
-    //color: $soft-red;
+    color: $blue;
     transition: color 0.3s;
     &:hover {
-      //color: $dark-grayish-red;
+      color: $light-red;
     }
   }
 }
 
+/*
 @media (max-width: 1200px) {
   .attribution {
     position: relative;
     margin-bottom: 1rem;
   }
 }
+*/
