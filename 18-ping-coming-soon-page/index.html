@@ -22,9 +22,10 @@
       </div>
       <div class="heading">We are launching <span>soon!</span></div>
 
-      <form action="#" id="mail-form">
+      <form id="mail-form" action="#" onsubmit="return validateForm()">
         <label for="email">Subscribe and get notified</label><br />
-        <input type="text" id="email"  placeholder="Your email address..."/>
+        <input type="text" id="email" placeholder="Your email address..." />
+        <div class="invalid-feedback">Please provide a valid email address</div>
         <input type="submit" value="Notify Me" />
       </form>
       <div class="illustration">
@@ -78,5 +79,6 @@
         >
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

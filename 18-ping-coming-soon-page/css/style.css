@@ -129,6 +129,20 @@ body {
   box-shadow: 10px 10px 15px 1px rgba(79, 125, 243, 0.37);
 }
 
+#mail-form .invalid-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+  text-align: left;
+  margin-left: 1rem;
+  display: none;
+}
+
+#mail-form.invalid .invalid-feedback {
+  display: block;
+}
+
 .illustration {
   margin-top: 4.5rem;
   margin-inline: auto;
