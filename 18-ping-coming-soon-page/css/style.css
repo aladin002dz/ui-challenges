@@ -227,6 +227,10 @@ footer {
   #mail-form input[type="submit"] {
     width: 31%;
   }
+  #mail-form .form-group {
+    display: flex;
+    align-items: center;
+  }
   .illustration {
     margin-top: 5rem;
   }

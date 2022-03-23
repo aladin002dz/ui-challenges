@@ -163,6 +163,11 @@ footer {
     input[type="submit"] {
       width: 31%;
     }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .illustration {

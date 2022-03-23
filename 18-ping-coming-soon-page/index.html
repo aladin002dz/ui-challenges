@@ -24,9 +24,13 @@
 
       <form id="mail-form" action="#" onsubmit="return validateForm()">
         <label for="email">Subscribe and get notified</label><br />
-        <input type="text" id="email" placeholder="Your email address..." />
-        <div class="invalid-feedback">Please provide a valid email address</div>
-        <input type="submit" value="Notify Me" />
+        <div class="form-group">
+          <input type="text" id="email" placeholder="Your email address..." />
+          <div class="invalid-feedback">
+            Please provide a valid email address
+          </div>
+          <input type="submit" value="Notify Me" />
+        </div>
       </form>
       <div class="illustration">
         <img
