@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  padding: 0 1rem;
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  //gap: var($gap, 1rem);
+}
+
+.attribution {
+  /*
+  position: absolute;
+  bottom: 1rem;
+  */
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  //color: $dark-grayish-red;
+
+  a {
+    //color: $soft-red;
+    transition: color 0.3s;
+    &:hover {
+      //color: $dark-grayish-red;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}

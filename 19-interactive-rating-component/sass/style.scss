@@ -1,0 +1,15 @@
+@import "./colors";
+@import "./starter";
+@import "./typography";
+@import "./layout";
+
+.thank-card {
+  display: none;
+}
+
+.rating-icon {
+  border-radius: 50%;
+  background-color: #272e38;
+  width: 3rem;
+  height: 3rem;
+}
