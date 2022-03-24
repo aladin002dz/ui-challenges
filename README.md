@@ -81,3 +81,9 @@ Challenges from https://www.frontendmentor.io/
 <img src="./17-base-apparel-coming-soon/design/desktop-preview.jpg" alt="preview challenge 17" width="200"/>
 
 [Link](https://aladin002dz.github.io/ui-challenges/17-base-apparel-coming-soon/)
+
+### Challenge18
+
+<img src="./18-ping-coming-soon-page/design/desktop-preview.jpg" alt="preview challenge 18" width="200"/>
+
+[Link](https://aladin002dz.github.io/ui-challenges/18-ping-coming-soon-page/)
