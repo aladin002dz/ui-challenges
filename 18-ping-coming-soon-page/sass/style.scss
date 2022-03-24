@@ -66,13 +66,17 @@ body {
   .invalid-feedback {
     width: 100%;
     margin-top: 0.25rem;
-    font-size: 0.875em;
+    margin-bottom: 1.5rem;
+    font-size: 62%;
     color: #dc3545;
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 2rem;
     display: none;
   }
   &.invalid {
+    input[type="text"] {
+      border: 1px solid $light-red;
+    }
     .invalid-feedback {
       display: block;
     }
@@ -156,17 +160,34 @@ footer {
       font-size: 85%;
     }
     input[type="text"] {
-      margin-top: 2.75rem;
+      margin-top: 0;
       margin-right: 2%;
-      width: 66%;
+      grid-area: inpt;
+      align-self: center;
+      justify-self: left;
     }
     input[type="submit"] {
-      width: 31%;
+      margin-top: 0;
+      grid-area: btn;
+      align-self: center;
+      justify-self: right;
+    }
+
+    .invalid-feedback {
+      grid-area: msg;
+      margin-bottom: 0;
     }
 
     .form-group {
-      display: flex;
+      margin-top: 2.75rem;
+      display: grid;
       align-items: center;
+      grid-template-columns: 66% 31%;
+      grid-template-areas:
+        "inpt btn"
+        "msg .";
+      align-items: center;
+      column-gap: 1rem;
     }
   }
 
