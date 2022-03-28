@@ -5,7 +5,7 @@
 }
 
 Body {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   min-height: 100vh;
 }
 
@@ -22,12 +22,12 @@ picture {
 }
 
 .attribution {
-  /*
   position: absolute;
   bottom: 1rem;
-  */
+  /*
   position: relative;
   margin-bottom: 1rem;
+  */
   width: 100%;
   text-align: center;
   font-size: 0.875rem;
@@ -42,10 +42,12 @@ picture {
     }
   }
 }
-
-@media (max-width: 1200px) {
+/*
+@media (min-width: 1200px) {
   .attribution {
     position: relative;
     margin-bottom: 1rem;
   }
+ 
 }
+ */

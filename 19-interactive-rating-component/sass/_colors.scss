@@ -7,13 +7,21 @@ $medium-grey: hsl(216, 12%, 54%);
 $dark-blue: hsl(213, 19%, 18%);
 $very-dark-blue: hsl(216, 12%, 8%);
 
+$bg-rating: #262f38;
+$bg-card: #202731;
+
 body {
   background-color: $very-dark-blue;
 }
 
 .card {
-  background-color: $dark-blue;
+  background-color: $bg-card;
 
+  h1 {
+    color: $white;
+  }
+
+  .rating-icon {
+    background-color: $bg-rating;
+  }
 }
-
-

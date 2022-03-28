@@ -1,7 +1,56 @@
 @import "./colors";
 @import "./starter";
 @import "./typography";
-@import "./layout";
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  h1 {
+    margin-top: 1.1rem;
+    margin-bottom: 0.7rem;
+
+    font-size: 150%;
+  }
+
+  p {
+    color: $medium-grey;
+    line-height: 1.6;
+    font-size: 87%;
+  }
+
+  .rating-numbers {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: $medium-grey;
+  }
+
+  .rating-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+
+  button {
+    background-color: $orange;
+    border: orange;
+    width: 100%;
+    border-radius: 1.5rem;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 1.25rem;
+  }
+}
 
 .thank-card {
   display: none;
