@@ -81,6 +81,8 @@ body {
 .card {
   border-radius: 1rem;
   padding: 1.5rem;
+  height: 365px;
+  width: 330px;
 }
 
 .card h1 {
@@ -122,14 +124,45 @@ body {
   margin-top: 1.25rem;
 }
 
-.thank-card {
-  display: none;
-}
-
 .rating-icon {
   border-radius: 50%;
   background-color: #272e38;
   width: 3rem;
   height: 3rem;
+}
+
+.rating-card {
+  display: none;
+}
+
+.thank-card {
+  display: block;
+}
+
+.thank-card {
+  text-align: center;
+}
+
+.thank-card img {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 146px;
+}
+
+.thank-card #result {
+  margin: auto;
+  color: #fb7413;
+  background-color: #262f38;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 90%;
+}
+
+.thank-card h1 {
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
