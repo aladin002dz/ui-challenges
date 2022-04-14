@@ -165,4 +165,30 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 0.9rem;
 }
+
+@media (min-width: 768px) {
+  .card {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 2rem;
+  }
+  .card p {
+    font-size: 90%;
+    word-spacing: 2px;
+    line-height: 1.5;
+  }
+  .thank-card img {
+    margin-bottom: 2.75rem;
+    width: 146px;
+  }
+  .thank-card #result {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 90%;
+  }
+  .thank-card h1 {
+    margin-top: 2.2rem;
+    font-size: 175%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
