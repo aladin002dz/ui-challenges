@@ -50,10 +50,16 @@ picture {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
+  color: #7c8798;
 }
 
 .attribution a {
+  color: #959eac;
   transition: color 0.3s;
+}
+
+.attribution a:hover {
+  color: #959eac;
 }
 
 /*

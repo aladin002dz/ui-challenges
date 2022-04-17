@@ -32,13 +32,13 @@ picture {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
-  //color: $dark-grayish-red;
+  color: $medium-grey;
 
   a {
-    //color: $soft-red;
+    color: $light-grey;
     transition: color 0.3s;
     &:hover {
-      //color: $dark-grayish-red;
+      color: $light-grey;
     }
   }
 }
