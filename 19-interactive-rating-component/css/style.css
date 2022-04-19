@@ -89,6 +89,8 @@ body {
   padding: 1.5rem;
   height: 365px;
   width: 330px;
+  display: flex;
+  overflow: hidden;
 }
 
 .card h1 {
@@ -135,14 +137,29 @@ body {
   background-color: #272e38;
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
+}
+
+.rating-numbers {
+  direction: rtl;
+}
+
+.rating-icon:hover {
+  background-color: orange;
+}
+
+.rating-icon:hover ~ .rating-icon {
+  background-color: #ddd;
 }
 
 .rating-card {
   display: block;
+  min-width: 330px;
 }
 
 .thank-card {
   display: none;
+  min-width: 330px;
 }
 
 .thank-card {
