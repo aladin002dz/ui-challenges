@@ -89,8 +89,12 @@ body {
   padding: 1.5rem;
   height: 365px;
   width: 330px;
-  display: flex;
   overflow: hidden;
+  position: relative;
+}
+
+.card .cards-container {
+  display: flex;
 }
 
 .card h1 {
@@ -122,7 +126,7 @@ body {
 
 .card button {
   background-color: #fb7413;
-  border: orange;
+  border: #fb7413;
   width: 100%;
   border-radius: 1.5rem;
   color: white;
@@ -140,26 +144,42 @@ body {
   cursor: pointer;
 }
 
+.selected {
+  background-color: #fb7413 !important;
+  color: white !important;
+}
+
+.rating-icon:hover, .rating-icon:hover ~ .rating-icon {
+  background-color: #959eac;
+  color: white;
+}
+
 .rating-numbers {
   direction: rtl;
 }
 
-.rating-icon:hover {
-  background-color: orange;
-}
-
-.rating-icon:hover ~ .rating-icon {
-  background-color: #ddd;
-}
-
 .rating-card {
-  display: block;
+  width: 100%;
   min-width: 330px;
+  overflow: hidden;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show {
+  left: 0 !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .thank-card {
-  display: none;
+  width: 100%;
   min-width: 330px;
+  position: absolute;
+  left: 26rem;
+  top: 0;
 }
 
 .thank-card {
@@ -204,7 +224,7 @@ body {
     margin-top: 2rem;
   }
   .rating-card {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem .6rem;
   }
   .rating-card .rating-icon {
     width: 3rem;
@@ -226,6 +246,14 @@ body {
   .thank-card h1 {
     margin-top: 2.2rem;
     font-size: 175%;
+  }
+  .rating-card {
+    min-width: 22.5rem;
+    margin-right: 1rem;
+  }
+  .thank-card {
+    min-width: 22.5rem;
+    padding: 0.6rem .6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

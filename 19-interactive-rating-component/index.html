@@ -79,5 +79,37 @@
         >Mahfoudh (aladin) Arous</a
       >.
     </div>
+    <script>
+      // add event listener to rating icons
+      const ratingIcons = document.querySelectorAll(".rating-icon");
+      ratingIcons.forEach((icon) => {
+        icon.addEventListener("click", (e) => {
+          // remove all active classes
+          ratingIcons.forEach((icon) => {
+            icon.classList.remove("selected");
+          });
+          // add active class to clicked icon
+          e.target.classList.add("selected");
+          console.log(e.target.innerHTML);
+        });
+      });
+
+      // add event listener to submit button
+
+      const submitButton = document.querySelector("button");
+      submitButton.addEventListener("click", (e) => {
+        // get selected rating
+        const selectedRating = document.querySelector(".selected");
+        // get rating number
+        const ratingNumber = selectedRating.innerHTML;
+        // get result paragraph
+        const result = document.querySelector("#result");
+        // set result text
+        result.innerHTML = `You selected ${ratingNumber} out of 5`;
+        // show thank you state
+        document.querySelector(".rating-card").classList.add("hide");
+        document.querySelector(".thank-card").classList.add("show");
+      });
+    </script>
   </body>
 </html>

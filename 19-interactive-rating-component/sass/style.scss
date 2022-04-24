@@ -12,8 +12,12 @@ body {
   padding: 1.5rem;
   height: 365px;
   width: 330px;
-  display: flex;
   overflow: hidden;
+  position: relative;
+
+  .cards-container{
+    display: flex;
+  }
 
   h1 {
     margin-top: 1.1rem;
@@ -45,7 +49,7 @@ body {
 
   button {
     background-color: $orange;
-    border: orange;
+    border: $orange;
     width: 100%;
     border-radius: 1.5rem;
     color: white;
@@ -64,25 +68,41 @@ body {
   cursor: pointer;
 }
 
+.selected {
+  background-color: $orange!important;
+  color: white!important;
+}
+
+// the operator "~" select every ".rating-icon" that is after ".rating-icon:hover"
+.rating-icon:hover, .rating-icon:hover~.rating-icon {
+  background-color: $light-grey;
+  color: white;
+}
+// inverse the effect of "~" the make the effect on the previous ".rating-icon"s
 .rating-numbers{
   direction: rtl;
 }
 
-.rating-icon:hover{
-  background-color: orange;
-}
-.rating-icon:hover~.rating-icon {
-   background-color: #ddd;
-}
-
 .rating-card {
-  display: block;
+  width: 100%;
   min-width: 330px;
+  overflow: hidden;
 }
 
+.hide {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.show {
+  left: 0!important;
+  transition: all 0.3s ease-in-out;
+}
 .thank-card {
-  display: none;
+  width: 100%;
   min-width: 330px;
+  position: absolute;
+  left: 26rem;
+  top: 0;
 }
 
 .thank-card {
@@ -97,7 +117,7 @@ body {
   #result {
     margin: auto;
     color: $orange;
-    background-color: $bg-rating;//#272E38;
+    background-color: $bg-rating;
     width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
@@ -127,7 +147,7 @@ body {
   }
 
   .rating-card {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem .6rem;
     .rating-icon {
       width: 3rem;
       height: 3rem;
@@ -156,6 +176,15 @@ body {
   }
 }
 
+.rating-card {
+  min-width: 22.5rem;
+  margin-right: 1rem;
+  //display: none;
+}
 
+.thank-card {
+  min-width: 22.5rem;
+  padding: 0.6rem .6rem;
+}
 
 }
