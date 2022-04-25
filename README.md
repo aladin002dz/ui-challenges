@@ -7,6 +7,7 @@ Challenges from https://www.frontendmentor.io/
 <span style="display: flex; flex-wrap: wrap;">
 
 <span style="margin-right: 2rem">
+
 <h3>Challenge1</h3>
 
 <img src="./01-single-price-grid-component/images/preview.jpg" alt="preview challenge 1" width="200"/>
@@ -14,7 +15,9 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/01-single-price-grid-component/)
 
 </span>
+
 <span style="margin-right: 2rem">
+
 <h3>Challenge2</h3>
 
 <img src="./02-social-proof-section/design/desktop-preview.jpg" alt="preview challenge 2" width="200"/>
@@ -22,7 +25,9 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/02-social-proof-section/)
 
 </span>
+
 <span style="margin-right: 2rem">
+
 <h3>Challenge5</h3>
 
 <img src="./05-testimonials-grid-section-main/design/desktop-preview.jpg" alt="preview challenge 5" width="200"/>
@@ -30,7 +35,9 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/05-testimonials-grid-section-main/)
 
 </span>
+
 <span style="margin-right: 2rem">
+
 <h3>Challenge7</h3>
 
 <img src="./07-profile-card-component-main/design/desktop-preview.jpg" alt="preview challenge 7" width="200"/>
