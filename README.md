@@ -4,9 +4,7 @@ Challenges from https://www.frontendmentor.io/
 
 ## Demos
 
-<span style="display: flex; flex-wrap: wrap;">
-
-<span style="margin-right: 2rem">
+ <span>
 
 <h3>Challenge1</h3>
 
@@ -16,7 +14,7 @@ Challenges from https://www.frontendmentor.io/
 
 </span>
 
-<span style="margin-right: 2rem">
+ <span>
 
 <h3>Challenge2</h3>
 
@@ -26,7 +24,7 @@ Challenges from https://www.frontendmentor.io/
 
 </span>
 
-<span style="margin-right: 2rem">
+ <span>
 
 <h3>Challenge5</h3>
 
@@ -36,7 +34,7 @@ Challenges from https://www.frontendmentor.io/
 
 </span>
 
-<span style="margin-right: 2rem">
+ <span>
 
 <h3>Challenge7</h3>
 
@@ -45,7 +43,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/07-profile-card-component-main/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge8</h3>
 
 <img src="./08-faq-accordion-card/design/desktop-preview.jpg" alt="preview challenge 8" width="200"/>
@@ -53,7 +51,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/08-faq-accordion-card/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge10</h3>
 
 <img src="./10-huddle-landing-page-with-single-introductory-section-master/design/desktop-preview.jpg" alt="preview challenge 10" width="200"/>
@@ -61,7 +59,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/10-huddle-landing-page-with-single-introductory-section-master/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge11</h3>
 
 <img src="./11-stats-preview-card-component-main/design/desktop-preview.jpg" alt="preview challenge 11" width="200"/>
@@ -69,7 +67,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/11-stats-preview-card-component-main/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge12</h3>
 
 <img src="./12-3-column-preview-card-component/design/desktop-preview.jpg" alt="preview challenge 12" width="200"/>
@@ -77,7 +75,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/12-3-column-preview-card-component/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge13</h3>
 
 <img src="./13-qr-code-component/design/desktop-preview.jpg" alt="preview challenge 13" width="200"/>
@@ -85,7 +83,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/13-qr-code-component/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge14</h3>
 
 <img src="./14-nft-preview-card-component/design/desktop-preview.jpg" alt="preview challenge 14" width="200"/>
@@ -93,7 +91,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/14-nft-preview-card-component/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge15</h3>
 
 <img src="./15-order-summary-component/design/desktop-preview.jpg" alt="preview challenge 15" width="200"/>
@@ -101,7 +99,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/15-order-summary-component/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge16</h3>
 
 <img src="./16-four-card-feature-section/design/desktop-preview.jpg" alt="preview challenge 16" width="200"/>
@@ -109,7 +107,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/16-four-card-feature-section/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge17</h3>
 
 <img src="./17-base-apparel-coming-soon/design/desktop-preview.jpg" alt="preview challenge 17" width="200"/>
@@ -117,7 +115,7 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/17-base-apparel-coming-soon/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge18</h3>
 
 <img src="./18-ping-coming-soon-page/design/desktop-preview.jpg" alt="preview challenge 18" width="200"/>
@@ -125,12 +123,11 @@ Challenges from https://www.frontendmentor.io/
 [Link](https://aladin002dz.github.io/ui-challenges/18-ping-coming-soon-page/)
 
 </span>
-<span style="margin-right: 2rem">
+ <span>
 <h3>Challenge19</h3>
 
 <img src="./19-interactive-rating-component/design/desktop-preview.jpg" alt="preview challenge 19" width="200"/>
 
 [Link](https://aladin002dz.github.io/ui-challenges/19-interactive-rating-component/)
 
-</span>
 </span>
