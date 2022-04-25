@@ -42,11 +42,7 @@ picture {
 .attribution {
   position: absolute;
   bottom: 1rem;
-  /*
-  position: relative;
-  margin-bottom: 1rem;
-  */
-  width: 100%;
+  width: calc(100% - 54px);
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
@@ -63,6 +59,7 @@ picture {
 }
 
 /*
+activate in case mobile display take more than 100vh
 @media (min-width: 1200px) {
   .attribution {
     position: relative;
@@ -91,10 +88,6 @@ body {
   width: 330px;
   overflow: hidden;
   position: relative;
-}
-
-.card .cards-container {
-  display: flex;
 }
 
 .card h1 {
@@ -159,8 +152,7 @@ body {
 }
 
 .rating-card {
-  width: 100%;
-  min-width: 330px;
+  min-width: 280px;
   overflow: hidden;
 }
 
@@ -175,20 +167,16 @@ body {
 }
 
 .thank-card {
-  width: 100%;
-  min-width: 330px;
+  min-width: 280px;
   position: absolute;
   left: 26rem;
   top: 0;
-}
-
-.thank-card {
   text-align: center;
 }
 
 .thank-card img {
-  margin: auto;
-  margin-top: 1rem;
+  margin-inline: auto;
+  margin-top: 2.2rem;
   margin-bottom: 1rem;
   width: 146px;
 }
@@ -207,6 +195,10 @@ body {
   margin: auto;
   margin-top: 1.5rem;
   margin-bottom: 0.9rem;
+}
+
+.thank-card p {
+  margin-inline: 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -235,17 +227,22 @@ body {
     font-size: 175%;
   }
   .thank-card img {
+    margin-top: 2.2rem;
     margin-bottom: 2.75rem;
     width: 146px;
   }
   .thank-card #result {
+    margin-top: 3rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     font-size: 90%;
   }
   .thank-card h1 {
-    margin-top: 2.2rem;
+    margin-top: 1.8rem;
     font-size: 175%;
+  }
+  .thank-card p {
+    margin-inline: 1.6rem;
   }
   .rating-card {
     min-width: 22.5rem;

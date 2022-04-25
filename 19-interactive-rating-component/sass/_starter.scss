@@ -18,17 +18,12 @@ picture {
 
 .flex {
   display: flex;
-  //gap: var($gap, 1rem);
 }
 
 .attribution {
   position: absolute;
   bottom: 1rem;
-  /*
-  position: relative;
-  margin-bottom: 1rem;
-  */
-  width: 100%;
+  width: calc(100% - 54px);
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
@@ -42,7 +37,9 @@ picture {
     }
   }
 }
+
 /*
+activate in case mobile display take more than 100vh
 @media (min-width: 1200px) {
   .attribution {
     position: relative;
