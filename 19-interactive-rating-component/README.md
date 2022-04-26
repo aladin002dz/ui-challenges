@@ -14,10 +14,9 @@ Thanks for checking out this front-end coding challenge.
 
 ### Built with
 
-- Semantic HTML5 markup
 - Sass (variables, nesting,...).
-- CSS GRID
 - Mobile-first workflow
+- the "[~](https://www.w3schools.com/cssref/sel_gen_sibling.asp)" operator of css.
 
 ## Useful resources
 
