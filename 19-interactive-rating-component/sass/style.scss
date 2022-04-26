@@ -64,6 +64,12 @@ body {
   cursor: pointer;
 }
 
+.rating-logo {
+  @extend .rating-icon;
+  cursor: default;
+  pointer-events: none;
+}
+
 .selected {
   background-color: $orange!important;
   color: white!important;
@@ -74,7 +80,11 @@ body {
   background-color: $light-grey;
   color: white;
 }
-// inverse the effect of "~" the make the effect on the previous ".rating-icon"s
+.selected~.rating-icon {
+  background-color: $orange!important;
+  color: white!important;
+}
+// inverse the effect of "~" the make the effect on the previous ".rating-icon"s unstead of the next ones
 .rating-numbers{
   direction: rtl;
 }

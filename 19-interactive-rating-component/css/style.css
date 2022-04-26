@@ -13,7 +13,7 @@ body {
   color: white;
 }
 
-.card .rating-icon {
+.card .rating-icon, .card .rating-logo {
   background-color: #262f38;
 }
 
@@ -109,7 +109,7 @@ body {
   color: #7c8798;
 }
 
-.card .rating-icon {
+.card .rating-icon, .card .rating-logo {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -129,7 +129,7 @@ body {
   margin-top: 1.25rem;
 }
 
-.rating-icon {
+.rating-icon, .rating-logo {
   border-radius: 50%;
   background-color: #272e38;
   width: 3rem;
@@ -137,14 +137,24 @@ body {
   cursor: pointer;
 }
 
+.rating-logo {
+  cursor: default;
+  pointer-events: none;
+}
+
 .selected {
   background-color: #fb7413 !important;
   color: white !important;
 }
 
-.rating-icon:hover, .rating-icon:hover ~ .rating-icon {
+.rating-icon:hover, .rating-logo:hover, .rating-icon:hover ~ .rating-icon, .rating-logo:hover ~ .rating-icon, .rating-icon:hover ~ .rating-logo, .rating-logo:hover ~ .rating-logo {
   background-color: #959eac;
   color: white;
+}
+
+.selected ~ .rating-icon, .selected ~ .rating-logo {
+  background-color: #fb7413 !important;
+  color: white !important;
 }
 
 .rating-numbers {
@@ -218,7 +228,7 @@ body {
   .rating-card {
     padding: 0.6rem .6rem;
   }
-  .rating-card .rating-icon {
+  .rating-card .rating-icon, .rating-card .rating-logo {
     width: 3rem;
     height: 3rem;
   }
