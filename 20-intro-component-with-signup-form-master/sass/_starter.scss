@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  padding: 0 1.5rem;
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100% - 54px);
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  //color: $medium-grey;
+
+  a {
+    //color: $light-grey;
+    transition: color 0.3s;
+    &:hover {
+      //color: $light-grey;
+    }
+  }
+}
+
+/*
+activate in case mobile display take more than 100vh
+@media (min-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+ 
+}
+ */

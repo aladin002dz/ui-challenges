@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  background-color: #ff7a7a;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  padding: 0 1.5rem;
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100% - 54px);
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.attribution a {
+  transition: color 0.3s;
+}
+
+/*
+activate in case mobile display take more than 100vh
+@media (min-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+ 
+}
+ */
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.hero {
+  display: flex;
+  margin-inline: 10rem;
+}
+/*# sourceMappingURL=style.css.map */

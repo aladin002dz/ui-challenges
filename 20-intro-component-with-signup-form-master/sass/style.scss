@@ -1,0 +1,14 @@
+@import "./colors";
+@import "./starter";
+@import "./typography";
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+
+.hero {
+  display: flex;
+  margin-inline:10rem;
+}
