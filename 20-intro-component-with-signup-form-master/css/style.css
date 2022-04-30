@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
   background-color: #ff7a7a;
   color: white;
@@ -46,20 +46,46 @@ activate in case mobile display take more than 100vh
 }
  */
 body {
-  font-family: "Overpass", sans-serif;
-}
-
-p {
-  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   display: grid;
   place-content: center;
+  width: 1440px;
 }
 
 .hero {
   display: flex;
-  margin-inline: 10rem;
+  margin-inline: 9rem;
+}
+
+.hero .hero-details {
+  width: 50%;
+}
+
+.hero .hero-details h1 {
+  font-size: 3.1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero .hero-form {
+  width: 50%;
+  padding-left: 1rem;
+}
+
+.hero .hero-form .accented {
+  background-color: #6055a5;
+  color: white;
+  border-radius: 0.5rem;
+  padding-block: 1rem;
+  font-size: 95%;
+  text-align: center;
+}
+
+.hero .hero-form .accented span {
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

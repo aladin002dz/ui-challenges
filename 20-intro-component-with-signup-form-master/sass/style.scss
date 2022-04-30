@@ -5,10 +5,42 @@
 body {
   display: grid;
   place-content: center;
+  width: 1440px;
 }
 
 
 .hero {
   display: flex;
-  margin-inline:10rem;
+  margin-inline:9rem;
+  .hero-details{
+    width: 50%;
+    //margin-right: 3rem;
+    h1{
+      font-size: 3.1rem;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  .hero-form{
+    width: 50%;
+    padding-left: 1rem;
+    .accented{
+      background-color: $accent-blue;
+      color: white;
+      border-radius: 0.5rem;
+      padding-block: 1rem;
+      //font-size: 80%;
+      font-size: 95%;
+      text-align: center;
+      span{
+        font-weight: 600;
+        //font-size: 100%;
+        //font-size: 1rem;
+      }
+    }
+  }
+
 }
