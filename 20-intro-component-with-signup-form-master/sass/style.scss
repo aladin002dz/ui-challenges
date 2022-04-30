@@ -11,6 +11,7 @@ body {
 
 .hero {
   display: flex;
+  align-items: center;
   margin-inline:9rem;
   .hero-details{
     width: 50%;
@@ -32,13 +33,63 @@ body {
       color: white;
       border-radius: 0.5rem;
       padding-block: 1rem;
-      //font-size: 80%;
       font-size: 95%;
       text-align: center;
+      box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.1);
       span{
+        font-weight: 700;
+      }
+    }
+    .form{
+      width: 100%;
+      padding: 2.5rem;
+      background-color: white;
+      border-radius: 0.5rem;
+      margin-top: 1.5rem;
+      box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.1);
+      input{
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 95%;
+        width: 100%;
+        margin-bottom: 1.2rem;
+        font-size: 95%;
+        border: 1px solid $neutral-grayish-blue;
         font-weight: 600;
-        //font-size: 100%;
-        //font-size: 1rem;
+        color: $neutral-dark-blue;
+        &:focus{
+          outline: none;
+          border: 1px solid $neutral-dark-blue;
+        }
+      }
+      input[type=submit]{
+        border-color: $primary-green;
+        background-color: $primary-green;
+        color: white;
+        text-align: center;
+        margin-bottom: 1.2rem;
+        cursor: pointer;
+        box-shadow: 0px 3px 0px 0px rgba(33, 119, 82, 0.5); //hsl(154, 59%, 51%);
+        transition: box-shadow 0.2s ease-in-out;
+        &:hover{
+          background-color: $primary-green;
+          opacity: 0.7;
+          box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5); //hsl(154, 59%, 51%);
+        }
+      }
+
+      .message{
+        width: 100%;
+        text-align: center;
+        font-size: 68%;
+        font-weight: 600;
+        color: $neutral-grayish-blue;
+        //color: $accent-blue;
+        a{
+          color: $primary-red;
+          font-weight: 700;
+          text-decoration: none;
+        }
       }
     }
   }

@@ -45,7 +45,7 @@ activate in case mobile display take more than 100vh
  
 }
  */
-body {
+* {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -57,6 +57,7 @@ body {
 
 .hero {
   display: flex;
+  align-items: center;
   margin-inline: 9rem;
 }
 
@@ -83,9 +84,67 @@ body {
   padding-block: 1rem;
   font-size: 95%;
   text-align: center;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero .hero-form .accented span {
+  font-weight: 700;
+}
+
+.hero .hero-form .form {
+  width: 100%;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero .hero-form .form input {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 95%;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  font-size: 95%;
+  border: 1px solid #b9b6d3;
   font-weight: 600;
+  color: #3e3c49;
+}
+
+.hero .hero-form .form input:focus {
+  outline: none;
+  border: 1px solid #3e3c49;
+}
+
+.hero .hero-form .form input[type=submit] {
+  border-color: #38cc8c;
+  background-color: #38cc8c;
+  color: white;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px 0px rgba(33, 119, 82, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.hero .hero-form .form input[type=submit]:hover {
+  background-color: #38cc8c;
+  opacity: 0.7;
+  box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5);
+}
+
+.hero .hero-form .form .message {
+  width: 100%;
+  text-align: center;
+  font-size: 68%;
+  font-weight: 600;
+  color: #b9b6d3;
+}
+
+.hero .hero-form .form .message a {
+  color: #ff7a7a;
+  font-weight: 700;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
