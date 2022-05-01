@@ -36,11 +36,12 @@ picture {
 
 /*
 activate in case mobile display take more than 100vh
-@media (min-width: 1200px) {
+*/
+@media (max-width: 1200px) {
   .attribution {
     position: relative;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    bottom: 0;
   }
- 
 }
- */

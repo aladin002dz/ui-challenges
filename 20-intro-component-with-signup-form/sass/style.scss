@@ -65,6 +65,7 @@ body {
       input[type=submit]{
         border-color: $primary-green;
         background-color: $primary-green;
+        text-transform: uppercase;
         color: white;
         text-align: center;
         margin-bottom: 1.2rem;
@@ -110,6 +111,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    display: block;
+    padding: 0 1rem;
+  }
   .hero{
     display: block;
     margin-top: 5.5rem;
@@ -125,8 +130,16 @@ body {
     .hero-form{
       width: 100%;
       margin-top: 4.5rem;
+      padding-left: 0;
+      .accented {
+        padding:1.5rem 3rem;
+      }
       .form{
-        padding: 0rem;
+        padding: 1rem;
+        .message{
+          padding-inline: 2rem;
+          line-height: 1.5;
+        }
       }
     }
   }

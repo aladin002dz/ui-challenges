@@ -37,14 +37,16 @@ picture {
 
 /*
 activate in case mobile display take more than 100vh
-@media (min-width: 1200px) {
+*/
+@media (max-width: 1200px) {
   .attribution {
     position: relative;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    bottom: 0;
   }
- 
 }
- */
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -119,6 +121,7 @@ body {
 .hero .hero-form .form input[type=submit] {
   border-color: #38cc8c;
   background-color: #38cc8c;
+  text-transform: uppercase;
   color: white;
   text-align: center;
   margin-bottom: 1.2rem;
@@ -160,6 +163,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    display: block;
+    padding: 0 1rem;
+  }
   .hero {
     display: block;
     margin-top: 5.5rem;
@@ -176,9 +183,17 @@ body {
   .hero .hero-form {
     width: 100%;
     margin-top: 4.5rem;
+    padding-left: 0;
+  }
+  .hero .hero-form .accented {
+    padding: 1.5rem 3rem;
   }
   .hero .hero-form .form {
-    padding: 0rem;
+    padding: 1rem;
+  }
+  .hero .hero-form .form .message {
+    padding-inline: 2rem;
+    line-height: 1.5;
   }
 }
 /*# sourceMappingURL=style.css.map */
