@@ -5,7 +5,7 @@
 body {
   display: grid;
   place-content: center;
-  width: 1440px;
+  //width: 1440px;
 }
 
 
@@ -94,4 +94,40 @@ body {
     }
   }
 
+}
+
+@media screen and (max-width: 1200px) {
+  .hero{
+    margin-inline:0rem;
+    .hero-details{
+      margin-right: 0;
+    }
+    .hero-form{
+      .form{
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero{
+    display: block;
+    margin-top: 5.5rem;
+    .hero-details{
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+      h1{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .hero-form{
+      width: 100%;
+      margin-top: 4.5rem;
+      .form{
+        padding: 0rem;
+      }
+    }
+  }
 }
