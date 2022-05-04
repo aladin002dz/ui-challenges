@@ -101,6 +101,29 @@ body {
   box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+.hero .hero-form .form .form-control {
+  position: relative;
+}
+
+.hero .hero-form .form .form-control small {
+  color: #ff7a7a;
+  font-weight: 600;
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  opacity: 0;
+  text-align: right;
+}
+
+.hero .hero-form .form .form-control small.error input {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.hero .hero-form .form .form-control small.error input::placeholder {
+  color: #ff7a7a;
+}
+
 .hero .hero-form .form input {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
