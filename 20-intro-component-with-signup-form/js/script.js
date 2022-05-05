@@ -2,20 +2,18 @@ const form = document.getElementById("form1");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(form);
-  return;
-  const firstName = form["firstName"].value;
-  const lastName = form["lastName"].value;
+  const firstname = form["firstname"].value;
+  const lastname = form["lastname"].value;
   const email = form["email"].value;
   const password = form["password"].value;
 
-  if (firstName === "") {
+  if (firstname === "") {
     addErrorTo("firstname", "First Name is required");
   } else {
     removeErrorFrom("firstname");
   }
 
-  if (lastName === "") {
+  if (lastname === "") {
     addErrorTo("lastname", "Last Name is required");
   } else {
     removeErrorFrom("lastname");
@@ -23,7 +21,7 @@ form.addEventListener("submit", (e) => {
 
   if (email === "") {
     addErrorTo("email", "Email is required");
-  } else if (!isValid(email)) {
+  } else if (!isValid(email, emailRegexPattern)) {
     addErrorTo("email", "Email is not valid");
   } else {
     removeErrorFrom("email");
@@ -38,6 +36,8 @@ form.addEventListener("submit", (e) => {
 
 //credit to https://github.com/Lakorthus/FrontendMentorChallenge/blob/main/intro-component-with-signup-form-master/script.js
 function addErrorTo(field, message) {
+  console.log("field: ", field);
+  console.log("message: ", message);
   const formControl = form[field].parentNode;
   formControl.classList.add("error");
 
