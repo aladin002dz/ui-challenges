@@ -103,16 +103,18 @@ body {
 
 .hero .hero-form .form .form-control {
   position: relative;
+  margin-bottom: 1.2rem;
 }
 
 .hero .hero-form .form .form-control small {
   color: #ff7a7a;
-  font-weight: 600;
-  position: absolute;
-  bottom: -24px;
-  right: 0;
-  opacity: 0;
+  font-weight: 700;
+  display: block;
+  width: 100%;
   text-align: right;
+  font-style: italic;
+  font-size: 70%;
+  padding-right: 0.5rem;
 }
 
 .hero .hero-form .form .form-control.error input {
@@ -146,7 +148,6 @@ body {
   padding: 1rem 2rem;
   font-size: 95%;
   width: 100%;
-  margin-bottom: 1.2rem;
   font-size: 95%;
   border: 1px solid #b9b6d3;
   font-weight: 600;
