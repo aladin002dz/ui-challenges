@@ -29,10 +29,16 @@ picture {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
+  color: white;
 }
 
 .attribution a {
+  color: #6055a5;
   transition: color 0.3s;
+}
+
+.attribution a:hover {
+  color: #3e3c49;
 }
 
 /*
@@ -60,6 +66,7 @@ body {
   display: flex;
   align-items: center;
   margin-inline: 9rem;
+  min-height: calc(100vh - 9rem);
 }
 
 .hero .hero-details {

@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   margin-inline:9rem;
+  min-height: calc(100vh - 9rem);
   .hero-details{
     width: 50%;
     //margin-right: 3rem;

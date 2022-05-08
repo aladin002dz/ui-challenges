@@ -23,13 +23,13 @@ picture {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
-  //color: $medium-grey;
+  color: white;
 
   a {
-    //color: $light-grey;
+    color: $accent-blue;
     transition: color 0.3s;
     &:hover {
-      //color: $light-grey;
+      color: $neutral-dark-blue;
     }
   }
 }
