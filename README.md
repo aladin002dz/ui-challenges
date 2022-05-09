@@ -93,3 +93,9 @@ Challenges from https://www.frontendmentor.io/
 <img src="./19-interactive-rating-component/design/desktop-preview.jpg" alt="preview challenge 19" width="200"/>
 
 [Link](https://aladin002dz.github.io/ui-challenges/19-interactive-rating-component/)
+
+### Challenge20
+
+<img src="./20-intro-component-with-signup-form/design/desktop-preview.jpg" alt="preview challenge 20" width="200"/>
+
+[Link](https://aladin002dz.github.io/ui-challenges/20-intro-component-with-signup-form/)
