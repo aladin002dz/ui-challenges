@@ -5,6 +5,7 @@
 body {
   display: grid;
   place-content: center;
+  background-image: url("/images/bg-intro-desktop.png");
 }
 
 .hero {
@@ -152,6 +153,7 @@ body {
   body {
     display: block;
     padding: 0 1rem;
+    background-image: url("/images/bg-intro-mobile.png");
   }
   .hero {
     display: block;
