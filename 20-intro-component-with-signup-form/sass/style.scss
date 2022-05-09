@@ -5,7 +5,7 @@
 body {
   display: grid;
   place-content: center;
-  background-image: url("/images/bg-intro-desktop.png");
+  background-image: url("/20-intro-component-with-signup-form/images/bg-intro-desktop.png");
 }
 
 .hero {
@@ -117,7 +117,7 @@ body {
       &:hover {
         background-color: $primary-green;
         opacity: 0.7;
-        box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5); //hsl(154, 59%, 51%);
+        box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5);
       }
     }
 
@@ -153,7 +153,7 @@ body {
   body {
     display: block;
     padding: 0 1rem;
-    background-image: url("/images/bg-intro-mobile.png");
+    background-image: url("/20-intro-component-with-signup-form/images/bg-intro-mobile.png");
   }
   .hero {
     display: block;
