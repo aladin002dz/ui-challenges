@@ -11,6 +11,9 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  .menu {
+    display: flex;
+  }
   ul {
     list-style: none;
     display: flex;

@@ -69,6 +69,10 @@ nav {
   justify-content: space-between;
 }
 
+nav .menu {
+  display: flex;
+}
+
 nav ul {
   list-style: none;
   display: flex;
