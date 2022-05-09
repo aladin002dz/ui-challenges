@@ -60,7 +60,7 @@ activate in case mobile display take more than 100vh
 body {
   display: grid;
   place-content: center;
-  background-image: url("/20-intro-component-with-signup-form/images/bg-intro-desktop.png");
+  background-image: url("/ui-challenges/20-intro-component-with-signup-form/images/bg-intro-desktop.png");
 }
 
 .hero {
@@ -217,7 +217,7 @@ body {
   body {
     display: block;
     padding: 0 1rem;
-    background-image: url("/20-intro-component-with-signup-form/images/bg-intro-mobile.png");
+    background-image: url("/ui-challenges/20-intro-component-with-signup-form/images/bg-intro-mobile.png");
   }
   .hero {
     display: block;
