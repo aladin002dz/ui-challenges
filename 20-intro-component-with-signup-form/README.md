@@ -15,8 +15,17 @@ Thanks for checking out this front-end coding challenge.
 ### Built with
 
 - Sass (variables, nesting,...).
-- Mobile-first workflow
-- the "[~](https://www.w3schools.com/cssref/sel_gen_sibling.asp)" operator of css.
+- Desktop-first workflow
+
+## What I learned
+
+Working Html Forms in an optimal way:
+
+```js
+const form = document.getElementById("form1");
+const firstname = form["firstname"].value;
+const email = form["email"].value;
+```
 
 ## Useful resources
 
@@ -31,5 +40,5 @@ Thanks for checking out this front-end coding challenge.
 
 ## Acknowledgments
 
-I inspired the code from the work of: [@PhoenixDev22](https://www.frontendmentor.io/profile/PhoenixDev22)  
+I inspired the code from the work of: [@Lakorthus](https://github.com/Lakorthus/FrontendMentorChallenge/blob/main/intro-component-with-signup-form-master/script.js)  
 I inspired this readme file from the one of : [@catherineisonline](https://www.frontendmentor.io/profile/catherineisonline)

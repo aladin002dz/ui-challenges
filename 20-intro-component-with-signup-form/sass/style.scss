@@ -5,149 +5,144 @@
 body {
   display: grid;
   place-content: center;
-  //width: 1440px;
 }
-
 
 .hero {
   display: flex;
   align-items: center;
-  margin-inline:9rem;
+  margin-inline: 9rem;
   min-height: calc(100vh - 9rem);
-  .hero-details{
+
+  .hero-details {
     width: 50%;
-    //margin-right: 3rem;
-    h1{
+    h1 {
       font-size: 3.1rem;
       line-height: 1.2;
       font-weight: 700;
       margin-bottom: 1.5rem;
     }
-
   }
 
-  .hero-form{
+  .hero-form {
     width: 50%;
     padding-left: 1rem;
-    .accented{
+    .accented {
       background-color: $accent-blue;
       color: white;
       border-radius: 0.5rem;
       padding-block: 1rem;
       font-size: 95%;
       text-align: center;
-      box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.1);
-      span{
+      box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
+      span {
         font-weight: 700;
       }
     }
 
-    .form{
+    @mixin input-base {
+      border-radius: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 95%;
+      width: 100%;
+      font-size: 95%;
+      border: 1px solid $neutral-grayish-blue;
+      font-weight: 600;
+    }
+
+    .form {
       width: 100%;
       padding: 2.5rem;
       background-color: white;
       border-radius: 0.5rem;
       margin-top: 1.5rem;
-      box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.1);
+      box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
       .form-control {
         position: relative;
         margin-bottom: 1.2rem;
-        small {
-          color: hsl(0, 100%, 74%);
-          font-weight: 700;
-          display:block;
-          width: 100%;
-          text-align: right;
-          font-style: italic;
-          font-size: 70%;
-          padding-right: 0.5rem;
+
+        input {
+          @include input-base;
+          color: $neutral-dark-blue;
+          &:focus {
+            outline: none; //important to hide the default browser outline
+            border: 1px solid $neutral-dark-blue;
           }
         }
-        .form-control.error input {
-          border-color: hsl(0, 100%, 74%);
-          color: hsl(0, 100%, 74%);
-        }
-        
-        .form-control.error input::placeholder {
-          color: hsl(0, 100%, 74%);
-        }
-        
-        input:focus {
-          border: 1.3px solid hsl(248, 32%, 49%);
-          outline: none;
-        }
-        
-        .form-control img {
+
+        img {
           opacity: 0;
           position: absolute;
           top: calc(50% - 20px);
           right: 2rem;
           height: 20px;
         }
-        
-        .form-control.error img {
-          opacity: 1;
-        }
-      }
 
-
-      input{
-        border-radius: 0.5rem;
-        padding: 1rem 2rem;
-        font-size: 95%;
-        width: 100%;
-        //margin-bottom: 1.2rem;
-        font-size: 95%;
-        border: 1px solid $neutral-grayish-blue;
-        font-weight: 600;
-        color: $neutral-dark-blue;
-        &:focus{
-          outline: none;
-          border: 1px solid $neutral-dark-blue;
-        }
-      }
-      input[type=submit]{
-        border-color: $primary-green;
-        background-color: $primary-green;
-        text-transform: uppercase;
-        color: white;
-        text-align: center;
-        margin-bottom: 1.2rem;
-        cursor: pointer;
-        box-shadow: 0px 3px 0px 0px rgba(33, 119, 82, 0.5); //hsl(154, 59%, 51%);
-        transition: box-shadow 0.2s ease-in-out;
-        &:hover{
-          background-color: $primary-green;
-          opacity: 0.7;
-          box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5); //hsl(154, 59%, 51%);
-        }
-      }
-
-      .message{
-        width: 100%;
-        text-align: center;
-        font-size: 68%;
-        font-weight: 600;
-        color: $neutral-grayish-blue;
-        //color: $accent-blue;
-        a{
-          color: $primary-red;
+        small {
+          color: hsl(0, 100%, 74%);
           font-weight: 700;
-          text-decoration: none;
+          display: block;
+          width: 100%;
+          text-align: right;
+          font-style: italic;
+          font-size: 70%;
+          padding-right: 0.5rem;
         }
+      }
+
+      .form-control.error input {
+        border-color: hsl(0, 100%, 74%);
+        color: hsl(0, 100%, 74%);
+        &::placeholder {
+          color: hsl(0, 100%, 74%);
+        }
+      }
+
+      .form-control.error img {
+        opacity: 1;
+      }
+    }
+
+    input[type="submit"] {
+      @include input-base;
+      border-color: $primary-green;
+      background-color: $primary-green;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0px 3px 0px 0px rgba(33, 119, 82, 0.5);
+      transition: box-shadow 0.2s ease-in-out;
+      &:hover {
+        background-color: $primary-green;
+        opacity: 0.7;
+        box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5); //hsl(154, 59%, 51%);
+      }
+    }
+
+    .terms-services {
+      width: 100%;
+      text-align: center;
+      font-size: 68%;
+      font-weight: 600;
+      color: $neutral-grayish-blue;
+      a {
+        color: $primary-red;
+        font-weight: 700;
+        text-decoration: none;
       }
     }
   }
-
+}
 
 @media screen and (max-width: 1200px) {
-  .hero{
-    margin-inline:0rem;
-    .hero-details{
+  .hero {
+    margin-inline: 0rem;
+    .hero-details {
       margin-right: 0;
     }
-    .hero-form{
-      .form{
+    .hero-form {
+      .form {
         padding: 1.5rem;
       }
     }
@@ -158,28 +153,28 @@ body {
     display: block;
     padding: 0 1rem;
   }
-  .hero{
+  .hero {
     display: block;
     margin-top: 5.5rem;
-    .hero-details{
+    .hero-details {
       width: 100%;
       margin-right: 0;
       text-align: center;
-      h1{
+      h1 {
         font-size: 1.7rem;
         margin-bottom: 2rem;
       }
     }
-    .hero-form{
+    .hero-form {
       width: 100%;
       margin-top: 4.5rem;
       padding-left: 0;
       .accented {
-        padding:1.5rem 3rem;
+        padding: 1.5rem 3rem;
       }
-      .form{
+      .form {
         padding: 1rem;
-        .message{
+        .message {
           padding-inline: 2rem;
           line-height: 1.5;
         }
