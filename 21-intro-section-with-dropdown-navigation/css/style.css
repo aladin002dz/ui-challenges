@@ -8,11 +8,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 Body {
   padding: 0 1.5rem;
-  min-height: 100vh;
+  height: 900px;
 }
 
 /* Make images easier to work with */
@@ -58,10 +59,13 @@ activate in case mobile display take more than 100vh
   font-size: 18px;
 }
 
-body {
-  display: grid;
-  place-content: center;
-  background-image: url("/ui-challenges/20-intro-component-with-signup-form/images/bg-intro-desktop.png");
+.container {
+  max-width: 1440px;
+  max-height: 900px;
+  margin-inline: auto;
+  padding: 0 2.7rem;
+  margin-block: 1.7rem;
+  outline: 2px solid red;
 }
 
 nav {
@@ -76,12 +80,33 @@ nav .menu {
 nav ul {
   list-style: none;
   display: flex;
+  margin-left: 3.5rem;
+}
+
+nav ul li {
+  margin-right: 1rem;
+  font-size: 80%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li img {
+  margin-left: 0.5rem;
+}
+
+nav ul li.btn-register {
+  color: #141414;
+  background-color: #fafafa;
+  border: 1px solid #141414;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.5rem;
 }
 
 .hero {
   display: flex;
   align-items: center;
   margin-inline: 9rem;
+  margin-block: 2rem;
   min-height: calc(100vh - 9rem);
 }
 
@@ -101,156 +126,7 @@ nav ul {
   padding-left: 1rem;
 }
 
-.hero .hero-illustration .accented {
-  color: white;
-  border-radius: 0.5rem;
-  padding-block: 1rem;
-  font-size: 95%;
-  text-align: center;
-  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
-}
-
-.hero .hero-illustration .accented span {
-  font-weight: 700;
-}
-
-.hero .hero-illustration .form {
-  width: 100%;
-  padding: 2.5rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  margin-top: 1.5rem;
-  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
-}
-
-.hero .hero-illustration .form .form-control {
-  position: relative;
-  margin-bottom: 1.2rem;
-}
-
-.hero .hero-illustration .form .form-control input {
-  border-radius: 0.5rem;
-  padding: 1rem 2rem;
-  font-size: 95%;
-  width: 100%;
-  font-size: 95%;
-  font-weight: 600;
-}
-
-.hero .hero-illustration .form .form-control input:focus {
-  outline: none;
-}
-
-.hero .hero-illustration .form .form-control img {
-  opacity: 0;
-  position: absolute;
-  top: calc(50% - 20px);
-  right: 2rem;
-  height: 20px;
-}
-
-.hero .hero-illustration .form .form-control small {
-  color: #ff7a7a;
-  font-weight: 700;
-  display: block;
-  width: 100%;
-  text-align: right;
-  font-style: italic;
-  font-size: 70%;
-  padding-right: 0.5rem;
-}
-
-.hero .hero-illustration .form .form-control.error input {
-  border-color: #ff7a7a;
-  color: #ff7a7a;
-}
-
-.hero .hero-illustration .form .form-control.error input::placeholder {
-  color: #ff7a7a;
-}
-
-.hero .hero-illustration .form .form-control.error img {
-  opacity: 1;
-}
-
-.hero .hero-illustration input[type="submit"] {
-  border-radius: 0.5rem;
-  padding: 1rem 2rem;
-  font-size: 95%;
-  width: 100%;
-  font-size: 95%;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  margin-bottom: 1.2rem;
-  cursor: pointer;
-  box-shadow: 0px 3px 0px 0px rgba(33, 119, 82, 0.5);
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-.hero .hero-illustration input[type="submit"]:hover {
-  opacity: 0.7;
-  box-shadow: 3px 6px 0px 0px rgba(33, 119, 82, 0.5);
-}
-
-.hero .hero-illustration .terms-services {
-  width: 100%;
-  text-align: center;
-  font-size: 68%;
-  font-weight: 600;
-}
-
-.hero .hero-illustration .terms-services a {
-  font-weight: 700;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .hero {
-    margin-inline: 0rem;
-  }
-  .hero .hero-details {
-    margin-right: 0;
-  }
-  .hero .hero-form .form {
-    padding: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    display: block;
-    padding: 0 1rem;
-    background-image: url("/ui-challenges/20-intro-component-with-signup-form/images/bg-intro-mobile.png");
-  }
-  .hero {
-    display: block;
-    margin-top: 5.5rem;
-  }
-  .hero .hero-details {
-    width: 100%;
-    margin-right: 0;
-    text-align: center;
-  }
-  .hero .hero-details h1 {
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
-  }
-  .hero .hero-form {
-    width: 100%;
-    margin-top: 4.5rem;
-    padding-left: 0;
-  }
-  .hero .hero-form .accented {
-    padding: 1.5rem 3rem;
-  }
-  .hero .hero-form .form {
-    padding: 1rem;
-  }
-  .hero .hero-form .form .message {
-    padding-inline: 2rem;
-    line-height: 1.5;
-  }
+.hero .hero-illustration img {
+  height: 35.5rem;
 }
 /*# sourceMappingURL=style.css.map */
