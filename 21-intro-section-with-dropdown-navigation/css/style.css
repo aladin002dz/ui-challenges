@@ -60,6 +60,7 @@ activate in case mobile display take more than 100vh
 }
 
 .container {
+  width: 100%;
   max-width: 1440px;
   max-height: 900px;
   margin-inline: auto;
@@ -71,6 +72,7 @@ activate in case mobile display take more than 100vh
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav .menu {
@@ -88,6 +90,7 @@ nav ul li {
   font-size: 80%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 nav ul li img {
@@ -105,24 +108,51 @@ nav ul li.btn-register {
 .hero {
   display: flex;
   align-items: center;
-  margin-inline: 9rem;
+  margin-inline: 1.5rem;
   margin-block: 2rem;
-  min-height: calc(100vh - 9rem);
 }
 
 .hero .hero-details {
   width: 50%;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
 }
 
 .hero .hero-details h1 {
-  font-size: 3.1rem;
-  line-height: 1.2;
+  font-size: 430%;
+  line-height: 1.1;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
+.hero .hero-details p {
+  width: 80%;
+  line-height: 1.5;
+}
+
+.hero .hero-details .btn-hero {
+  color: #fafafa;
+  background-color: #141414;
+  border: 1px solid #fafafa;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 1rem 1.75rem;
+}
+
+.hero .hero-details .clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+  gap: 1rem;
+}
+
 .hero .hero-illustration {
-  width: 50%;
+  width: 49%;
   padding-left: 1rem;
 }
 
