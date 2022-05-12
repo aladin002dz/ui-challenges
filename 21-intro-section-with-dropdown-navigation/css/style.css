@@ -107,33 +107,39 @@ nav ul li.btn-register {
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-inline: 1.5rem;
-  margin-block: 2rem;
+  padding-top: 2rem;
 }
 
 .hero .hero-details {
   width: 50%;
+  padding-top: 10%;
   margin-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70vh;
 }
 
-.hero .hero-details h1 {
+.hero .hero-details .details-content {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero .hero-details .details-content h1 {
   font-size: 430%;
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 1.5rem;
 }
 
-.hero .hero-details p {
+.hero .hero-details .details-content p {
   width: 80%;
   line-height: 1.5;
 }
 
-.hero .hero-details .btn-hero {
+.hero .hero-details .details-content .btn-hero {
   color: #fafafa;
   background-color: #141414;
   border: 1px solid #fafafa;
@@ -144,10 +150,10 @@ nav ul li.btn-register {
 }
 
 .hero .hero-details .clients {
+  flex: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-shrink: 1;
+  align-items: flex-end;
   gap: 1rem;
 }
 

@@ -49,40 +49,48 @@ nav {
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  //justify-content: stretch;
   margin-inline: 1.5rem;
-  margin-block: 2rem;
-
+  //margin-block: 2rem;
+  //margin-top: 2rem;
+  padding-top: 2rem;
   .hero-details {
     width: 50%;
+    padding-top: 10%;
     margin-left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70vh;
-    h1 {
-      font-size: 430%;
-      line-height: 1.1;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-    }
+    .details-content {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-size: 430%;
+        line-height: 1.1;
+        font-weight: 700;
+      }
 
-    p {
-      width: 80%;
-      line-height: 1.5;
-    }
+      p {
+        width: 80%;
+        line-height: 1.5;
+      }
 
-    .btn-hero {
-      @include btn-mixin($almost-white, $almost-black, $almost-white);
-      width: fit-content;
-      padding: 1rem 1.75rem;
+      .btn-hero {
+        @include btn-mixin($almost-white, $almost-black, $almost-white);
+        width: fit-content;
+        padding: 1rem 1.75rem;
+        //margin-top: 1rem;
+      }
     }
 
     .clients {
+      flex: 1;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      flex-shrink: 1;
+      align-items: flex-end;
       gap: 1rem;
     }
   }
