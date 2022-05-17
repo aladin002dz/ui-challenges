@@ -9,7 +9,7 @@
   margin-inline: auto;
   padding: 0 2.7rem;
   margin-block: 1.7rem;
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 @mixin btn-mixin($color, $bg, $border) {
@@ -24,14 +24,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .menu {
+  font-size: 60%;
+  > .menu {
     display: flex;
   }
-  ul {
+  & > ul,
+  & > .menu > ul {
     list-style: none;
     display: flex;
     margin-left: 3.5rem;
-    li {
+    > li {
       margin-right: 1rem;
       font-size: 80%;
       display: flex;
@@ -50,11 +52,8 @@ nav {
 .hero {
   display: flex;
   align-items: stretch;
-  //justify-content: stretch;
   margin-inline: 1.5rem;
-  //margin-block: 2rem;
-  //margin-top: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   .hero-details {
     width: 50%;
     padding-top: 10%;
@@ -62,6 +61,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .details-content {
       flex: 4;
       display: flex;
@@ -82,11 +82,11 @@ nav {
         @include btn-mixin($almost-white, $almost-black, $almost-white);
         width: fit-content;
         padding: 1rem 1.75rem;
-        //margin-top: 1rem;
       }
     }
 
     .clients {
+      margin-top: 2rem;
       flex: 1;
       display: flex;
       justify-content: space-between;
@@ -103,3 +103,5 @@ nav {
     }
   }
 }
+
+@import "./menu";

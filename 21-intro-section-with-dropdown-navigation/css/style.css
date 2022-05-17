@@ -8,7 +8,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
 }
 
 Body {
@@ -66,26 +65,28 @@ activate in case mobile display take more than 100vh
   margin-inline: auto;
   padding: 0 2.7rem;
   margin-block: 1.7rem;
-  outline: 2px solid red;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 60%;
 }
 
-nav .menu {
+nav > .menu {
   display: flex;
 }
 
-nav ul {
+nav > ul,
+nav > .menu > ul {
   list-style: none;
   display: flex;
   margin-left: 3.5rem;
 }
 
-nav ul li {
+nav > ul > li,
+nav > .menu > ul > li {
   margin-right: 1rem;
   font-size: 80%;
   display: flex;
@@ -93,11 +94,13 @@ nav ul li {
   cursor: pointer;
 }
 
-nav ul li img {
+nav > ul > li img,
+nav > .menu > ul > li img {
   margin-left: 0.5rem;
 }
 
-nav ul li.btn-register {
+nav > ul > li.btn-register,
+nav > .menu > ul > li.btn-register {
   color: #141414;
   background-color: #fafafa;
   border: 1px solid #141414;
@@ -109,7 +112,7 @@ nav ul li.btn-register {
   display: flex;
   align-items: stretch;
   margin-inline: 1.5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .hero .hero-details {
@@ -150,6 +153,7 @@ nav ul li.btn-register {
 }
 
 .hero .hero-details .clients {
+  margin-top: 2rem;
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -164,5 +168,53 @@ nav ul li.btn-register {
 
 .hero .hero-illustration img {
   height: 35.5rem;
+}
+
+.features {
+  position: relative;
+}
+
+.features .features-title {
+  display: flex;
+  align-items: center;
+}
+
+.features .submenu-features {
+  position: absolute;
+  width: max-content;
+  top: 2.5rem;
+  right: 0;
+  display: block;
+  box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  list-style: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.features .submenu-features li {
+  margin-bottom: 1rem;
+}
+
+.features .submenu-features li a {
+  display: flex;
+  color: #141414;
+  text-decoration: none;
+}
+
+.features .submenu-features li a img {
+  margin-right: 1rem;
+}
+
+.features .submenu-features li a span {
+  display: block;
+}
+
+.features .submenu-features li a:hover {
+  color: #141414;
+}
+
+.features .submenu-features li:nth-last-child(1) {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
