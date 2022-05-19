@@ -20,35 +20,6 @@
   border-radius: 0.5rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 60%;
-  > .menu {
-    display: flex;
-  }
-  & > ul,
-  & > .menu > ul {
-    list-style: none;
-    display: flex;
-    margin-left: 3.5rem;
-    > li {
-      margin-right: 1rem;
-      font-size: 80%;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      img {
-        margin-left: 0.5rem;
-      }
-      &.btn-register {
-        @include btn-mixin($almost-black, $almost-white, $almost-black);
-      }
-    }
-  }
-}
-
 .hero {
   display: flex;
   align-items: stretch;

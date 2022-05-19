@@ -53,7 +53,7 @@ activate in case mobile display take more than 100vh
   }
 }
 
-* {
+body {
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
 }
@@ -65,47 +65,6 @@ activate in case mobile display take more than 100vh
   margin-inline: auto;
   padding: 0 2.7rem;
   margin-block: 1.7rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 60%;
-}
-
-nav > .menu {
-  display: flex;
-}
-
-nav > ul,
-nav > .menu > ul {
-  list-style: none;
-  display: flex;
-  margin-left: 3.5rem;
-}
-
-nav > ul > li,
-nav > .menu > ul > li {
-  margin-right: 1rem;
-  font-size: 80%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-nav > ul > li img,
-nav > .menu > ul > li img {
-  margin-left: 0.5rem;
-}
-
-nav > ul > li.btn-register,
-nav > .menu > ul > li.btn-register {
-  color: #141414;
-  background-color: #fafafa;
-  border: 1px solid #141414;
-  padding: 0.6rem 1.1rem;
-  border-radius: 0.5rem;
 }
 
 .hero {
@@ -170,6 +129,46 @@ nav > .menu > ul > li.btn-register {
   height: 35.5rem;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 80%;
+}
+
+nav > .menu {
+  display: flex;
+}
+
+nav > ul,
+nav > .menu > ul {
+  list-style: none;
+  display: flex;
+  margin-left: 3.5rem;
+}
+
+nav > ul > li,
+nav > .menu > ul > li {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav > ul > li img,
+nav > .menu > ul > li img {
+  margin-left: 0.5rem;
+}
+
+nav > ul > li.btn-register,
+nav > .menu > ul > li.btn-register {
+  color: #141414;
+  background-color: #fafafa;
+  border: 1px solid #141414;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.5rem;
+}
+
 .features {
   position: relative;
 }
@@ -179,42 +178,42 @@ nav > .menu > ul > li.btn-register {
   align-items: center;
 }
 
-.features .submenu-features {
+.features .features-submenu {
   position: absolute;
   width: max-content;
   top: 2.5rem;
   right: 0;
   display: block;
-  box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 100px 0px rgba(0, 0, 0, 0.1);
   list-style: none;
   padding: 1rem;
   border-radius: 1rem;
   background-color: #fff;
 }
 
-.features .submenu-features li {
+.features .features-submenu li {
   margin-bottom: 1rem;
 }
 
-.features .submenu-features li a {
+.features .features-submenu li a {
   display: flex;
-  color: #141414;
+  color: dimgray;
   text-decoration: none;
 }
 
-.features .submenu-features li a img {
+.features .features-submenu li a img {
   margin-right: 1rem;
 }
 
-.features .submenu-features li a span {
+.features .features-submenu li a span {
   display: block;
 }
 
-.features .submenu-features li a:hover {
+.features .features-submenu li a:hover {
   color: #141414;
 }
 
-.features .submenu-features li:nth-last-child(1) {
+.features .features-submenu li:nth-last-child(1) {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
