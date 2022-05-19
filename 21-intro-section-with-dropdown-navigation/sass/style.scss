@@ -5,11 +5,11 @@
 .container {
   width: 100%;
   max-width: 1440px;
-  max-height: 900px;
+  min-height: 900px;
   margin-inline: auto;
   padding: 0 2.7rem;
   margin-block: 1.7rem;
-  //outline: 2px solid red;
+  outline: 2px solid red;
 }
 
 @mixin btn-mixin($color, $bg, $border) {

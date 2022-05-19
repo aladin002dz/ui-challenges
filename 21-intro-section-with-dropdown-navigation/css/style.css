@@ -12,7 +12,8 @@ body {
 
 Body {
   padding: 0 1.5rem;
-  height: 900px;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Make images easier to work with */
@@ -61,10 +62,11 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  max-height: 900px;
+  min-height: 900px;
   margin-inline: auto;
   padding: 0 2.7rem;
   margin-block: 1.7rem;
+  outline: 2px solid red;
 }
 
 .hero {
@@ -149,7 +151,7 @@ nav > .menu > ul {
 
 nav > ul > li,
 nav > .menu > ul > li {
-  margin-right: 1rem;
+  margin-right: 2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -185,8 +187,8 @@ nav > .menu > ul > li.btn-register {
   display: block;
   box-shadow: 5px 5px 100px 0px rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 1.3rem 1.2rem;
+  border-radius: 0.5rem;
   background-color: #fff;
 }
 
@@ -222,5 +224,10 @@ nav > .menu > ul > li.btn-register {
 
 .company-submenu {
   left: 0;
+  padding: 1.5rem 1.5rem;
+}
+
+.auth-menu {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,13 +3,12 @@
   margin: 0;
   padding: 0;
   //outline: 1px solid red;
-  //z-index: -1;
 }
 
 Body {
   padding: 0 1.5rem;
-  height: 900px;
-  //min-height: 100vh;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Make images easier to work with */
