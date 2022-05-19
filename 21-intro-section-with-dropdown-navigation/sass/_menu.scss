@@ -26,44 +26,51 @@ nav {
   }
 }
 
-.features {
+.menu-title {
+  display: flex;
+  align-items: center;
+}
+
+.submenu-parent {
   position: relative;
+}
 
-  .features-title {
-    display: flex;
-    align-items: center;
-  }
-
-  .features-submenu {
-    position: absolute;
-    width: max-content;
-    top: 2.5rem;
-    right: 0;
-    display: block;
-    box-shadow: 5px 5px 100px 0px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: #fff;
-    li {
-      margin-bottom: 1rem;
-      a {
-        display: flex;
-        color: $medium-gray;
-        text-decoration: none;
-        img {
-          margin-right: 1rem;
-        }
-        span {
-          display: block;
-        }
-        &:hover {
-          color: $almost-black;
-        }
+.submenu {
+  position: absolute;
+  width: max-content;
+  top: 2.5rem;
+  display: block;
+  box-shadow: 5px 5px 100px 0px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  li {
+    margin-bottom: 1rem;
+    a {
+      display: flex;
+      color: $medium-gray;
+      text-decoration: none;
+      img {
+        margin-right: 1rem;
+      }
+      span {
+        display: block;
+      }
+      &:hover {
+        color: $almost-black;
       }
     }
-    li:nth-last-child(1) {
-      margin-bottom: 0;
-    }
   }
+  li:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.features-submenu {
+  right: 0;
+}
+
+.company-submenu {
+  left: 0;
 }

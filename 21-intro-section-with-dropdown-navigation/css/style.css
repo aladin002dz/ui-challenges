@@ -169,20 +169,19 @@ nav > .menu > ul > li.btn-register {
   border-radius: 0.5rem;
 }
 
-.features {
-  position: relative;
-}
-
-.features .features-title {
+.menu-title {
   display: flex;
   align-items: center;
 }
 
-.features .features-submenu {
+.submenu-parent {
+  position: relative;
+}
+
+.submenu {
   position: absolute;
   width: max-content;
   top: 2.5rem;
-  right: 0;
   display: block;
   box-shadow: 5px 5px 100px 0px rgba(0, 0, 0, 0.1);
   list-style: none;
@@ -191,29 +190,37 @@ nav > .menu > ul > li.btn-register {
   background-color: #fff;
 }
 
-.features .features-submenu li {
+.submenu li {
   margin-bottom: 1rem;
 }
 
-.features .features-submenu li a {
+.submenu li a {
   display: flex;
   color: dimgray;
   text-decoration: none;
 }
 
-.features .features-submenu li a img {
+.submenu li a img {
   margin-right: 1rem;
 }
 
-.features .features-submenu li a span {
+.submenu li a span {
   display: block;
 }
 
-.features .features-submenu li a:hover {
+.submenu li a:hover {
   color: #141414;
 }
 
-.features .features-submenu li:nth-last-child(1) {
+.submenu li:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+.features-submenu {
+  right: 0;
+}
+
+.company-submenu {
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
