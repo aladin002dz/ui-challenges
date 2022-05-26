@@ -53,6 +53,11 @@
         @include btn-mixin($almost-white, $almost-black, $almost-white);
         width: fit-content;
         padding: 1rem 1.75rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          @include btn-mixin($almost-black, $almost-white, $almost-black);
+          padding: 1rem 1.75rem;
+        }
       }
     }
 

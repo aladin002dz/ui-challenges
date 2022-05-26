@@ -36,6 +36,9 @@ nav {
 }
 
 .submenu {
+  outline: 1px solid red;
+  opacity: 0;
+  overflow: hidden;
   position: absolute;
   width: max-content;
   top: 2.5rem;
@@ -45,6 +48,8 @@ nav {
   padding: 1.3rem 1.2rem;
   border-radius: 0.5rem;
   background-color: #fff;
+  transition: opacity 0.2s ease-in-out, max-height 5s ease-in-out 1s;
+  max-height: 0;
   li {
     margin-bottom: 1rem;
     a {
@@ -64,6 +69,19 @@ nav {
   }
   li:nth-last-child(1) {
     margin-bottom: 0;
+  }
+}
+
+.submenu-parent {
+  > .menu-title > img {
+    transition: transform 0.2s ease-in-out;
+  }
+  &:hover > .menu-title > img {
+    transform: rotate(180deg);
+  }
+  &:hover .submenu {
+    opacity: 1;
+    max-height: 10rem;
   }
 }
 
