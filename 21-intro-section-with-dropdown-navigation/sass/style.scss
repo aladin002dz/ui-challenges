@@ -2,10 +2,14 @@
 @import "./starter";
 @import "./typography";
 
+* {
+  outline: red solid 1px;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
-  min-height: 900px;
+  min-height: 840px;
   margin-inline: auto;
   padding: 0 2.7rem;
   margin-block: 1.7rem;
@@ -25,6 +29,8 @@
   align-items: stretch;
   margin-inline: 1.5rem;
   padding-top: 1rem;
+  height: 100%;
+
   .hero-details {
     width: 50%;
     padding-top: 10%;
@@ -38,6 +44,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       h1 {
         font-size: 430%;
         line-height: 1.1;
@@ -54,6 +61,7 @@
         width: fit-content;
         padding: 1rem 1.75rem;
         transition: all 0.2s ease-in-out;
+
         &:hover {
           @include btn-mixin($almost-black, $almost-white, $almost-black);
           padding: 1rem 1.75rem;
@@ -74,8 +82,10 @@
   .hero-illustration {
     width: 49%;
     padding-left: 1rem;
+
     img {
       height: 35.5rem;
+
     }
   }
 }
