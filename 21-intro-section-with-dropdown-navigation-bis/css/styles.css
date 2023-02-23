@@ -5,6 +5,50 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 /*
 colors:
 - Almost White: hsl(0, 0%, 98%)
@@ -26,11 +70,169 @@ body {
   color: hsl(0deg, 0%, 8%);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
+/*
+  <header>
+    <div class="container">
+      <img class="logo" src="./images/logo.svg" alt="logo">
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <img src="./images/icon-menu.svg" alt="icon-menu">
+      </button>
+      <nav class="menu" aria-hidden="true">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <a href="#">Login</a>
+      </div>
+      <div class="signup">
+        <a href="#">Register</a>
+      </div>
+    </div>
+  </header>
+*/
+/* Header styles */
+* {
+  outline: red 1px solid;
+}
+
+header {
+  height: 60px;
+}
+header .hamburger {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+header .hamburger:focus {
+  outline: hsl(0deg, 0%, 41%) 3px solid;
+}
+header .menu {
+  display: none;
+}
+header .menu.is-open {
+  display: block;
+}
+header .menu ul {
+  display: flex;
+  flex-direction: column;
+}
+header .menu li {
+  margin-bottom: 1rem;
+}
+header .menu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+header .login,
+header .signup {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .hamburger {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+    align-items: center;
+  }
+  header .menu ul {
+    flex-direction: row;
+  }
+  header .menu li {
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+  header .login,
+  header .signup {
+    display: block;
+    margin-left: 2rem;
+  }
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .hero-content {
+  text-align: center;
+}
+.hero .hero-content h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.hero .hero-content p {
+  margin-bottom: 30px;
+}
+.hero .hero-content .btn {
+  display: inline-block;
+}
+.hero .hero-content .btn a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #008fb4;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+.hero .hero-content .btn a:hover {
+  background-color: #006d8f;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .container {
+    flex-direction: row-reverse;
+  }
+  .hero-content {
+    text-align: left;
+    flex-basis: 50%;
+  }
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .hero-content .btn {
+    display: inline-block;
+  }
+  .hero-content .btn a {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  .hero-img {
+    flex-basis: 50%;
+  }
+  .hero-img img {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */
