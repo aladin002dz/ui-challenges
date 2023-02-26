@@ -1,6 +1,7 @@
 $border-radius: 5px;
 // Variables
-$breakpoint: 768px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
 
 //import the partials
 @import "reset";
@@ -11,9 +12,26 @@ $breakpoint: 768px;
 @import "header";
 
 
+@mixin btn($bg-color, $color) {
+
+    a {
+        display: block;
+        padding: 10px 15px;
+        border-radius: $border-radius;
+        background-color: $bg-color;
+        color: $color;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: darken($bg-color, 10%);
+        }
+    }
+}
+
+
 .container {
     width: 100%;
-    padding: 0 20px;
+    max-width: 1350px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -23,7 +41,7 @@ $breakpoint: 768px;
 // Main styles
 .hero {
     background-color: #f2f2f2;
-    padding: 40px 0;
+    padding: 15px 0;
 
     .container {
         display: flex;
@@ -32,16 +50,17 @@ $breakpoint: 768px;
     }
 
     .hero-content {
+        padding-top: 40px;
         text-align: center;
 
         h1 {
             margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 28px;
+            margin-bottom: 10px;
+            font-size: 35px;
         }
 
         p {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .btn {
@@ -49,7 +68,7 @@ $breakpoint: 768px;
 
             a {
                 display: block;
-                padding: 10px 20px;
+                padding: 10px 15px;
                 border-radius: 5px;
                 background-color: #008fb4;
                 color: #fff;
@@ -60,44 +79,76 @@ $breakpoint: 768px;
                 }
             }
         }
+
+        .partners {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 47px;
+
+            img {
+                width: auto;
+                height: 25px;
+                margin: 0 10px;
+            }
+        }
     }
 }
 
-@media screen and (min-width: $breakpoint) {
+@media screen and (min-width: $breakpoint-md) {
     .hero {
         .container {
             flex-direction: row-reverse;
         }
-    }
 
-    .hero-content {
-        text-align: left;
-        flex-basis: 50%;
 
-        h1 {
-            font-size: 36px;
+        .hero-content {
+            text-align: left;
+            flex-basis: 50%;
+
+            h1 {
+                font-size: 80px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+
+            .btn {
+                display: inline-block;
+
+                a {
+                    padding: 15px 30px;
+                    font-size: 16px;
+                }
+            }
         }
 
-        p {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
+        .hero-img {
+            flex-basis: 50%;
 
-        .btn {
-            display: inline-block;
-
-            a {
-                padding: 15px 30px;
-                font-size: 16px;
+            img {
+                max-width: 80%;
             }
         }
     }
+}
 
-    .hero-img {
-        flex-basis: 50%;
+@media screen and (min-width: $breakpoint-lg) {
+    .hero {
+        .container {
+            max-width: 1200px;
+        }
 
-        img {
-            max-width: 80%;
+        .hero-content {
+            h1 {
+                font-size: 100px;
+            }
+
+            p {
+                font-size: 20px;
+            }
         }
     }
 }
