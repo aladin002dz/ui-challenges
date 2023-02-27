@@ -1,6 +1,5 @@
 header {
     height: 3rem;
-    //background-color: rgb(97, 97, 192);
 
     .logo {
         margin-left: 20px;
@@ -13,40 +12,55 @@ header {
         cursor: pointer;
         padding: 0.5rem;
         border-radius: $border-radius;
+        z-index: 1;
 
         &:focus {
             outline: $medium-gray 3px solid;
         }
     }
 
-    .menu {
+    nav {
         display: none;
+        width: 100%;
+        background-color: $almost-white;
+        padding: 1rem 0;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        ul {
+            li {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #000;
+            }
+        }
     }
 
-    .menu.is-open {
-        display: block;
-    }
+    &.is-menu-open {
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            align-items: baseline;
 
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-    }
+            nav {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                display: block;
+                width: 13rem;
+            }
+        }
 
-    .menu li {
-        margin-bottom: 1rem;
     }
-
-    .menu a {
-        display: block;
-        text-decoration: none;
-        color: #000;
-    }
-
-    .login,
-    .signup {
-        display: none;
-    }
-
 }
 
 @media (min-width: 768px) {
@@ -63,31 +77,31 @@ header {
             display: none;
         }
 
-        .menu {
+        nav {
             display: flex;
             align-items: center;
             width: 100%;
             justify-content: space-between;
-        }
 
-        .menu ul {
-            flex-direction: row;
-        }
+            ul {
+                flex-direction: row;
 
-        .menu li {
-            margin-left: 2rem;
-            margin-bottom: 0;
-        }
+                li {
+                    margin-left: 2rem;
+                    margin-bottom: 0;
+                }
+            }
 
-        .login,
-        .signup {
-            display: block;
-            margin-left: 2rem;
-            padding: 0.5rem 1rem;
-        }
+            .login,
+            .signup {
+                display: block;
+                margin-left: 2rem;
+                padding: 0.5rem 1rem;
+            }
 
-        .signup {
-            @include btn($almost-white, $almost-black);
+            .signup {
+                @include btn($almost-white, $almost-black);
+            }
         }
 
     }

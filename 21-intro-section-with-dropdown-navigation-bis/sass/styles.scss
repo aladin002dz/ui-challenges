@@ -1,7 +1,15 @@
 $border-radius: 1rem;
-// Variables
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
+//colors
+$almost-white: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
+
+body {
+    background-color: $almost-white;
+    color: $almost-black;
+}
 
 //import the partials
 @import "reset";
@@ -11,12 +19,9 @@ $breakpoint-lg: 1024px;
 @import "layout";
 @import "components";
 @import "header";
-@import "./attribution";
+@import "attribution";
 
-body {
-    background-color: $almost-white;
-    color: $almost-black;
-}
+
 
 .container {
     width: 100%;
@@ -33,7 +38,7 @@ main {
 
 // Main styles
 .hero {
-    background-color: #f2f2f2;
+    background-color: $almost-white;
     padding: 15px 0;
     height: 100%;
 
