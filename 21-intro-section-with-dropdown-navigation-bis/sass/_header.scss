@@ -1,6 +1,6 @@
 header {
-    padding-top: 20px;
-    height: 60px;
+    height: 3rem;
+    //background-color: rgb(97, 97, 192);
 
     .logo {
         margin-left: 20px;
@@ -11,7 +11,7 @@ header {
         border: none;
         background-color: transparent;
         cursor: pointer;
-        padding: 10px;
+        padding: 0.5rem;
         border-radius: $border-radius;
 
         &:focus {
@@ -52,7 +52,8 @@ header {
 @media (min-width: 768px) {
 
     header {
-        padding-top: 27px;
+        height: 5rem;
+        padding: 1rem 1rem;
 
         .logo {
             margin-left: 0px;
@@ -82,7 +83,7 @@ header {
         .signup {
             display: block;
             margin-left: 2rem;
-            padding: 10px 15px;
+            padding: 0.5rem 1rem;
         }
 
         .signup {

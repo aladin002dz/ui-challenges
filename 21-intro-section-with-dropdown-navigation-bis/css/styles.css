@@ -3,11 +3,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: red solid 1px;
 }
 
 html,
 body {
   height: 100%;
+  min-height: 100vh;
 }
 
 a {
@@ -50,12 +52,6 @@ h6 {
 }
 
 /*
-colors:
-- Almost White: hsl(0, 0%, 98%)
-- Medium Gray: hsl(0, 0%, 41%)
-- Almost Black: hsl(0, 0%, 8%)
-*/
-/*
 ### Font
 
 - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
@@ -71,8 +67,7 @@ body {
 }
 
 header {
-  padding-top: 20px;
-  height: 60px;
+  height: 3rem;
 }
 header .logo {
   margin-left: 20px;
@@ -82,8 +77,8 @@ header .hamburger {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 header .hamburger:focus {
   outline: hsl(0, 0%, 41%) 3px solid;
@@ -113,7 +108,8 @@ header .signup {
 
 @media (min-width: 768px) {
   header {
-    padding-top: 27px;
+    height: 5rem;
+    padding: 1rem 1rem;
   }
   header .logo {
     margin-left: 0px;
@@ -138,12 +134,12 @@ header .signup {
   header .signup {
     display: block;
     margin-left: 2rem;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
   }
   header .signup {
     display: block;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 1rem;
     background-color: hsl(0, 0%, 98%);
     border: hsl(0, 0%, 8%) 1px solid;
     color: hsl(0, 0%, 8%);
@@ -154,6 +150,34 @@ header .signup {
   }
   header .signup:hover {
     background-color: #e0e0e0;
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100% - 54px);
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 8%);
+}
+.attribution a {
+  color: hsl(0, 0%, 41%);
+  transition: color 0.3s;
+}
+.attribution a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+/*
+  activate in case mobile display take more than 100vh
+  */
+@media (max-width: 1200px) {
+  .attribution {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    bottom: 0;
   }
 }
 body {
@@ -170,9 +194,14 @@ body {
   align-items: center;
 }
 
+main {
+  height: calc(100% - 5rem);
+}
+
 .hero {
   background-color: #f2f2f2;
   padding: 15px 0;
+  height: 100%;
 }
 .hero .container {
   display: flex;
@@ -180,23 +209,23 @@ body {
   align-items: center;
 }
 .hero .hero-content {
-  padding-top: 40px;
+  padding-top: 2rem;
   text-align: center;
 }
 .hero .hero-content h1 {
   margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 35px;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 .hero .hero-content p {
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 .hero .hero-content .btn a {
   display: block;
   transition: background-color 0.2s ease-in-out;
   display: block;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 1rem;
   background-color: hsl(0, 0%, 8%);
   border: hsl(0, 0%, 98%) 1px solid;
   color: hsl(0, 0%, 98%);
@@ -212,12 +241,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 47px;
+  margin-top: 3rem;
 }
 .hero .hero-content .partners img {
   width: auto;
-  height: 25px;
-  margin: 0 10px;
+  height: 1.5rem;
+  margin: 0 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -232,24 +261,24 @@ body {
     justify-content: space-between;
   }
   .hero .hero-content h1 {
-    font-size: 80px;
+    font-size: 5rem;
   }
   .hero .hero-content p {
-    font-size: 18px;
-    margin-bottom: 50px;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
   }
   .hero .hero-content .btn {
     display: inline-block;
   }
   .hero .hero-content .btn a {
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
   .hero .hero-img {
     flex-basis: 50%;
     display: flex;
     justify-content: end;
-    padding-top: 50px;
+    padding-top: 3rem;
   }
   .hero .hero-img picture {
     max-width: 80%;
@@ -260,17 +289,17 @@ body {
     max-width: 1200px;
   }
   .hero .container .hero-content {
-    min-height: 690px;
-    padding-left: 45px;
-    padding-right: 20px;
+    min-height: 41rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
   }
   .hero .container .hero-content h1 {
-    margin-top: 90px;
+    margin-top: 5.5rem;
     line-height: 1;
   }
   .hero .container .hero-content p {
-    margin-top: 60px;
-    margin-right: 60px;
+    margin-top: 0.5rem;
+    margin-right: 7rem;
   }
   .hero .container .hero-content .btn a {
     margin: 0;
