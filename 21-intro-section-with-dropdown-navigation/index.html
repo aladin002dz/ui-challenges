@@ -1,127 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <div class="menu">
-          <div class="logo">
-            <img src="./images/logo.svg" alt="snap logo" />
-          </div>
-          <ul>
-            <li class="submenu-parent">
-              <div class="menu-title">
-                <span>Features</span>
-                <img
-                  src="./images/icon-arrow-down.svg"
-                  width="11"
-                  height="7"
-                  alt="dropdown menu"
-                />
-              </div>
-              <ul class="features-submenu submenu">
-                <li>
-                  <a href="#">
-                    <img src="./images/icon-todo.svg" alt="todo icon" />
-                    <span>Todo List</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./images/icon-calendar.svg" alt="Calendar icon" />
-                    <span>Calendar</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./images/icon-reminders.svg" alt="feature 3" />
-                    <span>Reminders</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./images/icon-planning.svg" alt="feature 4" />
-                    <span>Planning</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="submenu-parent">
-              <div class="menu-title">
-                <span>Company</span>
-                <img
-                  src="./images/icon-arrow-down.svg"
-                  width="11"
-                  height="7"
-                  alt="dropdown menu"
-                />
-              </div>
-              <ul class="company-submenu submenu">
-                <li>
-                  <a href="#"> History </a>
-                </li>
-                <li>
-                  <a href="#"> Our Team </a>
-                </li>
-                <li>
-                  <a href="#"> Blog </a>
-                </li>
-              </ul>
-            </li>
-            <li>Careers</li>
-            <li>About</li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <header class="flex-beetween-center">
+    <img class="logo" src="./images/logo.svg" alt="logo">
+    <button class="hamburger navbar-toggle" aria-label="Menu" aria-expanded="false">
+      <!--
+      <img src="./images/icon-menu.svg" alt="icon-menu">
+      -->
+    </button>
+    <nav class="navbar-collapse" aria-hidden="true">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul>
+        <li class="login">
+          <a href="#">Login</a>
+        </li>
+        <li class="signup">
+          <a href="#">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-img">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png">
+            <img src="./images/image-hero-mobile.png" alt="Image">
+          </picture>
         </div>
-        <ul class="auth-menu">
-          <li>Login</li>
-          <li class="btn-register">Register</li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <div class="hero-details">
-          <div class="details-content">
-            <h1>
-              Make <br />
-              remote work
-            </h1>
-            <p>
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </p>
-            <div class="btn-hero">Learn more</div>
+        <div class="hero-content">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+          <div class="btn">
+            <a href="#">Learn more</a>
           </div>
-          <section class="clients">
-            <img src="./images/client-databiz.svg" alt="databiz" />
-            <img src="./images/client-audiophile.svg" alt="audiophile" />
-            <img src="./images/client-meet.svg" alt="meet" />
-            <img src="./images/client-maker.svg" alt="maker" />
-          </section>
-        </div>
-        <div class="hero-illustration">
-          <img
-            src="./images/image-hero-desktop.png"
-            alt="remote worker illustration"
-          />
+          <div class="partners">
+            <img src="./images/client-databiz.svg" alt="logo-databiz">
+            <img src="./images/client-audiophile.svg" alt="logo-audiophile">
+            <img src="./images/client-meet.svg" alt="logo-meet">
+            <img src="./images/client-maker.svg" alt="logo-maker">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </body>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://github.com/aladin002dz/ui-challenges/tree/main/21-intro-section-with-dropdown-navigation"
+      target="_blank">Mahfoudh
+      (aladin002dz) Arous</a>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
