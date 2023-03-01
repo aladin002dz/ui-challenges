@@ -26,7 +26,8 @@ header {
         width: 100%;
         height: 100vh;
 
-
+        opacity: 0;
+        transition: opacity 0.3s ease;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -55,6 +56,18 @@ header {
             padding-top: 5rem;
             flex-grow: 0;
         }
+
+
+        .login,
+        .signup {
+            display: block;
+            margin-left: 2rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .signup {
+            @include btn($almost-white, $almost-black);
+        }
     }
 
     &.is-menu-open {
@@ -64,6 +77,7 @@ header {
 
         .navbar-collapse {
             background-color: rgba($color: #000000, $alpha: 0.5);
+            opacity: 1;
 
             ul {
                 transform: translateX(0%);
@@ -73,7 +87,7 @@ header {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     header {
         height: 5rem;
@@ -87,14 +101,24 @@ header {
             display: none;
         }
 
-        nav {
-            display: flex;
+        .navbar-collapse {
+            position: relative;
+
+            flex-direction: row;
             align-items: center;
-            width: 100%;
             justify-content: space-between;
 
+            opacity: 1;
+            width: auto;
+            height: auto;
+
+            background-color: $almost-white;
+
             ul {
+                display: flex;
                 flex-direction: row;
+                width: auto;
+                transform: translateX(0);
 
                 li {
                     margin-left: 2rem;
@@ -102,15 +126,9 @@ header {
                 }
             }
 
-            .login,
-            .signup {
-                display: block;
-                margin-left: 2rem;
-                padding: 0.5rem 1rem;
-            }
-
-            .signup {
-                @include btn($almost-white, $almost-black);
+            ul:first-child {
+                padding-top: 0;
+                flex-grow: 1;
             }
         }
 
