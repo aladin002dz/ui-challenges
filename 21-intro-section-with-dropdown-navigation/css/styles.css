@@ -77,6 +77,9 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   padding-inline: 1rem;
   height: 3rem;
 }
@@ -107,7 +110,7 @@ header .navbar-collapse {
   flex-direction: column;
   align-items: flex-end;
 }
-header .navbar-collapse ul {
+header .navbar-collapse > ul {
   padding-inline: 1.5rem;
   flex-grow: 1;
   width: 13rem;
@@ -115,15 +118,18 @@ header .navbar-collapse ul {
   transform: translateX(100%);
   transition: transform 0.3s ease;
 }
-header .navbar-collapse ul li {
+header .navbar-collapse > ul li {
   margin-bottom: 1rem;
 }
-header .navbar-collapse ul a {
+header .navbar-collapse > ul li img {
+  display: inline;
+}
+header .navbar-collapse > ul a {
   display: block;
   text-decoration: none;
   color: #000;
 }
-header .navbar-collapse ul:first-child {
+header .navbar-collapse > ul:first-child {
   padding-top: 5rem;
   flex-grow: 0;
 }
@@ -155,7 +161,7 @@ header.is-menu-open .navbar-collapse {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
-header.is-menu-open .navbar-collapse ul {
+header.is-menu-open .navbar-collapse > ul {
   transform: translateX(0%);
 }
 
@@ -173,24 +179,24 @@ header.is-menu-open .navbar-collapse ul {
   header .navbar-collapse {
     position: relative;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     opacity: 1;
     width: auto;
     height: auto;
     background-color: hsl(0, 0%, 98%);
   }
-  header .navbar-collapse ul {
+  header .navbar-collapse > ul {
     display: flex;
     flex-direction: row;
     width: auto;
     transform: translateX(0);
   }
-  header .navbar-collapse ul li {
+  header .navbar-collapse > ul li {
     margin-left: 2rem;
     margin-bottom: 0;
   }
-  header .navbar-collapse ul:first-child {
+  header .navbar-collapse > ul:first-child {
     padding-top: 0;
     flex-grow: 1;
   }
