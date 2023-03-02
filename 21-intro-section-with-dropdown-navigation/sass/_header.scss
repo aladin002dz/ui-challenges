@@ -46,9 +46,26 @@ header {
 
             li {
                 margin-bottom: 1rem;
+                position: relative;
 
                 img {
                     display: inline;
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    min-width: 200px;
+                    background-color: #aeaeae;
+                    z-index: 1;
+                }
+
+                &.open {
+                    .dropdown-menu {
+                        display: block;
+                    }
                 }
             }
 

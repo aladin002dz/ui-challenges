@@ -120,9 +120,22 @@ header .navbar-collapse > ul {
 }
 header .navbar-collapse > ul li {
   margin-bottom: 1rem;
+  position: relative;
 }
 header .navbar-collapse > ul li img {
   display: inline;
+}
+header .navbar-collapse > ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: #aeaeae;
+  z-index: 1;
+}
+header .navbar-collapse > ul li.open .dropdown-menu {
+  display: block;
 }
 header .navbar-collapse > ul a {
   display: block;
