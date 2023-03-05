@@ -117,6 +117,7 @@ header .navbar-collapse > ul {
   background-color: hsl(0, 0%, 98%);
   transform: translateX(100%);
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 header .navbar-collapse > ul > li {
   margin-bottom: 1rem;
@@ -125,21 +126,22 @@ header .navbar-collapse > ul > li {
 header .navbar-collapse > ul > li img {
   display: inline;
 }
+header .navbar-collapse > ul > li > a > img {
+  transition: transform 0.3s ease;
+}
 header .navbar-collapse > ul > li .dropdown-menu {
-  display: none;
-  position: absolute;
+  max-height: 0;
+  overflow: hidden;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1.2rem;
-  top: 3rem;
-  left: 0;
   background-color: hsl(0, 0%, 98%);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  z-index: 1;
 }
 header .navbar-collapse > ul > li .dropdown-menu a {
   display: block;
+  padding: 0.5rem 1rem;
+}
+header .navbar-collapse > ul > li.open > a > img {
+  transform: rotate(-180deg);
 }
 header .navbar-collapse > ul > li.open .dropdown-menu {
   display: block;
@@ -215,6 +217,16 @@ header.is-menu-open .navbar-collapse > ul {
   header .navbar-collapse > ul > li {
     margin-left: 2rem;
     margin-bottom: 0;
+  }
+  header .navbar-collapse > ul > li .dropdown-menu {
+    min-height: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    top: 3rem;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    z-index: 1;
   }
   header .navbar-collapse > ul:first-child {
     padding-top: 0;
