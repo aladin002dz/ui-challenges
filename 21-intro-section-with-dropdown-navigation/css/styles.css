@@ -85,6 +85,8 @@ header {
   height: 3rem;
   color: hsl(0, 0%, 41%);
   font-size: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 header .logo {
   margin-left: 20px;
@@ -126,12 +128,36 @@ header .navbar-collapse > ul > li {
   margin-bottom: 1rem;
   position: relative;
 }
+header .navbar-collapse > ul > li .dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+header .navbar-collapse > ul > li .dropdown-toggle:hover {
+  color: hsl(0, 0%, 8%);
+  font-weight: 600;
+}
+header .navbar-collapse > ul > li .dropdown-toggle img {
+  transition: transform 0.3s ease;
+}
+header .navbar-collapse > ul > li .dropdown-toggle.open img {
+  transform: rotate(-180deg);
+}
 header .navbar-collapse > ul > li img {
   display: inline;
   margin-left: 0.5rem;
 }
-header .navbar-collapse > ul > li > a > img {
+header .navbar-collapse > ul > li > a {
+  transition: color 0.3s ease-in-out;
+}
+header .navbar-collapse > ul > li > a img {
   transition: transform 0.3s ease;
+}
+header .navbar-collapse > ul > li > a:hover {
+  color: hsl(0, 0%, 8%);
+  font-weight: 600;
 }
 header .navbar-collapse > ul > li .dropdown-menu {
   max-height: 0;
@@ -153,15 +179,6 @@ header .navbar-collapse > ul > li .dropdown-menu li img {
 header .navbar-collapse > ul > li .dropdown-menu a {
   display: block;
   padding: 0.5rem 1rem;
-}
-header .navbar-collapse > ul > li.open {
-  /*
-  .dropdown-menu {
-      display: block;
-  }*/
-}
-header .navbar-collapse > ul > li.open > a > img {
-  transform: rotate(-180deg);
 }
 header .navbar-collapse > ul a {
   display: block;
@@ -208,7 +225,8 @@ header.is-menu-open .navbar-collapse > ul {
 @media (min-width: 992px) {
   header {
     height: 5rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0rem 1rem 1rem;
+    text-align: center;
   }
   header .logo {
     margin-left: 0px;
@@ -219,7 +237,7 @@ header.is-menu-open .navbar-collapse > ul {
   header .navbar-collapse {
     position: relative;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     opacity: 1;
     height: auto;
@@ -251,12 +269,12 @@ header.is-menu-open .navbar-collapse > ul {
     border-radius: 1rem;
     z-index: 1;
   }
-  header .navbar-collapse > ul > li .dropdown-menu.features {
+  header .navbar-collapse > ul > li .dropdown-menu#features {
     right: 0;
     left: auto;
     width: 9.5rem;
   }
-  header .navbar-collapse > ul > li .dropdown-menu.company {
+  header .navbar-collapse > ul > li .dropdown-menu#company {
     width: 7.5rem;
   }
   header .navbar-collapse > ul:first-child {
@@ -266,6 +284,7 @@ header.is-menu-open .navbar-collapse > ul {
   header .navbar-collapse > ul:last-child {
     flex-grow: 0;
     align-items: center;
+    padding-inline: 0;
   }
   header.is-menu-open .navbar-collapse {
     background-color: hsl(0, 0%, 98%);

@@ -15,22 +15,25 @@
 
   <header>
     <img class="logo" src="./images/logo.svg" alt="logo">
-    <button class="hamburger navbar-toggle" aria-label="Menu" aria-expanded="false">
+    <button class="hamburger navbar-toggle" aria-label="Toggle nav menus" aria-expanded="false"
+      aria-controls="collapsableNavbar">
     </button>
-    <nav class="navbar-collapse" aria-hidden="true">
+    <nav id="collapsableNavbar" class="navbar-collapse" aria-hidden="true">
       <ul>
         <li class="dropdown">
-          <a href="#">Features <img src="./images/icon-arrow-down.svg" alt="icon arrow down"></a>
-          <ul class="dropdown-menu features">
+          <button class="dropdown-toggle" aria-controls="features" aria-expanded="false">Features <img
+              src="./images/icon-arrow-down.svg" alt="icon arrow down"></button>
+          <ul id="features" aria-hidden="true" class="dropdown-menu">
             <li><a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
             <li><a href="#"><img src="./images/icon-calendar.svg" alt="">Calendar</a></li>
             <li><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
             <li><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#">Company <img src="./images/icon-arrow-down.svg" alt="icon arrow down"></a>
-          <ul class="dropdown-menu company">
+        <li>
+          <button class="dropdown-toggle" aria-controls="company" aria-expanded="false">Company <img
+              src="./images/icon-arrow-down.svg" alt="icon arrow down"></button>
+          <ul id="company" aria-hidden="true" class="dropdown-menu company">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>

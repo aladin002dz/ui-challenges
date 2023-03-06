@@ -7,6 +7,8 @@ header {
     height: 3rem;
     color: $medium-gray;
     font-size: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 
     .logo {
         margin-left: 20px;
@@ -52,13 +54,45 @@ header {
                 margin-bottom: 1rem;
                 position: relative;
 
+                .dropdown-toggle {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: inherit;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $almost-black;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        transition: transform 0.3s ease;
+                    }
+
+                    &.open {
+                        img {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+
                 img {
                     display: inline;
                     margin-left: 0.5rem;
                 }
 
-                >a>img {
-                    transition: transform 0.3s ease;
+                >a {
+                    img {
+                        transition: transform 0.3s ease;
+                    }
+
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $almost-black;
+                        font-weight: 600;
+                    }
                 }
 
                 .dropdown-menu {
@@ -85,17 +119,6 @@ header {
                         display: block;
                         padding: 0.5rem 1rem;
                     }
-                }
-
-                &.open {
-                    >a>img {
-                        transform: rotate(-180deg);
-                    }
-
-                    /*
-                    .dropdown-menu {
-                        display: block;
-                    }*/
                 }
             }
 
@@ -150,8 +173,8 @@ header {
 
     header {
         height: 5rem;
-        padding: 1rem 1rem;
-        //text-align: center;
+        padding: 1rem 0rem 1rem 1rem;
+        text-align: center;
 
         .logo {
             margin-left: 0px;
@@ -164,7 +187,7 @@ header {
         .navbar-collapse {
             position: relative;
             flex-direction: row;
-            align-items: baseline;
+            align-items: center;
             justify-content: space-between;
             opacity: 1;
             height: auto;
@@ -198,13 +221,13 @@ header {
                         border-radius: $border-radius;
                         z-index: 1;
 
-                        &.features {
+                        &#features {
                             right: 0;
                             left: auto;
                             width: 9.5rem;
                         }
 
-                        &.company {
+                        &#company {
                             width: 7.5rem;
                         }
                     }
@@ -220,6 +243,7 @@ header {
             >ul:last-child {
                 flex-grow: 0;
                 align-items: center;
+                padding-inline: 0;
             }
         }
 
