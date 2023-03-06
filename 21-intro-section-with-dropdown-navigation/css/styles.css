@@ -209,7 +209,8 @@ header .navbar-collapse .signup {
   transition: background-color 0.2s ease-in-out;
 }
 header .navbar-collapse .signup:hover {
-  background-color: #e0e0e0;
+  background-color: hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 98%);
 }
 header.is-menu-open .hamburger {
   background-image: url("../images/icon-close-menu.svg");
@@ -367,7 +368,24 @@ main {
   width: fit-content;
 }
 .hero .hero-content .btn a:hover {
-  background-color: black;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+.hero .hero-content .btn a:hover {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 98%);
+  border: hsl(0, 0%, 8%) 1px solid;
+  color: hsl(0, 0%, 8%);
+  margin: 0 auto;
+  transition: background-color 0.2s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .hero-content .btn a:hover:hover {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
 }
 .hero .hero-content .partners {
   display: flex;

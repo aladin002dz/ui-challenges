@@ -68,6 +68,11 @@ main {
                 transition: background-color 0.2s ease-in-out;
                 @include btn($almost-black, $almost-white);
                 width: fit-content;
+
+                &:hover {
+                    @include btn($almost-white, $almost-black);
+                    width: fit-content;
+                }
             }
         }
 
