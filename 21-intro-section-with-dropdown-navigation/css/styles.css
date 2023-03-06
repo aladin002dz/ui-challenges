@@ -79,9 +79,12 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding-inline: 1rem;
+  align-items: center;
+  padding-block: 2rem;
+  padding-right: 1rem;
   height: 3rem;
+  color: hsl(0, 0%, 41%);
+  font-size: 80%;
 }
 header .logo {
   margin-left: 20px;
@@ -113,7 +116,7 @@ header .navbar-collapse {
 header .navbar-collapse > ul {
   padding-inline: 1.5rem;
   flex-grow: 1;
-  width: 13rem;
+  width: 14rem;
   background-color: hsl(0, 0%, 98%);
   transform: translateX(100%);
   transition: transform 0.3s ease;
@@ -125,6 +128,7 @@ header .navbar-collapse > ul > li {
 }
 header .navbar-collapse > ul > li img {
   display: inline;
+  margin-left: 0.5rem;
 }
 header .navbar-collapse > ul > li > a > img {
   transition: transform 0.3s ease;
@@ -135,30 +139,46 @@ header .navbar-collapse > ul > li .dropdown-menu {
   width: -moz-fit-content;
   width: fit-content;
   background-color: hsl(0, 0%, 98%);
+  transition: max-height 0.7s ease-in-out;
+}
+header .navbar-collapse > ul > li .dropdown-menu > li:first-child {
+  padding-top: 1rem;
+}
+header .navbar-collapse > ul > li .dropdown-menu > li:last-child {
+  padding-bottom: 1rem;
+}
+header .navbar-collapse > ul > li .dropdown-menu li img {
+  margin-right: 1rem;
 }
 header .navbar-collapse > ul > li .dropdown-menu a {
   display: block;
   padding: 0.5rem 1rem;
 }
+header .navbar-collapse > ul > li.open {
+  /*
+  .dropdown-menu {
+      display: block;
+  }*/
+}
 header .navbar-collapse > ul > li.open > a > img {
   transform: rotate(-180deg);
-}
-header .navbar-collapse > ul > li.open .dropdown-menu {
-  display: block;
 }
 header .navbar-collapse > ul a {
   display: block;
   text-decoration: none;
-  color: #000;
+  color: hsl(0, 0%, 41%);
 }
 header .navbar-collapse > ul:first-child {
   padding-top: 5rem;
   flex-grow: 0;
 }
+header .navbar-collapse > ul:last-child {
+  padding-top: 1rem;
+  text-align: center;
+}
 header .navbar-collapse .login,
 header .navbar-collapse .signup {
   display: block;
-  margin-left: 2rem;
   padding: 0.5rem 1rem;
 }
 header .navbar-collapse .signup {
@@ -166,10 +186,8 @@ header .navbar-collapse .signup {
   padding: 10px 15px;
   border-radius: 1rem;
   background-color: hsl(0, 0%, 98%);
-  border: hsl(0, 0%, 8%) 1px solid;
-  color: hsl(0, 0%, 8%);
-  width: -moz-fit-content;
-  width: fit-content;
+  border: hsl(0, 0%, 41%) 1px solid;
+  color: hsl(0, 0%, 41%);
   margin: 0 auto;
   transition: background-color 0.2s ease-in-out;
 }
@@ -180,7 +198,7 @@ header.is-menu-open .hamburger {
   background-image: url("../images/icon-close-menu.svg");
 }
 header.is-menu-open .navbar-collapse {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
 }
 header.is-menu-open .navbar-collapse > ul {
@@ -204,7 +222,6 @@ header.is-menu-open .navbar-collapse > ul {
     align-items: baseline;
     justify-content: space-between;
     opacity: 1;
-    width: auto;
     height: auto;
     background-color: hsl(0, 0%, 98%);
   }
@@ -213,24 +230,45 @@ header.is-menu-open .navbar-collapse > ul {
     flex-direction: row;
     width: auto;
     transform: translateX(0);
+    overflow: visible;
   }
   header .navbar-collapse > ul > li {
     margin-left: 2rem;
     margin-bottom: 0;
+    position: relative;
+  }
+  header .navbar-collapse > ul > li:hover a {
+    transition: color 0.3s ease-in-out;
+    color: hsl(0, 0%, 8%);
   }
   header .navbar-collapse > ul > li .dropdown-menu {
-    min-height: 0;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
     width: -moz-fit-content;
     width: fit-content;
-    top: 3rem;
-    left: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px 0px rgba(54, 54, 54, 0.37);
     border-radius: 1rem;
     z-index: 1;
+  }
+  header .navbar-collapse > ul > li .dropdown-menu.features {
+    right: 0;
+    left: auto;
+    width: 9.5rem;
+  }
+  header .navbar-collapse > ul > li .dropdown-menu.company {
+    width: 7.5rem;
   }
   header .navbar-collapse > ul:first-child {
     padding-top: 0;
     flex-grow: 1;
+  }
+  header .navbar-collapse > ul:last-child {
+    flex-grow: 0;
+    align-items: center;
+  }
+  header.is-menu-open .navbar-collapse {
+    background-color: hsl(0, 0%, 98%);
   }
 }
 .attribution {
@@ -304,10 +342,10 @@ main {
   background-color: hsl(0, 0%, 8%);
   border: hsl(0, 0%, 98%) 1px solid;
   color: hsl(0, 0%, 98%);
-  width: -moz-fit-content;
-  width: fit-content;
   margin: 0 auto;
   transition: background-color 0.2s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .hero .hero-content .btn a:hover {
   background-color: black;

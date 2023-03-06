@@ -1,9 +1,12 @@
 header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-inline: 1rem;
+    align-items: center;
+    padding-block: 2rem;
+    padding-right: 1rem;
     height: 3rem;
+    color: $medium-gray;
+    font-size: 80%;
 
     .logo {
         margin-left: 20px;
@@ -39,7 +42,7 @@ header {
         >ul {
             padding-inline: 1.5rem;
             flex-grow: 1;
-            width: 13rem;
+            width: 14rem;
             background-color: $almost-white;
             transform: translateX(100%);
             transition: transform 0.3s ease;
@@ -51,6 +54,7 @@ header {
 
                 img {
                     display: inline;
+                    margin-left: 0.5rem;
                 }
 
                 >a>img {
@@ -62,6 +66,20 @@ header {
                     overflow: hidden;
                     width: fit-content;
                     background-color: $almost-white;
+                    transition: max-height 0.7s ease-in-out;
+
+                    //first child li
+                    >li:first-child {
+                        padding-top: 1rem;
+                    }
+
+                    >li:last-child {
+                        padding-bottom: 1rem;
+                    }
+
+                    li img {
+                        margin-right: 1rem;
+                    }
 
                     a {
                         display: block;
@@ -74,16 +92,17 @@ header {
                         transform: rotate(-180deg);
                     }
 
+                    /*
                     .dropdown-menu {
                         display: block;
-                    }
+                    }*/
                 }
             }
 
             a {
                 display: block;
                 text-decoration: none;
-                color: #000;
+                color: $medium-gray;
             }
         }
 
@@ -92,16 +111,21 @@ header {
             flex-grow: 0;
         }
 
+        >ul:last-child {
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+
 
         .login,
         .signup {
             display: block;
-            margin-left: 2rem;
             padding: 0.5rem 1rem;
         }
 
         .signup {
-            @include btn($almost-white, $almost-black);
+            @include btn($almost-white, $medium-gray);
         }
     }
 
@@ -111,7 +135,7 @@ header {
         }
 
         .navbar-collapse {
-            background-color: rgba($color: #000000, $alpha: 0.5);
+            background-color: rgba($color: #000000, $alpha: 0.7);
             opacity: 1;
 
             >ul {
@@ -127,6 +151,7 @@ header {
     header {
         height: 5rem;
         padding: 1rem 1rem;
+        //text-align: center;
 
         .logo {
             margin-left: 0px;
@@ -138,15 +163,11 @@ header {
 
         .navbar-collapse {
             position: relative;
-
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
-
             opacity: 1;
-            width: auto;
             height: auto;
-
             background-color: $almost-white;
 
             >ul {
@@ -154,19 +175,38 @@ header {
                 flex-direction: row;
                 width: auto;
                 transform: translateX(0);
+                overflow: visible;
 
                 >li {
                     margin-left: 2rem;
                     margin-bottom: 0;
+                    position: relative;
+
+                    &:hover {
+                        a {
+                            transition: color 0.3s ease-in-out;
+                            color: $almost-black;
+                        }
+                    }
 
                     .dropdown-menu {
-                        min-height: 0;
-                        width: fit-content;
-                        top: 3rem;
+                        position: absolute;
+                        top: 2.5rem;
                         left: 0;
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                        width: fit-content;
+                        box-shadow: 0px 0px 30px 0px rgb(54 54 54 / 37%);
                         border-radius: $border-radius;
                         z-index: 1;
+
+                        &.features {
+                            right: 0;
+                            left: auto;
+                            width: 9.5rem;
+                        }
+
+                        &.company {
+                            width: 7.5rem;
+                        }
                     }
                 }
             }
@@ -175,6 +215,19 @@ header {
                 padding-top: 0;
                 flex-grow: 1;
             }
+
+
+            >ul:last-child {
+                flex-grow: 0;
+                align-items: center;
+            }
+        }
+
+        &.is-menu-open {
+            .navbar-collapse {
+                background-color: $almost-white;
+            }
+
         }
 
     }
