@@ -50,29 +50,32 @@ main {
     }
 
     .hero-content {
-        padding-top: 2rem;
+        padding-top: 3.5rem;
         text-align: center;
 
         h1 {
             margin-top: 0;
-            margin-bottom: 0.5rem;
-            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-size: 2.25rem;
+            line-height: 1.16;
         }
 
         p {
             margin-bottom: 1.5rem;
+            color: $medium-gray;
+            line-height: 1.625;
         }
 
-        .btn {
-            a {
-                transition: background-color 0.2s ease-in-out;
-                @include btn($almost-black, $almost-white);
-                width: fit-content;
+        .btn-cta {
+            transition: background-color 0.2s ease-in-out;
+            @include btn($almost-black, $almost-white);
+            padding-block: 0.8rem;
+            height: 3rem;
+            width: 8.5rem;
 
-                &:hover {
-                    @include btn($almost-white, $almost-black);
-                    width: fit-content;
-                }
+            &:hover {
+                @include btn($almost-white, $almost-black);
+                width: fit-content;
             }
         }
 
@@ -143,25 +146,28 @@ main {
             max-width: 1200px;
 
             .hero-content {
-                min-height: 41rem;
+                min-height: 40rem;
+                height: 100%;
 
                 h1 {
-                    margin-top: 5.5rem;
+                    margin-top: 3.5rem;
                     line-height: 1;
                 }
 
                 p {
-                    margin-top: 0.5rem;
+                    margin-top: 0rem;
+                    margin-bottom: 0rem;
                     margin-right: 7rem;
                 }
 
                 padding-left: 3rem;
                 padding-right: 1rem;
 
-                .btn {
-                    a {
-                        margin: 0;
-                    }
+                .btn-cta {
+                    margin: 0;
+                    height: 3.5rem;
+                    width: 10rem;
+                    padding-top: 1rem;
                 }
             }
         }

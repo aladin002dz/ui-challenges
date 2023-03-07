@@ -16,38 +16,38 @@
   <header>
     <img class="logo" src="./images/logo.svg" alt="logo">
     <button class="hamburger navbar-toggle" aria-label="Toggle nav menus" aria-expanded="false"
-      aria-controls="collapsableNavbar">
+      aria-controls="collapsableNavbar" tabindex="0">
     </button>
     <nav id="collapsableNavbar" class="navbar-collapse" aria-hidden="true">
       <ul>
         <li class="dropdown">
-          <button class="dropdown-toggle" aria-controls="features" aria-expanded="false">Features <img
+          <button class="dropdown-toggle" aria-controls="features" aria-expanded="false" tabindex="1">Features <img
               src="./images/icon-arrow-down.svg" alt="icon arrow down"></button>
           <ul id="features" aria-hidden="true" class="dropdown-menu">
-            <li><a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
-            <li><a href="#"><img src="./images/icon-calendar.svg" alt="">Calendar</a></li>
-            <li><a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
-            <li><a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
+            <li><a href="#" tabindex="2"><img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
+            <li><a href="#" tabindex="3"><img src="./images/icon-calendar.svg" alt="">Calendar</a></li>
+            <li><a href="#" tabindex="4"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
+            <li><a href="#" tabindex="5"><img src="./images/icon-planning.svg" alt="">Planning</a></li>
           </ul>
         </li>
         <li>
-          <button class="dropdown-toggle" aria-controls="company" aria-expanded="false">Company <img
+          <button class="dropdown-toggle" aria-controls="company" aria-expanded="false" tabindex="6">Company <img
               src="./images/icon-arrow-down.svg" alt="icon arrow down"></button>
           <ul id="company" aria-hidden="true" class="dropdown-menu company">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#" tabindex="7">History</a></li>
+            <li><a href="#" tabindex="8">Our Team</a></li>
+            <li><a href="#" tabindex="9">Blog</a></li>
           </ul>
         </li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#" tabindex="10">Careers</a></li>
+        <li><a href="#" tabindex="11">About</a></li>
       </ul>
       <ul>
         <li class="login">
-          <a href="#">Login</a>
+          <a href="#" tabindex="12">Login</a>
         </li>
         <li class="signup">
-          <a href="#">Register</a>
+          <a href="#" tabindex="13">Register</a>
         </li>
       </ul>
     </nav>
@@ -66,9 +66,7 @@
           <h1>Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes,
             create team rituals, and watch productivity soar.</p>
-          <div class="btn">
-            <a href="#">Learn more</a>
-          </div>
+          <a href="#" class="btn-cta" tabindex="14">Learn more</a>
           <div class="partners">
             <img src="./images/client-databiz.svg" alt="logo-databiz">
             <img src="./images/client-audiophile.svg" alt="logo-audiophile">
@@ -82,9 +80,9 @@
 
   <footer class="attribution">
     Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" tabindex="15">Frontend Mentor</a>. Coded by
     <a href="https://github.com/aladin002dz/ui-challenges/tree/main/21-intro-section-with-dropdown-navigation"
-      target="_blank">Mahfoudh
+      target="_blank" tabindex="16">Mahfoudh
       (aladin002dz) Arous</a>
   </footer>
   <script src="./js/index.js"></script>

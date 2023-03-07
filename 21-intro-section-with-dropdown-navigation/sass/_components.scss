@@ -1,11 +1,11 @@
 @mixin btn($bg-color, $color) {
     display: block;
-    padding: 10px 15px;
     border-radius: $border-radius;
     background-color: $bg-color;
     border: $color 1px solid;
     color: $color;
     margin: 0 auto;
+    text-align: center;
     transition: background-color 0.2s ease-in-out;
 
     &:hover {

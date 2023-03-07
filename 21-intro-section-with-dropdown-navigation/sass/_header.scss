@@ -7,7 +7,6 @@ header {
     height: 3rem;
     color: $medium-gray;
     font-size: 80%;
-    max-width: 1200px;
     margin: 0 auto;
 
     .logo {
@@ -149,6 +148,11 @@ header {
 
         .signup {
             @include btn($almost-white, $medium-gray);
+
+            &:hover {
+                background-color: $almost-white;
+                color: $medium-gray;
+            }
         }
     }
 
@@ -173,7 +177,8 @@ header {
 
     header {
         height: 5rem;
-        padding: 1rem 0rem 1rem 1rem;
+        padding: 1rem 2.5rem 1rem 2rem;
+        font-size: 0.875rem;
         text-align: center;
 
         .logo {
@@ -244,6 +249,9 @@ header {
                 flex-grow: 0;
                 align-items: center;
                 padding-inline: 0;
+                width: 13rem;
+                display: flex;
+                justify-content: space-between !important;
             }
         }
 
