@@ -1,24 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap";
+
 body {
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 8%);
+  background-color: #fafafa;
+  color: #141414
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 html,
 body {
   height: 100%;
-  min-height: 100vh;
+  min-height: 100vh
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit
 }
 
 img,
@@ -27,7 +28,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  max-width: 100%
 }
 
 ul,
@@ -35,14 +36,14 @@ ol,
 li {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+  font: inherit
 }
 
 p,
@@ -52,28 +53,21 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+  overflow-wrap: break-word
 }
 
-/*
-### Font
-
-- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
-- Weights: 500, 700
-
-*/
 body {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: hsl(0, 0%, 8%);
+  color: #141414
 }
 
 .flex-beetween-center {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
 }
 
 header {
@@ -83,25 +77,28 @@ header {
   padding-block: 2rem;
   padding-right: 1rem;
   height: 3rem;
-  color: hsl(0, 0%, 41%);
+  color: dimgray;
   font-size: 80%;
-  margin: 0 auto;
+  margin: 0 auto
 }
+
 header .logo {
-  margin-left: 20px;
+  margin-left: 20px
 }
+
 header .hamburger {
   display: block;
   border: none;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  padding: 0.5rem;
+  padding: .5rem;
   z-index: 1;
   width: 1.5rem;
   height: 1.5rem;
   background-image: url("../images/icon-menu.svg");
-  background-size: cover;
+  background-size: cover
 }
+
 header .navbar-collapse {
   position: absolute;
   top: 0;
@@ -109,136 +106,164 @@ header .navbar-collapse {
   width: 100%;
   height: 100vh;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-end
 }
-header .navbar-collapse > ul {
+
+header .navbar-collapse>ul {
   padding-inline: 1.5rem;
   flex-grow: 1;
   width: 14rem;
-  background-color: hsl(0, 0%, 98%);
+  background-color: #fafafa;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
-  overflow: hidden;
+  transition: transform .3s ease;
+  overflow: hidden
 }
-header .navbar-collapse > ul > li {
+
+header .navbar-collapse>ul>li {
   margin-bottom: 1rem;
-  position: relative;
+  position: relative
 }
-header .navbar-collapse > ul > li .dropdown-toggle {
+
+header .navbar-collapse>ul>li .dropdown-toggle {
   border: none;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   color: inherit;
-  transition: color 0.3s ease-in-out;
+  transition: color .3s ease-in-out
 }
-header .navbar-collapse > ul > li .dropdown-toggle:hover {
-  color: hsl(0, 0%, 8%);
-  font-weight: 600;
+
+header .navbar-collapse>ul>li .dropdown-toggle:hover {
+  color: #141414;
+  font-weight: 600
 }
-header .navbar-collapse > ul > li .dropdown-toggle img {
-  transition: transform 0.3s ease;
+
+header .navbar-collapse>ul>li .dropdown-toggle img {
+  transition: transform .3s ease
 }
-header .navbar-collapse > ul > li .dropdown-toggle.open img {
-  transform: rotate(-180deg);
+
+header .navbar-collapse>ul>li .dropdown-toggle.open img {
+  transform: rotate(-180deg)
 }
-header .navbar-collapse > ul > li img {
+
+header .navbar-collapse>ul>li img {
   display: inline;
-  margin-left: 0.5rem;
+  margin-left: .5rem
 }
-header .navbar-collapse > ul > li > a {
-  transition: color 0.3s ease-in-out;
+
+header .navbar-collapse>ul>li>a {
+  transition: color .3s ease-in-out
 }
-header .navbar-collapse > ul > li > a img {
-  transition: transform 0.3s ease;
+
+header .navbar-collapse>ul>li>a img {
+  transition: transform .3s ease
 }
-header .navbar-collapse > ul > li > a:hover {
-  color: hsl(0, 0%, 8%);
-  font-weight: 600;
+
+header .navbar-collapse>ul>li>a:hover {
+  color: #141414;
+  font-weight: 600
 }
-header .navbar-collapse > ul > li .dropdown-menu {
+
+header .navbar-collapse>ul>li .dropdown-menu {
   max-height: 0;
   overflow: hidden;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: hsl(0, 0%, 98%);
-  transition: max-height 0.7s ease-in-out;
+  background-color: #fafafa;
+  transition: max-height .7s ease-in-out
 }
-header .navbar-collapse > ul > li .dropdown-menu > li:first-child {
-  padding-top: 1rem;
+
+header .navbar-collapse>ul>li .dropdown-menu>li:first-child {
+  padding-top: 1rem
 }
-header .navbar-collapse > ul > li .dropdown-menu > li:last-child {
-  padding-bottom: 1rem;
+
+header .navbar-collapse>ul>li .dropdown-menu>li:last-child {
+  padding-bottom: 1rem
 }
-header .navbar-collapse > ul > li .dropdown-menu li img {
-  margin-right: 1rem;
+
+header .navbar-collapse>ul>li .dropdown-menu li img {
+  margin-right: 1rem
 }
-header .navbar-collapse > ul > li .dropdown-menu a {
+
+header .navbar-collapse>ul>li .dropdown-menu a {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem
 }
-header .navbar-collapse > ul a {
+
+header .navbar-collapse>ul a {
   display: block;
   text-decoration: none;
-  color: hsl(0, 0%, 41%);
+  color: dimgray
 }
-header .navbar-collapse > ul:first-child {
+
+header .navbar-collapse>ul:first-child {
   padding-top: 5rem;
-  flex-grow: 0;
+  flex-grow: 0
 }
-header .navbar-collapse > ul:last-child {
+
+header .navbar-collapse>ul:last-child {
   padding-top: 1rem;
-  text-align: center;
+  text-align: center
 }
+
 header .navbar-collapse .login,
 header .navbar-collapse .signup {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem
 }
+
 header .navbar-collapse .signup {
   display: block;
   border-radius: 1rem;
-  background-color: hsl(0, 0%, 98%);
-  border: hsl(0, 0%, 41%) 1px solid;
-  color: hsl(0, 0%, 41%);
+  background-color: #fafafa;
+  border: dimgray 1px solid;
+  color: dimgray;
   margin: 0 auto;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
-}
-header .navbar-collapse .signup:hover {
-  background-color: hsl(0, 0%, 41%);
-  color: hsl(0, 0%, 98%);
-}
-header .navbar-collapse .signup:hover {
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 41%);
-}
-header.is-menu-open .hamburger {
-  background-image: url("../images/icon-close-menu.svg");
-}
-header.is-menu-open .navbar-collapse {
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-}
-header.is-menu-open .navbar-collapse > ul {
-  transform: translateX(0%);
+  transition: background-color .2s ease-in-out
 }
 
-@media (min-width: 992px) {
+header .navbar-collapse .signup:hover {
+  background-color: dimgray;
+  color: #fafafa
+}
+
+header .navbar-collapse .signup:hover {
+  background-color: #fafafa;
+  color: dimgray
+}
+
+header.is-menu-open .hamburger {
+  background-image: url("../images/icon-close-menu.svg")
+}
+
+header.is-menu-open .navbar-collapse {
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 1
+}
+
+header.is-menu-open .navbar-collapse>ul {
+  transform: translateX(0%)
+}
+
+@media(min-width: 992px) {
   header {
     height: 5rem;
     padding: 1rem 2.5rem 1rem 2rem;
-    font-size: 0.875rem;
-    text-align: center;
+    font-size: .875rem;
+    text-align: center
   }
+
   header .logo {
-    margin-left: 0px;
+    margin-left: 0px
   }
+
   header .hamburger {
-    display: none;
+    display: none
   }
+
   header .navbar-collapse {
     position: relative;
     flex-direction: row;
@@ -246,228 +271,262 @@ header.is-menu-open .navbar-collapse > ul {
     justify-content: space-between;
     opacity: 1;
     height: auto;
-    background-color: hsl(0, 0%, 98%);
+    background-color: #fafafa
   }
-  header .navbar-collapse > ul {
+
+  header .navbar-collapse>ul {
     display: flex;
     flex-direction: row;
     width: auto;
     transform: translateX(0);
-    overflow: visible;
+    overflow: visible
   }
-  header .navbar-collapse > ul > li {
+
+  header .navbar-collapse>ul>li {
     margin-left: 2rem;
     margin-bottom: 0;
-    position: relative;
+    position: relative
   }
-  header .navbar-collapse > ul > li:hover a {
-    transition: color 0.3s ease-in-out;
-    color: hsl(0, 0%, 8%);
+
+  header .navbar-collapse>ul>li:hover a {
+    transition: color .3s ease-in-out;
+    color: #141414
   }
-  header .navbar-collapse > ul > li .dropdown-menu {
+
+  header .navbar-collapse>ul>li .dropdown-menu {
     position: absolute;
     top: 2.5rem;
     left: 0;
     width: -moz-fit-content;
     width: fit-content;
-    box-shadow: 0px 0px 30px 0px rgba(54, 54, 54, 0.37);
+    box-shadow: 0px 0px 30px 0px rgba(54, 54, 54, .37);
     border-radius: 1rem;
-    z-index: 1;
+    z-index: 1
   }
-  header .navbar-collapse > ul > li .dropdown-menu#features {
+
+  header .navbar-collapse>ul>li .dropdown-menu#features {
     right: 0;
     left: auto;
-    width: 9.5rem;
+    width: 9.5rem
   }
-  header .navbar-collapse > ul > li .dropdown-menu#company {
-    width: 7.5rem;
+
+  header .navbar-collapse>ul>li .dropdown-menu#company {
+    width: 7.5rem
   }
-  header .navbar-collapse > ul:first-child {
+
+  header .navbar-collapse>ul:first-child {
     padding-top: 0;
-    flex-grow: 1;
+    flex-grow: 1
   }
-  header .navbar-collapse > ul:last-child {
+
+  header .navbar-collapse>ul:last-child {
     flex-grow: 0;
     align-items: center;
     padding-inline: 0;
     width: 13rem;
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between !important
   }
+
   header.is-menu-open .navbar-collapse {
-    background-color: hsl(0, 0%, 98%);
+    background-color: #fafafa
   }
 }
+
 .attribution {
   position: absolute;
   bottom: 1rem;
   width: calc(100% - 54px);
   text-align: center;
-  font-size: 0.875rem;
+  font-size: .875rem;
   text-decoration: none;
-  color: hsl(0, 0%, 8%);
-}
-.attribution a {
-  color: hsl(0, 0%, 41%);
-  transition: color 0.3s;
-}
-.attribution a:hover {
-  color: hsl(0, 0%, 8%);
+  color: #141414
 }
 
-/*
-  activate in case mobile display take more than 100vh
-  */
-@media (max-width: 1200px) {
+.attribution a {
+  color: dimgray;
+  transition: color .3s
+}
+
+.attribution a:hover {
+  color: #141414
+}
+
+@media(max-width: 1200px) {
   .attribution {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 0rem;
-    bottom: 0;
+    bottom: 0
   }
 }
+
 .container {
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
 }
 
 main {
-  height: calc(100% - 5rem);
+  height: calc(100% - 5rem)
 }
 
 .hero {
-  background-color: hsl(0, 0%, 98%);
+  background-color: #fafafa;
   padding: 15px 0;
-  height: 100%;
+  height: 100%
 }
+
 .hero .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center
 }
+
 .hero .hero-content {
   padding-top: 3.5rem;
-  text-align: center;
+  text-align: center
 }
+
 .hero .hero-content h1 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 2.25rem;
-  line-height: 1.16;
+  line-height: 1.16
 }
+
 .hero .hero-content p {
   margin-bottom: 1.5rem;
-  color: hsl(0, 0%, 41%);
-  line-height: 1.625;
+  color: dimgray;
+  line-height: 1.625
 }
+
 .hero .hero-content .btn-cta {
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color .2s ease-in-out;
   display: block;
   border-radius: 1rem;
-  background-color: hsl(0, 0%, 8%);
-  border: hsl(0, 0%, 98%) 1px solid;
-  color: hsl(0, 0%, 98%);
+  background-color: #141414;
+  border: #fafafa 1px solid;
+  color: #fafafa;
   margin: 0 auto;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
-  padding-block: 0.8rem;
+  transition: background-color .2s ease-in-out;
+  padding-block: .8rem;
   height: 3rem;
-  width: 8.5rem;
+  width: 8.5rem
 }
+
 .hero .hero-content .btn-cta:hover {
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 8%);
+  background-color: #fafafa;
+  color: #141414
 }
+
 .hero .hero-content .btn-cta:hover {
   display: block;
   border-radius: 1rem;
-  background-color: hsl(0, 0%, 98%);
-  border: hsl(0, 0%, 8%) 1px solid;
-  color: hsl(0, 0%, 8%);
+  background-color: #fafafa;
+  border: #141414 1px solid;
+  color: #141414;
   margin: 0 auto;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color .2s ease-in-out;
   width: -moz-fit-content;
-  width: fit-content;
+  width: fit-content
 }
+
 .hero .hero-content .btn-cta:hover:hover {
-  background-color: hsl(0, 0%, 8%);
-  color: hsl(0, 0%, 98%);
+  background-color: #141414;
+  color: #fafafa
 }
+
 .hero .hero-content .partners {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 3rem
 }
+
 .hero .hero-content .partners img {
   width: auto;
   height: 1.5rem;
-  margin: 0 0.5rem;
+  margin: 0 .5rem
 }
 
 @media screen and (min-width: 768px) {
   .hero .container {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse
   }
+
   .hero .hero-content {
     text-align: left;
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between
   }
+
   .hero .hero-content h1 {
-    font-size: 5rem;
+    font-size: 5rem
   }
+
   .hero .hero-content p {
     font-size: 1.15rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
   }
+
   .hero .hero-content .btn {
-    display: inline-block;
+    display: inline-block
   }
+
   .hero .hero-content .btn a {
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1rem
   }
+
   .hero .hero-img {
     flex-basis: 50%;
     display: flex;
     justify-content: end;
-    padding-top: 3rem;
+    padding-top: 3rem
   }
+
   .hero .hero-img picture {
-    max-width: 80%;
+    max-width: 80%
   }
 }
+
 @media screen and (min-width: 1024px) {
   .hero .container {
-    max-width: 1200px;
+    max-width: 1200px
   }
+
   .hero .container .hero-content {
     min-height: 40rem;
     height: 100%;
     padding-left: 3rem;
-    padding-right: 1rem;
+    padding-right: 1rem
   }
+
   .hero .container .hero-content h1 {
     margin-top: 3.5rem;
-    line-height: 1;
+    line-height: 1
   }
+
   .hero .container .hero-content p {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    margin-right: 7rem;
+    margin-right: 7rem
   }
+
   .hero .container .hero-content .btn-cta {
     margin: 0;
     height: 3.5rem;
     width: 10rem;
-    padding-top: 1rem;
+    padding-top: 1rem
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
