@@ -15,9 +15,11 @@ dropdowns.forEach(dropdown => {
         if (dropdown.classList.contains('open')) {
             dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + 'px';
             dropdownMenu.setAttribute('aria-hidden', 'false');
+            dropdownMenu.querySelectorAll('a').forEach(a => a.setAttribute('tabindex', '0'));
         } else {
             dropdownMenu.style.maxHeight = 0;
             dropdownMenu.setAttribute('aria-hidden', 'true');
+            dropdownMenu.querySelectorAll('a').forEach(a => a.setAttribute('tabindex', '-'));
         }
     });
 });
