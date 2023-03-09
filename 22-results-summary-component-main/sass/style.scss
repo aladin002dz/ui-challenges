@@ -27,7 +27,7 @@ body {
     background-color: white;
 
     .score {
-        width: 50%;
+        //width: 100%;
         min-width: $mobile-width;
         background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
         border-radius: 0px 0px 1.7rem 1.7rem;
@@ -160,10 +160,24 @@ body {
     }
 }
 
-@media (min-width:375px) {
+@media (min-width:768px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+
     .card-results {
+        display: flex;
+        border-radius: 1.7rem;
+        overflow: hidden;
+
         .score {
-            //height: 20rem;
+            width: 49%;
         }
+
+        .details {
+            width: 49%;
+        }
+
     }
 }
