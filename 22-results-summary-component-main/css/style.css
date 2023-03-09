@@ -50,6 +50,36 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100% - 54px);
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: hsla(241, 72%, 46%, 0);
+  display: none;
+}
+.attribution a {
+  color: hsl(256, 72%, 46%);
+  transition: color 0.3s;
+}
+.attribution a:hover {
+  color: hsl(241, 81%, 54%);
+}
+
+/*
+  activate in case mobile display take more than 100vh
+  */
+@media (min-width: 376px) {
+  .attribution {
+    display: block;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    bottom: 0;
+  }
+}
 /*
 * {
     outline: red solid 2px;
@@ -62,8 +92,6 @@ body {
   line-height: 1.3;
   background-color: hsl(221, 100%, 96%);
   color: hsl(224, 30%, 27%);
-  display: grid;
-  place-content: center;
 }
 
 .card-results {
@@ -77,13 +105,9 @@ body {
   width: 50%;
   min-width: 375px;
   background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
-  border-radius: 32px;
   border-radius: 0px 0px 1.7rem 1.7rem;
   text-align: center;
   color: hsl(241, 100%, 89%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-block: 1.3rem;
 }
@@ -91,8 +115,11 @@ body {
   font-weight: 700;
 }
 .card-results .score .score-value {
-  height: 11rem;
-  width: 11rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   display: grid;
   place-content: center;
@@ -103,10 +130,17 @@ body {
   font-size: 4rem;
   font-weight: 800;
 }
-.card-results .score .score-value p {
+.card-results .score h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.card-results .score p {
   color: hsl(241, 100%, 89%);
   line-height: 1.3;
   margin-inline: 3rem;
+  font-size: 0.95rem;
 }
 .card-results .details {
   display: flex;
@@ -114,11 +148,10 @@ body {
   justify-content: space-between;
   padding: 1.7rem;
   margin-left: 1rem;
-  height: calc(100dvh - 20rem);
   width: 100%;
 }
-.card-results .details .h3 {
-  font-size: 1.5rem;
+.card-results .details h3 {
+  font-size: 1rem;
   font-weight: 700;
   color: hsl(224, 30%, 27%);
 }
@@ -164,7 +197,8 @@ body {
 }
 .card-results .details button {
   display: block;
-  width: 16rem;
+  width: 100%;
+  margin-inline: 1rem;
   height: 3rem;
   font-weight: 700;
   border-radius: 1.5rem;

@@ -1,0 +1,32 @@
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    width: calc(100% - 54px);
+    text-align: center;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: $persian-blue;
+    display: none;
+
+    a {
+        color: $violet-blue;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $light-royal-blue;
+        }
+    }
+}
+
+/*
+  activate in case mobile display take more than 100vh
+  */
+@media (min-width: 376px) {
+    .attribution {
+        display: block;
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        bottom: 0;
+    }
+}
