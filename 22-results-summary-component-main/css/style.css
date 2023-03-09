@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+* {
+    outline: red solid 2px;
+}
+*/
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500, 700, 800;
+  background-color: hsl(221, 100%, 96%);
+  color: hsl(224, 30%, 27%);
+  display: grid;
+  place-content: center;
+}
+
+.card-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-results .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin-left: 1rem;
+}
+.card-results .details .h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+.card-results .details ul {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(224, 30%, 27%);
+}
+.card-results .details ul li {
+  border-radius: 0.7rem;
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.card-results .details ul li div {
+  display: flex;
+  align-items: center;
+}
+.card-results .details ul li img {
+  display: inline;
+}
+.card-results .details ul li:first-child {
+  color: hsl(0, 100%, 67%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(0, 100%, 67%);
+}
+.card-results .details ul li:nth-child(2) {
+  color: hsl(39, 100%, 56%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(39, 100%, 56%);
+}
+.card-results .details ul li:nth-child(3) {
+  color: hsl(166, 100%, 37%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(166, 100%, 37%);
+}
+.card-results .details ul li:last-child {
+  color: hsl(234, 85%, 45%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(234, 85%, 45%);
+}
+.card-results .details button {
+  display: block;
+  width: 16rem;
+  height: 3rem;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom, hsl(224, 30%, 27%) 0%, hsl(224, 30%, 27%) 100%);
+  border: none;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.card-results .details button:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(256, 72%, 46%) 0.01%, hsl(241, 81%, 54%) 100%);
+  filter: drop-shadow(0px 30px 60px rgba(61, 108, 236, 0.15));
+}/*# sourceMappingURL=style.css.map */
