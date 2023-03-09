@@ -58,7 +58,8 @@ h6 {
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
-  font-weight: 500, 700, 800;
+  font-weight: 500;
+  line-height: 1.3;
   background-color: hsl(221, 100%, 96%);
   color: hsl(224, 30%, 27%);
   display: grid;
@@ -68,13 +69,53 @@ body {
 .card-results {
   display: flex;
   flex-wrap: wrap;
+  width: clamp(375px, 100%, 41rem);
+  background-color: white;
+  height: 100%;
+}
+.card-results .score {
+  width: 50%;
+  min-width: 375px;
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+  border-radius: 32px;
+  border-radius: 0px 0px 1.7rem 1.7rem;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1.3rem;
+}
+.card-results .score .score-title {
+  font-weight: 700;
+}
+.card-results .score .score-value {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+}
+.card-results .score .score-value h2 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.card-results .score .score-value p {
+  color: hsl(241, 100%, 89%);
+  line-height: 1.3;
+  margin-inline: 3rem;
 }
 .card-results .details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  padding: 1.7rem;
   margin-left: 1rem;
+  height: calc(100dvh - 20rem);
+  width: 100%;
 }
 .card-results .details .h3 {
   font-size: 1.5rem;
@@ -85,15 +126,18 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding-block: 0.3rem;
 }
 .card-results .details ul li {
   border-radius: 0.7rem;
-  width: 16rem;
+  width: 100%;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  margin-block: 0.9rem;
 }
 .card-results .details ul li div {
   display: flex;
