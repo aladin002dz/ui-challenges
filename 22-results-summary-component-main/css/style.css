@@ -95,11 +95,8 @@ body {
 }
 
 .card-results {
-  display: flex;
-  flex-wrap: wrap;
-  width: clamp(375px, 100%, 41rem);
+  width: 100%;
   background-color: white;
-  height: 100%;
 }
 .card-results .score {
   width: 50%;
@@ -108,8 +105,8 @@ body {
   border-radius: 0px 0px 1.7rem 1.7rem;
   text-align: center;
   color: hsl(241, 100%, 89%);
-  align-items: center;
-  padding-block: 1.3rem;
+  padding-top: 1.3rem;
+  padding-bottom: 3rem;
 }
 .card-results .score .score-title {
   font-weight: 700;
@@ -147,7 +144,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.7rem;
-  margin-left: 1rem;
   width: 100%;
 }
 .card-results .details h3 {
@@ -160,7 +156,9 @@ body {
   font-weight: 500;
   color: hsl(224, 30%, 27%);
   width: 100%;
-  padding-block: 0.3rem;
+  padding-top: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .card-results .details ul li {
   border-radius: 0.7rem;
