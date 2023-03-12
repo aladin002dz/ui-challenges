@@ -5,7 +5,7 @@
     text-align: center;
     font-size: 0.875rem;
     text-decoration: none;
-    color: $persian-blue;
+    color: $dark-gray-blue;
     display: none;
 
     a {
@@ -24,7 +24,7 @@
 @media (min-width: 376px) {
     .attribution {
         display: block;
-        position: relative;
+        position: absolute;
         margin-top: 1rem;
         margin-bottom: 0rem;
         bottom: 0;

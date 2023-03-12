@@ -57,7 +57,7 @@ h6 {
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
-  color: hsla(241, 72%, 46%, 0);
+  color: hsl(224, 30%, 27%);
   display: none;
 }
 .attribution a {
@@ -74,7 +74,7 @@ h6 {
 @media (min-width: 376px) {
   .attribution {
     display: block;
-    position: relative;
+    position: absolute;
     margin-top: 1rem;
     margin-bottom: 0rem;
     bottom: 0;
@@ -219,11 +219,12 @@ body {
     display: flex;
     border-radius: 1.7rem;
     overflow: hidden;
+    width: 41rem;
+    height: 28rem;
+    outline: red solid 2px;
   }
   .card-results .score {
-    width: 49%;
-  }
-  .card-results .details {
-    width: 49%;
+    width: 20rem;
+    border-radius: 1.7rem;
   }
 }/*# sourceMappingURL=style.css.map */

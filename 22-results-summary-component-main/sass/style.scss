@@ -170,13 +170,17 @@ body {
         display: flex;
         border-radius: 1.7rem;
         overflow: hidden;
+        width: 41rem;
+        height: 28rem;
+        outline: red solid 2px;
 
         .score {
-            width: 49%;
+            width: 20rem;
+            border-radius: 1.7rem;
         }
 
         .details {
-            width: 49%;
+            //width: 49%;
         }
 
     }
