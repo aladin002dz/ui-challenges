@@ -188,10 +188,34 @@ body {
         .score {
             width: 20rem;
             border-radius: 1.7rem;
+            padding-top: 2.3rem;
+
+            .score-title {
+                font-size: 1.5rem;
+            }
+
+            .score-value {
+                width: 12rem;
+                height: 12rem;
+                margin-bottom: 2.5rem;
+            }
+
+            h3 {
+                font-size: 1.85rem;
+                margin-bottom: 1.3rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                //margin-bottom: 2.5rem;
+            }
         }
 
         .details {
-            //width: 49%;
+            button {
+                height: 3.5rem;
+                margin-bottom: 1.5rem;
+            }
         }
 
     }

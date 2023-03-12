@@ -1,7 +1,9 @@
 .attribution {
     position: absolute;
-    bottom: 1rem;
-    width: calc(100% - 54px);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     font-size: 0.875rem;
     text-decoration: none;
@@ -18,15 +20,8 @@
     }
 }
 
-/*
-  activate in case mobile display take more than 100vh
-  */
 @media (min-width: 376px) {
     .attribution {
         display: block;
-        position: absolute;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-        bottom: 0;
     }
 }

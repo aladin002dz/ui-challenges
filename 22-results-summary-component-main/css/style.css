@@ -52,8 +52,10 @@ h6 {
 
 .attribution {
   position: absolute;
-  bottom: 1rem;
-  width: calc(100% - 54px);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   font-size: 0.875rem;
   text-decoration: none;
@@ -68,16 +70,9 @@ h6 {
   color: hsl(241, 81%, 54%);
 }
 
-/*
-  activate in case mobile display take more than 100vh
-  */
 @media (min-width: 376px) {
   .attribution {
     display: block;
-    position: absolute;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    bottom: 0;
   }
 }
 /*
@@ -235,5 +230,25 @@ body {
   .card-results .score {
     width: 20rem;
     border-radius: 1.7rem;
+    padding-top: 2.3rem;
+  }
+  .card-results .score .score-title {
+    font-size: 1.5rem;
+  }
+  .card-results .score .score-value {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2.5rem;
+  }
+  .card-results .score h3 {
+    font-size: 1.85rem;
+    margin-bottom: 1.3rem;
+  }
+  .card-results .score p {
+    font-size: 1.2rem;
+  }
+  .card-results .details button {
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
