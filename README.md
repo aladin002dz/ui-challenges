@@ -5,7 +5,7 @@ Challenges from https://www.frontendmentor.io/
 ## Demos
 
 ### Challenge22
-<img src="./22-results-summary-component-main/desktop-preview.jpg" alt="preview challenge 22" width="200"/>
+<img src="./22-results-summary-component-main/design/desktop-preview.jpg" alt="preview challenge 22" width="200"/>
 
 [Link](https://aladin002dz.github.io/ui-challenges/22-results-summary-component-main/)
 
