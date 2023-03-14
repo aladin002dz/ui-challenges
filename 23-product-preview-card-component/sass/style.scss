@@ -10,6 +10,8 @@ body {
     font-weight: $montserrat-weight-medium;
     font-size: $body-copy-font-size;
     background-color: $primary-cream;
+    display: grid;
+    place-content: center;
 }
 
 .card {
@@ -110,6 +112,19 @@ body {
             &:hover {
                 background: hsla(158, 36%, 37%, 0.8);
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 37.5rem;
+        height: 28rem;
+        flex-direction: row;
+
+        .card__image {
+            height: 100%;
+            width: 50%;
         }
     }
 }

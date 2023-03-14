@@ -86,6 +86,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-content: center;
 }
 
 .card {
@@ -173,4 +175,16 @@ body {
 }
 .card .card__body .add-to-cart:hover {
   background: hsla(158, 36%, 37%, 0.8);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 37.5rem;
+    height: 28rem;
+    flex-direction: row;
+  }
+  .card .card__image {
+    height: 100%;
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
