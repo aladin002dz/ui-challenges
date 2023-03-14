@@ -1,24 +1,25 @@
-/*
 .attribution {
     position: absolute;
     bottom: 1rem;
-    width: calc(100% - 54px);
+    width: 100%;
     text-align: center;
     font-size: 0.875rem;
     text-decoration: none;
-    color: $almost-black;
+    color: $neutral-very-dark-blue;
+    transition: color 0.3s ease-in-out;
 
     a {
-        color: $medium-gray;
+        color: $neutral-very-dark-blue;
+        font-weight: 700;
         transition: color 0.3s;
 
         &:hover {
-            color: $almost-black;
+            color: $primary-dark-cyan;
         }
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .attribution {
         position: relative;
         margin-top: 1rem;
@@ -26,4 +27,3 @@
         bottom: 0;
     }
 }
-*/

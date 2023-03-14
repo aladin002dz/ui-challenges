@@ -37,7 +37,7 @@ body {
 
     .card__body {
         flex: 1 1 auto;
-        padding: 1.5rem;
+        padding: 1.6rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -55,43 +55,41 @@ body {
             font-family: 'Fraunces';
             font-style: normal;
             font-weight: 700;
-            font-size: 32px;
-            line-height: 32px;
+            font-size: 2rem;
+            line-height: 1;
 
             color: $neutral-very-dark-blue;
         }
 
         p {
-
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
-            font-size: 14px;
-            line-height: 23px;
+            line-height: 1.65;
             color: $neutral-dark-grayish-blue;
         }
 
 
         .prices {
             display: flex;
-            //justify-content: space-between;
             align-items: center;
 
             .new-price {
                 font-family: 'Fraunces';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 32px;
-                line-height: 100%;
+                font-size: 2rem;
+                line-height: 1;
                 color: $primary-dark-cyan;
+                margin-right: 1rem;
             }
 
             .old-price {
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 13px;
-                line-height: 177%;
+                font-size: 0.9rem;
+                line-height: 1.77;
                 text-decoration-line: line-through;
                 color: $neutral-dark-grayish-blue;
             }
@@ -100,7 +98,7 @@ body {
         .add-to-cart {
             cursor: pointer;
             background: $primary-dark-cyan;
-            border-radius: 8px;
+            border-radius: 0.55rem;
             width: 100%;
             border: none;
             padding: 1rem 0;
@@ -108,9 +106,14 @@ body {
             justify-content: center;
             align-items: center;
             color: $neutral-white;
+            transition: background-color 0.3s ease-in-out;
+
+            img {
+                margin-right: 1rem;
+            }
 
             &:hover {
-                background: hsla(158, 36%, 37%, 0.8);
+                background-color: hsla(158, 36%, 37%, 0.8);
             }
         }
     }
@@ -125,6 +128,12 @@ body {
         .card__image {
             height: 100%;
             width: 50%;
+        }
+
+        .card__body {
+            h2 {
+                font-size: 2.1rem;
+            }
         }
     }
 }
