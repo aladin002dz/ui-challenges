@@ -1,4 +1,5 @@
 .attribution {
+    display: none;
     position: absolute;
     bottom: 1rem;
     width: 100%;
@@ -19,8 +20,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .attribution {
+        display: block;
         position: relative;
         margin-top: 1rem;
         margin-bottom: 0rem;

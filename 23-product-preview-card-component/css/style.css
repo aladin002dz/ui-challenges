@@ -53,6 +53,7 @@ h6 {
 }
 
 .attribution {
+  display: none;
   position: absolute;
   bottom: 1rem;
   width: 100%;
@@ -71,8 +72,9 @@ h6 {
   color: hsl(158, 36%, 37%);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .attribution {
+    display: block;
     position: relative;
     margin-top: 1rem;
     margin-bottom: 0rem;
@@ -96,7 +98,7 @@ body {
   height: 38rem;
   background: hsl(0, 0%, 100%);
   border-radius: 0.7rem;
-  margin: 1.8rem 1rem;
+  margin: 1.8rem auto;
 }
 .card > * {
   width: 100%;
