@@ -1,0 +1,219 @@
+/*
+@import "variables";
+@import "reset";
+@import "attribution";
+
+body {
+    font-family: $font-family;
+    font-size: $body-copy-font-size;
+}
+*/
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: hsl(236, 13%, 42%);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+}
+
+a {
+  color: hsl(35, 77%, 62%);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+aside {
+  background-color: hsl(36, 100%, 99%);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+aside h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+aside ul li {
+  margin-bottom: 20px;
+}
+aside ul li:last-child {
+  margin-bottom: 0;
+}
+aside ul li h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+aside ul li p {
+  margin: 0;
+}
+
+.primary {
+  color: hsl(35, 77%, 62%);
+}
+
+.secondary {
+  color: hsl(5, 85%, 63%);
+}
+
+.neutral-offwhite {
+  color: hsl(36, 100%, 99%);
+}
+
+.neutral-grayishblue {
+  color: hsl(233, 8%, 79%);
+}
+
+.neutral-darkgrayishblue {
+  color: hsl(236, 13%, 42%);
+}
+
+.neutral-verydarkblue {
+  color: hsl(240, 100%, 5%);
+}
+
+/* Variables */
+/* Base styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: hsl(35, 77%, 62%);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+header {
+  background-color: hsl(36, 100%, 99%);
+  padding: 2.4rem;
+}
+header h1 {
+  font-size: 4.8rem;
+  margin-bottom: 0;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4.8rem;
+}
+main article {
+  width: 100%;
+}
+main article h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+main article p {
+  color: hsl(236, 13%, 42%);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+main article a {
+  color: hsl(35, 77%, 62%);
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main aside {
+  width: 100%;
+  max-width: 32rem;
+}
+main aside h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+main aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main aside ul li {
+  margin-bottom: 2.4rem;
+}
+main aside ul li h3 {
+  color: hsl(35, 77%, 62%);
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+main aside ul li p {
+  color: hsl(236, 13%, 42%);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
