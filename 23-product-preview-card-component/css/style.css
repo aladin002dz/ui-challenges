@@ -75,10 +75,9 @@ h6 {
 @media (min-width: 768px) {
   .attribution {
     display: block;
-    position: relative;
     margin-top: 1rem;
     margin-bottom: 0rem;
-    bottom: 0;
+    bottom: 1rem;
   }
 }
 body {
@@ -171,14 +170,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   color: hsl(0, 0%, 100%);
   transition: background-color 0.3s ease-in-out;
 }
-.card .card__body .add-to-cart img {
-  margin-right: 1rem;
-}
 .card .card__body .add-to-cart:hover {
-  background-color: hsla(158, 36%, 37%, 0.8);
+  background-color: hsl(157, 43%, 18%);
 }
 
 @media (min-width: 768px) {

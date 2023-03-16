@@ -105,15 +105,13 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 0.5rem;
             color: $neutral-white;
             transition: background-color 0.3s ease-in-out;
 
-            img {
-                margin-right: 1rem;
-            }
-
             &:hover {
-                background-color: hsla(158, 36%, 37%, 0.8);
+                background-color: hsla(157, 43%, 18%, 1);
+                ;
             }
         }
     }
