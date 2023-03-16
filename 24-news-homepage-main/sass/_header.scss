@@ -5,12 +5,13 @@ header {
     padding-block: 2rem;
     padding-right: 1rem;
     height: 3rem;
-    color: $medium-gray;
-    font-size: 80%;
+    color: $dark-grayish-blue;
+    font-size: 120%;
     margin: 0 auto;
 
     .logo {
-        margin-left: 20px;
+        height: 2rem;
+        width: auto;
     }
 
     .hamburger {
@@ -22,9 +23,10 @@ header {
         z-index: 1;
         width: 1.5rem;
         height: 1.5rem;
-        background-image: url("../images/icon-menu.svg");
+        background-image: url("../assets/images/icon-menu.svg");
         background-size: cover;
     }
+
 
     .navbar-collapse {
         position: absolute;
@@ -40,138 +42,48 @@ header {
         align-items: flex-end;
 
 
-        >ul {
+        ul {
+            padding: 10rem 2rem;
             padding-inline: 1.5rem;
             flex-grow: 1;
             width: 14rem;
-            background-color: $almost-white;
+            background-color: $off-white;
             transform: translateX(100%);
             transition: transform 0.3s ease;
             overflow: hidden;
 
-            >li {
-                margin-bottom: 1rem;
-                position: relative;
+            li {
+                margin-bottom: 1.6rem;
 
-                .dropdown-toggle {
-                    border: none;
-                    background-color: transparent;
-                    cursor: pointer;
-                    color: inherit;
+                a {
                     transition: color 0.3s ease-in-out;
 
                     &:hover {
-                        color: $almost-black;
-                        font-weight: 600;
-                    }
-
-                    img {
-                        transition: transform 0.3s ease;
-                    }
-
-                    &.open {
-                        img {
-                            transform: rotate(-180deg);
-                        }
-                    }
-                }
-
-                img {
-                    display: inline;
-                    margin-left: 0.5rem;
-                }
-
-                >a {
-                    img {
-                        transition: transform 0.3s ease;
-                    }
-
-                    transition: color 0.3s ease-in-out;
-
-                    &:hover {
-                        color: $almost-black;
+                        color: $soft-red;
                         font-weight: 600;
                     }
                 }
-
-                .dropdown-menu {
-                    max-height: 0;
-                    overflow: hidden;
-                    width: fit-content;
-                    background-color: $almost-white;
-                    transition: max-height 0.7s ease-in-out;
-
-                    //first child li
-                    >li:first-child {
-                        padding-top: 1rem;
-                    }
-
-                    >li:last-child {
-                        padding-bottom: 1rem;
-                    }
-
-                    li img {
-                        margin-right: 1rem;
-                    }
-
-                    a {
-                        display: block;
-                        padding: 0.5rem 1rem;
-                    }
-                }
-            }
-
-            a {
-                display: block;
-                text-decoration: none;
-                color: $medium-gray;
-            }
-        }
-
-        >ul:first-child {
-            padding-top: 5rem;
-            flex-grow: 0;
-        }
-
-        >ul:last-child {
-            padding-top: 1rem;
-            text-align: center;
-        }
-
-
-
-        .login,
-        .signup {
-            display: block;
-            padding: 0.5rem 1rem;
-        }
-
-        .signup {
-            @include btn($almost-white, $medium-gray);
-
-            &:hover {
-                background-color: $almost-white;
-                color: $medium-gray;
             }
         }
     }
 
     &.is-menu-open {
         .hamburger {
-            background-image: url("../images/icon-close-menu.svg");
+            background-image: url("../assets/images/icon-menu-close.svg");
         }
 
         .navbar-collapse {
-            background-color: rgba($color: #000000, $alpha: 0.7);
+            background-color: hsla(240, 100%, 5%, 0.5);
             opacity: 1;
 
-            >ul {
+            ul {
                 transform: translateX(0%);
             }
 
         }
     }
 }
+
 
 @media (min-width: 992px) {
 
@@ -182,7 +94,8 @@ header {
         text-align: center;
 
         .logo {
-            margin-left: 0px;
+            height: 3rem;
+            width: auto;
         }
 
         .hamburger {
@@ -196,70 +109,30 @@ header {
             justify-content: space-between;
             opacity: 1;
             height: auto;
-            background-color: $almost-white;
+            background-color: $off-white;
+            width: auto;
 
-            >ul {
+            ul {
                 display: flex;
                 flex-direction: row;
                 width: auto;
                 transform: translateX(0);
                 overflow: visible;
+                padding: 0;
 
-                >li {
+                li {
                     margin-left: 2rem;
                     margin-bottom: 0;
                     position: relative;
-
-                    &:hover {
-                        a {
-                            transition: color 0.3s ease-in-out;
-                            color: $almost-black;
-                        }
-                    }
-
-                    .dropdown-menu {
-                        position: absolute;
-                        top: 2.5rem;
-                        left: 0;
-                        width: fit-content;
-                        box-shadow: 0px 0px 30px 0px rgb(54 54 54 / 37%);
-                        border-radius: $border-radius;
-                        z-index: 1;
-
-                        &#features {
-                            right: 0;
-                            left: auto;
-                            width: 9.5rem;
-                        }
-
-                        &#company {
-                            width: 7.5rem;
-                        }
-                    }
                 }
             }
 
-            >ul:first-child {
-                padding-top: 0;
-                flex-grow: 1;
-            }
-
-
-            >ul:last-child {
-                flex-grow: 0;
-                align-items: center;
-                padding-inline: 0;
-                width: 13rem;
-                display: flex;
-                justify-content: space-between !important;
-            }
         }
 
         &.is-menu-open {
             .navbar-collapse {
-                background-color: $almost-white;
+                background-color: $off-white;
             }
-
         }
 
     }

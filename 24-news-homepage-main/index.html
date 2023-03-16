@@ -9,13 +9,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | News homepage</title>
-
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>The News Outlet</h1>
-    <nav>
+    <img class="logo" src="./assets/images/logo.svg" alt="logo">
+    <button class="hamburger navbar-toggle" aria-label="Toggle nav menus" aria-expanded="false"
+      aria-controls="collapsableNavbar" tabindex="-1">
+    </button>
+    <nav id="collapsableNavbar" class="navbar-collapse" aria-hidden="true">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Politics</a></li>
@@ -75,6 +78,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

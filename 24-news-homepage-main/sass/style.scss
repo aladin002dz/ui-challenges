@@ -1,14 +1,20 @@
 //import partials
-/*
+
 @import "variables";
 @import "reset";
-@import "attribution";
 
 body {
     font-family: $font-family;
     font-size: $body-copy-font-size;
 }
-*/
+
+@import "attribution";
+@import "header";
+
+
+/*
+
+
 // Variables
 $color-primary: hsl(35, 77%, 62%);
 $color-secondary: hsl(5, 85%, 63%);
@@ -130,7 +136,7 @@ $font-family: 'Inter', sans-serif;
 $font-weights: 400, 700, 800;
 
 /* Base styles */
-html {
+/*html {
     font-size: 62.5%;
 }
 
@@ -173,9 +179,9 @@ a {
         text-decoration: underline;
     }
 }
-
+*/
 /* Layout */
-header {
+/*header {
     background-color: $off-white;
     padding: 2.4rem;
 
@@ -274,3 +280,5 @@ main {
     }
 
 }
+
+*/
