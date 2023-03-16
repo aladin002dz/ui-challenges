@@ -12,6 +12,12 @@ Thanks for checking out this front-end coding challenge.
 
 [Link](https://aladin002dz.github.io/ui-challenges/23-product-preview-card-component//)
 
+## Note
+
+For more accessibility, I implemented:
+- **ria-label** for indication about the prices elements for screen readers.
+- **role="presentation"** on a decorative icon, so it will be indicated by screen readers.
+
 ### Built with
 
 - Sass.
