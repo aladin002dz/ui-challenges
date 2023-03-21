@@ -98,6 +98,7 @@ header {
   color: hsl(236, 13%, 42%);
   font-size: 120%;
   margin: 0 auto;
+  max-width: 74rem;
 }
 header .logo {
   height: 2rem;
@@ -243,8 +244,30 @@ header.is-menu-open .navbar-collapse ul {
   gap: 2rem;
 }
 
-main .hero {
+main {
+  max-width: 74rem;
   margin: 0 auto;
+}
+main .hero {
+  min-width: 23rem;
+  max-width: 46rem;
+}
+main .hero .hero-content {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+main .hero .hero-content h1 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  color: hsl(240, 100%, 5%);
+  max-width: 23rem;
+  flex: 1 1 auto;
+}
+main .hero .hero-content .hero-content-details {
+  flex: 1 1 auto;
 }
 main .btn-cta {
   width: 12rem;
@@ -260,6 +283,7 @@ main aside {
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
   padding: 1.3rem;
+  max-width: 22rem;
 }
 main aside h2 {
   color: hsl(35, 77%, 62%);
