@@ -1,0 +1,29 @@
+.top-stories {
+    margin-top: 4rem;
+    gap: 2rem;
+
+    article {
+        gap: 1.5rem;
+        width: 23rem;
+
+        img {
+            width: 7rem;
+            height: 9rem;
+        }
+
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.1rem;
+            line-height: 1;
+
+            color: $grayish-blue;
+
+        }
+
+        p {
+            color: $dark-grayish-blue;
+            line-height: 1.7;
+        }
+    }
+}

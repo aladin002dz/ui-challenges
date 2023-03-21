@@ -1,0 +1,19 @@
+.d-flex {
+    display: flex;
+    justify-content: stretch;
+}
+
+.d-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
