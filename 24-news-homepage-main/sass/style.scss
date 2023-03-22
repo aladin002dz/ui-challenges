@@ -21,13 +21,11 @@ main {
 
     .hero {
         min-width: 23rem;
-        max-width: 46rem;
 
         .hero-content {
             margin-top: 2.5rem;
             display: flex;
-            justify-content: stretch;
-            flex-wrap: wrap;
+            flex-direction: column;
 
             h1 {
                 font-weight: 800;
@@ -36,15 +34,26 @@ main {
 
                 color: $very-dark-blue;
                 max-width: 23rem;
-                flex: 1 1 auto;
             }
+        }
 
-            .hero-content-details {
-                flex: 1 1 auto;
+        @media (min-width: 768px) {
+            .hero-content {
+                flex-direction: row;
+
+                .hero-content-details {
+                    max-width: 22rem;
+                }
             }
         }
 
 
+    }
+
+    @media(min-width: 1200px) {
+        .hero {
+            max-width: 46rem;
+        }
     }
 
     .btn-cta {
@@ -67,8 +76,9 @@ main {
         h2 {
             color: $soft-orange;
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 2.5rem;
             line-height: 2rem;
+            margin-top: 1rem;
         }
 
         ul {
@@ -80,14 +90,72 @@ main {
 
             li {
                 padding-block: 2rem;
-                height: 6rem;
                 width: 100%;
+                max-width: 20rem;
                 border-bottom: $dark-grayish-blue 1px solid;
+
+                h3 {
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    color: $grayish-blue;
+                    line-height: 1.7;
+                }
             }
 
             li:last-child {
+                padding-bottom: 0;
                 border-bottom: none;
             }
         }
     }
+
+
+    @media (min-width: 768px) {
+        aside {
+            max-width: 100%;
+
+            ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+
+                li {
+                    margin-inline: 1rem;
+                }
+
+                li:last-child {
+                    padding-bottom: 2rem;
+                    border-bottom: $dark-grayish-blue 1px solid;
+
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        aside {
+            max-width: 22rem;
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin-inline: 0;
+                }
+
+                li:last-child {
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+        }
+
+    }
+
+
 }

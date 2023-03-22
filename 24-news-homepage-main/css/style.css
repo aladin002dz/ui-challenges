@@ -250,13 +250,11 @@ main {
 }
 main .hero {
   min-width: 23rem;
-  max-width: 46rem;
 }
 main .hero .hero-content {
   margin-top: 2.5rem;
   display: flex;
-  justify-content: stretch;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 main .hero .hero-content h1 {
   font-weight: 800;
@@ -264,10 +262,19 @@ main .hero .hero-content h1 {
   line-height: 56px;
   color: hsl(240, 100%, 5%);
   max-width: 23rem;
-  flex: 1 1 auto;
 }
-main .hero .hero-content .hero-content-details {
-  flex: 1 1 auto;
+@media (min-width: 768px) {
+  main .hero .hero-content {
+    flex-direction: row;
+  }
+  main .hero .hero-content .hero-content-details {
+    max-width: 22rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .hero {
+    max-width: 46rem;
+  }
 }
 main .btn-cta {
   width: 12rem;
@@ -288,8 +295,9 @@ main aside {
 main aside h2 {
   color: hsl(35, 77%, 62%);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 2rem;
+  margin-top: 1rem;
 }
 main aside ul {
   display: flex;
@@ -300,10 +308,52 @@ main aside ul {
 }
 main aside ul li {
   padding-block: 2rem;
-  height: 6rem;
   width: 100%;
+  max-width: 20rem;
   border-bottom: hsl(236, 13%, 42%) 1px solid;
 }
+main aside ul li h3 {
+  margin-bottom: 1rem;
+}
+main aside ul li p {
+  color: hsl(233, 8%, 79%);
+  line-height: 1.7;
+}
 main aside ul li:last-child {
+  padding-bottom: 0;
   border-bottom: none;
+}
+@media (min-width: 768px) {
+  main aside {
+    max-width: 100%;
+  }
+  main aside ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  main aside ul li {
+    margin-inline: 1rem;
+  }
+  main aside ul li:last-child {
+    padding-bottom: 2rem;
+    border-bottom: hsl(236, 13%, 42%) 1px solid;
+  }
+}
+@media (min-width: 1200px) {
+  main aside {
+    max-width: 22rem;
+  }
+  main aside ul {
+    flex-direction: column;
+  }
+  main aside ul li {
+    margin-inline: 0;
+  }
+  main aside ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }/*# sourceMappingURL=style.css.map */
