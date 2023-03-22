@@ -52,42 +52,44 @@ h6 {
   overflow-wrap: break-word;
 }
 
+* {
+  outline: red 1px solid;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   padding: 1rem;
 }
 
-/* .attribution {
-    display: none;
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-    text-align: center;
-    font-size: 0.875rem;
-    text-decoration: none;
-    color: $neutral-very-dark-blue;
-    transition: color 0.3s ease-in-out;
-
-    a {
-        color: $neutral-very-dark-blue;
-        font-weight: 700;
-        transition: color 0.3s;
-
-        &:hover {
-            color: $primary-dark-cyan;
-        }
-    }
+.attribution {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  transition: color 0.3s ease-in-out;
+}
+.attribution a {
+  color: hsl(240, 100%, 5%);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.attribution a:hover {
+  color: hsl(5, 85%, 63%);
 }
 
 @media (min-width: 768px) {
-    .attribution {
-        display: block;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-        bottom: 1rem;
-    }
-} */
+  .attribution {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    bottom: 1rem;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -98,7 +100,7 @@ header {
   color: hsl(236, 13%, 42%);
   font-size: 120%;
   margin: 0 auto;
-  max-width: 74rem;
+  max-width: 70rem;
 }
 header .logo {
   height: 2rem;
@@ -161,8 +163,8 @@ header.is-menu-open .navbar-collapse ul {
 
 @media (min-width: 992px) {
   header {
-    height: 5rem;
-    padding: 1rem 2.5rem 1rem 2rem;
+    margin-bottom: 3rem;
+    padding: 0;
     font-size: 0.875rem;
     text-align: center;
   }
@@ -206,11 +208,11 @@ header.is-menu-open .navbar-collapse ul {
 }
 .top-stories article {
   gap: 1.5rem;
-  width: 23rem;
+  width: 22rem;
 }
 .top-stories article img {
   width: 7rem;
-  height: 9rem;
+  height: 8rem;
 }
 .top-stories article h2 {
   font-style: normal;
@@ -232,6 +234,7 @@ header.is-menu-open .navbar-collapse ul {
 .d-flex-wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .d-flex-column {
@@ -245,14 +248,14 @@ header.is-menu-open .navbar-collapse ul {
 }
 
 main {
-  max-width: 74rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 main .hero {
   min-width: 23rem;
 }
 main .hero .hero-content {
-  margin-top: 2.5rem;
+  margin-top: 2.7rem;
   display: flex;
   flex-direction: column;
 }
