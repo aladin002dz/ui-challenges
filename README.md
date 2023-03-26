@@ -4,6 +4,11 @@ Challenges from https://www.frontendmentor.io/
 
 ## Demos
 
+### Challenge24
+<img src="./24-news-homepage-main/design/desktop-preview.jpg" alt="preview challenge 23" width="200"/>
+
+[Link](https://aladin002dz.github.io/ui-challenges/24-news-homepage-main/)
+
 ### Challenge23
 <img src="./23-product-preview-card-component/design/desktop-preview.jpg" alt="preview challenge 23" width="200"/>
 
