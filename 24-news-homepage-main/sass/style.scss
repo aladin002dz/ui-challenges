@@ -3,10 +3,6 @@
 @import "variables";
 @import "reset";
 
-* {
-    outline: red 1px solid;
-}
-
 body {
     font-family: $font-family;
     font-size: $body-copy-font-size;
