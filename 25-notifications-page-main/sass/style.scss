@@ -1,0 +1,17 @@
+@import './variables';
+@import './reset';
+@import './utilities';
+
+body {
+    font-family: $font-family;
+    background: #F2F2F2;
+}
+
+.notifications {
+    margin: auto;
+    max-width: 730px;
+
+    background: white;
+    box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
+    border-radius: 15px;
+}
