@@ -211,6 +211,13 @@ header.is-menu-open .navbar-collapse ul {
   width: 7rem;
   height: 8rem;
 }
+.top-stories article h3 {
+  transition: color 0.3s ease-in-out;
+}
+.top-stories article h3:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
 .top-stories article h2 {
   font-style: normal;
   font-weight: 700;
@@ -271,11 +278,6 @@ main .hero .hero-content h1 {
     max-width: 22rem;
   }
 }
-@media (min-width: 1200px) {
-  main .hero {
-    max-width: 46rem;
-  }
-}
 main .btn-cta {
   width: 12rem;
   text-align: center;
@@ -285,6 +287,11 @@ main .btn-cta {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+main .btn-cta:hover {
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
 }
 main aside {
   background-color: hsl(240, 100%, 5%);
@@ -314,6 +321,11 @@ main aside ul li {
 }
 main aside ul li h3 {
   margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+main aside ul li h3:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
 }
 main aside ul li p {
   color: hsl(233, 8%, 79%);
@@ -343,6 +355,9 @@ main aside ul li:last-child {
   }
 }
 @media (min-width: 1200px) {
+  main .hero {
+    max-width: 46rem;
+  }
   main aside {
     max-width: 22rem;
   }

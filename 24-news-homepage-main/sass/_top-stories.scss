@@ -11,6 +11,16 @@
             height: 8rem;
         }
 
+        h3 {
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                color: $soft-red;
+            }
+        }
+
+
         h2 {
             font-style: normal;
             font-weight: 700;
