@@ -14,4 +14,43 @@ body {
     background: white;
     box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
     border-radius: 15px;
+
+
+    .header {
+        .title {
+            align-items: flex-end;
+            gap: 0.7rem;
+
+            span {
+                background: #0A327B;
+                border-radius: 6px;
+                padding: 0.2rem 0.7rem;
+                color: white;
+                font-weight: 800;
+            }
+        }
+
+        .btn-clear-all {
+            background: none;
+            border: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: $dark-grayish-blue;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
 }
