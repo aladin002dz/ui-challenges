@@ -48,9 +48,44 @@ body {
 
     }
 
-    img {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
+    .notification {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        background-color: $very-light-grayish-blue;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-block: 0.5rem;
+        margin-inline: 0.5rem;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: $very-dark-blue;
+        }
+
+        .action {
+            color: $dark-grayish-blue;
+        }
+
+        .subject {
+            font-weight: 700;
+            color: $dark-grayish-blue;
+        }
+
+        .message {
+            color: $dark-grayish-blue;
+            background-color: $light-grayish-blue-1;
+            border: 1px solid $light-grayish-blue-2;
+            border-radius: 5px;
+        }
+
+        .timestamp {
+            color: $grayish-blue;
+        }
     }
 }
