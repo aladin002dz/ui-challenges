@@ -10,16 +10,19 @@ body {
 .notifications {
     margin: auto;
     max-width: 730px;
-
+    padding: 1.5rem 1rem;
     background: white;
     box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
     border-radius: 15px;
 
 
     .header {
+        margin-bottom: 1.3rem;
+
         .title {
+            font-size: 14px;
             align-items: flex-end;
-            gap: 0.7rem;
+            gap: 0.45rem;
 
             span {
                 background: #0A327B;
@@ -34,7 +37,7 @@ body {
             background: none;
             border: none;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 20px;
             text-align: right;
             color: $dark-grayish-blue;
@@ -49,6 +52,7 @@ body {
     }
 
     .notification {
+
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
@@ -59,9 +63,13 @@ body {
         margin-inline: 0.5rem;
 
         img {
-            width: 3rem;
-            height: 3rem;
+            width: 2.2rem;
+            height: 2.2rem;
             border-radius: 50%;
+        }
+
+        .details {
+            margin-left: 1rem;
         }
 
         .name {
@@ -82,10 +90,30 @@ body {
             background-color: $light-grayish-blue-1;
             border: 1px solid $light-grayish-blue-2;
             border-radius: 5px;
+            padding: 0.5rem;
         }
 
         .timestamp {
             color: $grayish-blue;
+        }
+
+        .red-dot {
+            color: $red;
+            font-size: 1.35rem;
+            margin-left: 0.3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .notifications {
+        font-size: 14px;
+
+        .notification {
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
         }
     }
 }
