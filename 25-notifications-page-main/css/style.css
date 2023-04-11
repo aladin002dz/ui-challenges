@@ -68,9 +68,12 @@ h6 {
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background: #F2F2F2;
+  display: grid;
+  place-content: center;
 }
 
 .notifications {
+  outline: red solid 1px;
   margin: auto;
   max-width: 730px;
   padding: 1.5rem 1rem;
@@ -108,13 +111,14 @@ body {
   color: hsl(219, 85%, 26%);
 }
 .notifications .notification {
+  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   background-color: hsl(210, 60%, 98%);
   border-radius: 8px;
   padding: 1rem;
-  margin-block: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-inline: 0.5rem;
 }
 .notifications .notification img {
@@ -126,6 +130,7 @@ body {
   margin-left: 1rem;
 }
 .notifications .notification .name {
+  font-weight: 800;
   color: hsl(224, 21%, 14%);
 }
 .notifications .notification .action {
@@ -133,7 +138,7 @@ body {
 }
 .notifications .notification .subject {
   font-weight: 700;
-  color: hsl(219, 12%, 42%);
+  color: hsl(219, 85%, 26%);
 }
 .notifications .notification .message {
   color: hsl(219, 12%, 42%);
@@ -141,6 +146,7 @@ body {
   border: 1px solid hsl(205, 33%, 90%);
   border-radius: 5px;
   padding: 0.5rem;
+  margin-block: 1.5rem;
 }
 .notifications .notification .timestamp {
   color: hsl(219, 14%, 63%);
@@ -150,10 +156,24 @@ body {
   font-size: 1.35rem;
   margin-left: 0.3rem;
 }
+.notifications .notification .notification-image {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.notifications .notification .notification-image img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
 
 @media screen and (min-width: 768px) {
   .notifications {
     font-size: 14px;
+    padding: 2.3rem 2rem;
+  }
+  .notifications .header {
+    margin-bottom: 2rem;
   }
   .notifications .notification img {
     width: 3rem;

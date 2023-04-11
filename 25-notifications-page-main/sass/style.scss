@@ -5,9 +5,12 @@
 body {
     font-family: $font-family;
     background: #F2F2F2;
+    display: grid;
+    place-content: center;
 }
 
 .notifications {
+    outline: red solid 1px;
     margin: auto;
     max-width: 730px;
     padding: 1.5rem 1rem;
@@ -52,14 +55,14 @@ body {
     }
 
     .notification {
-
+        width: 100%;
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
         background-color: $very-light-grayish-blue;
         border-radius: 8px;
         padding: 1rem;
-        margin-block: 0.5rem;
+        margin-bottom: 0.5rem;
         margin-inline: 0.5rem;
 
         img {
@@ -73,6 +76,7 @@ body {
         }
 
         .name {
+            font-weight: 800;
             color: $very-dark-blue;
         }
 
@@ -82,7 +86,7 @@ body {
 
         .subject {
             font-weight: 700;
-            color: $dark-grayish-blue;
+            color: $blue;
         }
 
         .message {
@@ -91,6 +95,7 @@ body {
             border: 1px solid $light-grayish-blue-2;
             border-radius: 5px;
             padding: 0.5rem;
+            margin-block: 1.5rem;
         }
 
         .timestamp {
@@ -102,12 +107,29 @@ body {
             font-size: 1.35rem;
             margin-left: 0.3rem;
         }
+
+        .notification-image {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 0.5rem;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 768px) {
     .notifications {
         font-size: 14px;
+        padding: 2.3rem 2rem;
+
+        .header {
+            margin-bottom: 2rem;
+        }
 
         .notification {
             img {
