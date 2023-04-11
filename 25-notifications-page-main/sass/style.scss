@@ -1,16 +1,17 @@
 @import './variables';
 @import './reset';
 @import './utilities';
+@import './attribution';
 
 body {
     font-family: $font-family;
     background: #F2F2F2;
     display: grid;
     place-content: center;
+    min-height: 100dvh;
 }
 
 .notifications {
-    outline: red solid 1px;
     margin: auto;
     max-width: 730px;
     padding: 1.5rem 1rem;
@@ -94,7 +95,7 @@ body {
             background-color: $light-grayish-blue-1;
             border: 1px solid $light-grayish-blue-2;
             border-radius: 5px;
-            padding: 0.5rem;
+            padding: 1rem 0.7rem;
             margin-block: 1.5rem;
         }
 
@@ -122,9 +123,9 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .notifications {
-        font-size: 14px;
+
         padding: 2.3rem 2rem;
 
         .header {
@@ -132,6 +133,9 @@ body {
         }
 
         .notification {
+            font-size: 16px;
+            margin-inline: 1rem;
+
             img {
                 width: 3rem;
                 height: 3rem;
