@@ -2,6 +2,8 @@
 
 ![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)
 
+## Welcome! 👋
+
 ## The challenge
 
 Your challenge is to build out this notifications page and get it looking as close to the design as possible.
@@ -15,7 +17,24 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-## Welcome! 👋
+### Solution
+
+I implemented the following code in ./js/main.js to solve the challenge:
+
+```javascript
+const allRedDots = document.querySelectorAll(".red-dot"); //get all red dots
+const unreadNotificationsCounter = document.querySelector(
+  "#unread-notifications-counter"
+); //get the counter of unread notifications
+unreadNotificationsCounter.textContent = allRedDots.length; //display the number of unread notifications
+
+const btnClearAll = document.querySelector(".btn-clear-all"); //get the button to clear all notifications
+btnClearAll.addEventListener("click", clearAllNotifications); //add event listener to the button to clear all notifications
+function clearAllNotifications() {
+  allRedDots.forEach((redDot) => redDot.remove()); //remove all red dots
+  unreadNotificationsCounter.textContent = 0; //set the counter of unread notifications to 0
+}
+```
 
 Thanks for checking out this front-end coding challenge.
 

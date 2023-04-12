@@ -157,21 +157,34 @@ body {
 .notifications .notification .name {
   font-weight: 800;
   color: hsl(224, 21%, 14%);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.notifications .notification .name:hover {
+  color: hsl(219, 85%, 26%);
 }
 .notifications .notification .action {
   color: hsl(219, 12%, 42%);
 }
 .notifications .notification .subject {
   font-weight: 700;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.notifications .notification .subject:hover {
   color: hsl(219, 85%, 26%);
 }
 .notifications .notification .message {
   color: hsl(219, 12%, 42%);
-  background-color: hsl(211, 68%, 94%);
   border: 1px solid hsl(205, 33%, 90%);
   border-radius: 5px;
   padding: 1rem 0.7rem;
   margin-block: 1.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+.notifications .notification .message:hover {
+  background-color: hsl(211, 68%, 94%);
 }
 .notifications .notification .timestamp {
   color: hsl(219, 14%, 63%);
@@ -190,6 +203,7 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

@@ -79,6 +79,12 @@ body {
         .name {
             font-weight: 800;
             color: $very-dark-blue;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: $blue;
+            }
         }
 
         .action {
@@ -87,16 +93,27 @@ body {
 
         .subject {
             font-weight: 700;
-            color: $blue;
+            color: $dark-grayish-blue;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $blue;
+            }
         }
 
         .message {
             color: $dark-grayish-blue;
-            background-color: $light-grayish-blue-1;
+
             border: 1px solid $light-grayish-blue-2;
             border-radius: 5px;
             padding: 1rem 0.7rem;
             margin-block: 1.5rem;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $light-grayish-blue-1;
+            }
         }
 
         .timestamp {
@@ -118,6 +135,7 @@ body {
                 width: 3rem;
                 height: 3rem;
                 border-radius: 0.5rem;
+                cursor: pointer;
             }
         }
     }
