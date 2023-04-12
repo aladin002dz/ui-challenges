@@ -20,6 +20,7 @@ Your users should be able to:
 ### Solution
 
 I implemented the following code in ./js/main.js to solve the challenge:
+![Solution Code](./code.png)
 
 ```javascript
 const allRedDots = document.querySelectorAll(".red-dot"); //get all red dots
