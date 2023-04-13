@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+form .form-container {
+  display: flex;
+  gap: 1rem;
+}
+form .input-group {
+  width: 32%;
+}
+form .input-group * {
+  display: block;
+}
+form .input-group .invalid-feedback {
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+form .input-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+form .input-group input {
+  max-width: 100%;
+  padding: 0.4rem 0.8rem;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+form .input-group input::-moz-placeholder {
+  color: hsl(0, 1%, 44%);
+}
+form .input-group input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+form .input-group input:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+form .input-group input:focus-visible {
+  outline: hsl(259, 100%, 65%);
+}
+form .submit {
+  display: flex;
+  justify-content: center;
+}
+form .submit button {
+  border-radius: 50%;
+  width: 6rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+form .submit button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.result {
+  font-size: 104px;
+  font-weight: 800;
+}
+.result .counter {
+  color: hsl(259, 100%, 65%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import './variables';
+@import './reset';
+
+body {
+    font-family: $font-family;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+form {
+    .form-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .input-group {
+        width: 32%;
+
+        * {
+            display: block;
+        }
+
+        .invalid-feedback {
+            color: red;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+            color: $color-neutral-smokey-grey;
+            //margin-bottom: 1rem;
+        }
+
+        input {
+            max-width: 100%;
+            padding: 0.4rem 0.8rem;
+            font-size: $font-size-inputs;
+            font-weight: $font-weight-bold;
+            color: $color-neutral-off-black;
+            border: 1px solid $color-neutral-light-grey;
+            border-radius: 0.5rem;
+            background-color: transparent;
+
+            //padding: 0.5rem 0;
+            //margin-bottom: 1rem;
+            //width: 100%;
+            &::placeholder {
+                color: $color-neutral-smokey-grey;
+            }
+
+            &:focus {
+                border-color: $color-primary-purple;
+                //outline: $color-primary-purple;
+            }
+
+            &:focus-visible {
+                //border-color: $color-primary-purple;
+                outline: $color-primary-purple;
+            }
+        }
+    }
+
+    .submit {
+        display: flex;
+        //flex-direction: column;
+        justify-content: center;
+        //align-items: center;
+        //margin-left: 1rem;
+
+        button {
+            border-radius: 50%;
+            width: 6rem;
+            aspect-ratio: 1;
+            display: grid;
+            place-items: center;
+            border: none;
+            //border-radius: 0.5rem;
+            font-size: 16px;
+            font-weight: $font-weight-bold;
+            color: $color-neutral-white;
+            background-color: $color-primary-purple;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $color-neutral-off-black;
+            }
+        }
+    }
+}
+
+.result {
+    font-size: 104px;
+    font-weight: $font-weight-extra-bold;
+
+    .counter {
+        color: $color-primary-purple;
+    }
+}

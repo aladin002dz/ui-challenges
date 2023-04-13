@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <form id="age-form">
+      <div class="form-container">
+        <div class="input-group">
+          <label for="day-of-birth">Day</label>
+          <input type="text" name="day-of-birth" id="day-of-birth" placeholder="DD" value="13">
+          <div class="invalid-feedback">Must be a valid day</div>
+        </div>
+        <div class="input-group">
+          <label for="month-of-birth">Month</label>
+          <input type="text" name="month-of-birth" id="month-of-birth" placeholder="MM" value="04">
+          <div class="invalid-feedback">Must be a valid month</div>
+        </div>
+        <div class="input-group">
+          <label for="year-of-birth">Year</label>
+          <input type="text" name="year-of-birth" id="year-of-birth" placeholder="YYYYY" value="2022">
+          <div class="invalid-feedback">Must be in the past</div>
+        </div>
+      </div>
+      <div class="submit">
+        <button type="submit">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+      </div>
+    </form>
+    <div id="result">
+      00
+    </div>
+    <div class="result">
+      <div>
+        <span class="counter" id="years-coutner">--</span>
+        <span class="counter-label">years</span>
+      </div>
+      <div>
+        <span class="counter" id="months-coutner">--</span>
+        <span class="counter-label">months</span>
+      </div>
+      <div>
+        <span class="counter" id="days-coutner">--</span>
+        <span class="counter-label">days</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
