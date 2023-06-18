@@ -78,6 +78,7 @@ form .input-group .invalid-feedback {
   font-weight: 400;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  display: none;
 }
 form .input-group label {
   font-size: 14px;
@@ -105,6 +106,15 @@ form .input-group input:focus {
 }
 form .input-group input:focus-visible {
   outline: hsl(259, 100%, 65%);
+}
+form .input-group.error label {
+  color: red;
+}
+form .input-group.error input {
+  border-color: red;
+}
+form .input-group.error .invalid-feedback {
+  display: block;
 }
 form .submit {
   display: flex;
