@@ -13,6 +13,8 @@ body {
 }
 
 form {
+    position: relative;
+
     .form-container {
         display: flex;
         gap: 1rem;
@@ -86,11 +88,10 @@ form {
     }
 
     .submit {
+        //text-align: center;
+
         display: flex;
-        //flex-direction: column;
         justify-content: center;
-        //align-items: center;
-        //margin-left: 1rem;
 
         button {
             border-radius: 50%;
@@ -110,6 +111,17 @@ form {
             &:hover {
                 background-color: $color-neutral-off-black;
             }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 3rem;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: $color-neutral-light-grey;
+                z-index: -1;
+            }
         }
     }
 }
@@ -120,5 +132,14 @@ form {
 
     .counter {
         color: $color-primary-purple;
+    }
+}
+
+@media (min-width: 768px) {
+    form {
+        .submit {
+            //text-align: right;
+            justify-content: flex-end;
+        }
     }
 }

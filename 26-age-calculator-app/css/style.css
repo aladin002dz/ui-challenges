@@ -62,6 +62,9 @@ body {
   padding: 0 1rem;
 }
 
+form {
+  position: relative;
+}
 form .form-container {
   display: flex;
   gap: 1rem;
@@ -137,6 +140,16 @@ form .submit button {
 form .submit button:hover {
   background-color: hsl(0, 0%, 8%);
 }
+form .submit button::before {
+  content: "";
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  z-index: -1;
+}
 
 .result {
   font-size: 104px;
@@ -144,4 +157,10 @@ form .submit button:hover {
 }
 .result .counter {
   color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 768px) {
+  form .submit {
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=style.css.map */
