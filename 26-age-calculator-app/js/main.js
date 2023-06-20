@@ -4,15 +4,29 @@ function main() {
     formCalculateAge.addEventListener("submit", calculateAge);
     function calculateAge(e) {
         e.preventDefault();
-        document.getElementById("years-counter").textContent = "--";
-        document.getElementById("months-counter").textContent = "--";
-        document.getElementById("days-counter").textContent = "--";
 
+        // Get the age display elements
+        yearsCounter = document.getElementById("years-counter");
+        monthsCounter = document.getElementById("months-counter");
+        daysCounter = document.getElementById("days-counter");
+
+        // Clear the age display
+        yearsCounter.textContent = "--";
+        monthsCounter.textContent = "--";
+        daysCounter.textContent = "--";
+
+        // Validate the form inputs
         if (!validateForm()) {
             return;
         }
 
-        const birthDate = new Date(document.getElementById("year-of-birth").value, document.getElementById("month-of-birth").value - 1, document.getElementById("day-of-birth").value);
+        // Get the birth date and today's date
+        const yearInput = document.getElementById("year-of-birth").value;
+        const monthInput = document.getElementById("month-of-birth").value;
+        const dayInput = document.getElementById("day-of-birth").value;
+
+        // Calculate the age in milliseconds
+        const birthDate = new Date(yearInput, monthInput - 1, dayInput);
         const today = new Date();
         const ageInMilliseconds = today - birthDate;
 
@@ -22,60 +36,65 @@ function main() {
         const ageInDays = Math.floor((ageInMonths - Math.floor(ageInMonths)) * 30);
 
         // Display the age in years, months, and days
-        document.getElementById("years-counter").textContent = Math.floor(ageInYears);
-        document.getElementById("months-counter").textContent = Math.floor(ageInMonths);
-        document.getElementById("days-counter").textContent = ageInDays;
+        yearsCounter.textContent = Math.floor(ageInYears);
+        monthsCounter.textContent = Math.floor(ageInMonths);
+        daysCounter.textContent = ageInDays;
     }
 }
 
 function validateForm() {
+    // set initial result to true
+    let result = true;
+
+    // get the user input
     const yearInput = document.getElementById("year-of-birth");
     const monthInput = document.getElementById("month-of-birth");
     const dayInput = document.getElementById("day-of-birth");
-
     const year = yearInput.value;
     const month = monthInput.value;
     const day = dayInput.value;
 
-
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
+    //Regex patterns for year, month, and day
     var yearPattern = /^[1-9]\d*$/;
     var monthPattern = /^(0?[1-9]|1[0-2])$/;
     var dayPattern = /^(0?[1-9]|[1-2]\d|3[0-1])$/;
 
-    let valid = true;
-
+    // validate the year input
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
     if (!yearPattern.test(year) || year > currentYear) {
-        addInvalidClassToInputGroup(yearInput);
-        valid = false;
+        displayError(yearInput);
+        result = false;
     } else {
-        removeInvalidClassFromInputGroup(yearInput);
+        removeDisplayedError(yearInput);
     }
 
+    // validate the month input
     if (!monthPattern.test(month)) {
-        addInvalidClassToInputGroup(monthInput);
-        valid = false;
+        displayError(monthInput);
+        result = false;
     } else {
-        removeInvalidClassFromInputGroup(monthInput);
+        removeDisplayedError(monthInput);
     }
 
+    // validate the day input
     if (!dayPattern.test(day)) {
-        addInvalidClassToInputGroup(dayInput);
-        valid = false;
+        displayError(dayInput);
+        result = false;
     } else {
-        removeInvalidClassFromInputGroup(dayInput);
+        removeDisplayedError(dayInput);
     }
 
-    return valid;
+    // return the result
+    return result;
 }
 
-function addInvalidClassToInputGroup(element) {
+function displayError(element) {
     const parent = element.closest('.input-group');
     parent.classList.add('error');
 }
 
-function removeInvalidClassFromInputGroup(element) {
+function removeDisplayedError(element) {
     const parent = element.closest('.input-group');
     parent.classList.remove('error');
 }
