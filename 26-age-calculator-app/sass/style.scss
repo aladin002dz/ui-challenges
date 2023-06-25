@@ -6,8 +6,9 @@
 body {
     font-family: $font-family;
     background: $color-neutral-off-white;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-inline: 1rem;
 }
 
@@ -15,15 +16,17 @@ body {
     width: 100%;
     max-width: 840px;
     margin: 0 auto;
-    padding: 3.5rem;
+    padding: 3rem 1.5rem;
     border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
-    background: #FFF;
+    background-color: #FFF;
 }
 
 form {
     position: relative;
+    max-width: 100%;
 
     .form-container {
+        max-width: 100%;
         display: flex;
         gap: 1rem;
     }
@@ -96,19 +99,27 @@ form {
     }
 
     .submit {
-        //text-align: center;
-
         display: flex;
         justify-content: center;
 
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: $color-neutral-light-grey;
+        }
+
         button {
+            z-index: 1;
             border-radius: 50%;
             width: 6rem;
             aspect-ratio: 1;
             display: grid;
             place-items: center;
             border: none;
-            //border-radius: 0.5rem;
             font-size: 16px;
             font-weight: $font-weight-bold;
             color: $color-neutral-white;
@@ -119,22 +130,12 @@ form {
             &:hover {
                 background-color: $color-neutral-off-black;
             }
-
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: 3rem;
-                left: 0;
-                right: 0;
-                height: 1px;
-                background-color: $color-neutral-light-grey;
-                z-index: -1;
-            }
         }
     }
 }
 
 .result {
+    max-width: 100%;
     font-size: 104px;
     font-weight: $font-weight-extra-bold;
 
@@ -144,6 +145,10 @@ form {
 }
 
 @media (min-width: 768px) {
+    .container {
+        padding: 3.5rem;
+    }
+
     form {
         .submit {
             //text-align: right;

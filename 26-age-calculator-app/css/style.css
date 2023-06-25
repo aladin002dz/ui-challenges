@@ -80,8 +80,9 @@ h6 {
 body {
   font-family: "Poppins", sans-serif;
   background: hsl(0, 0%, 94%);
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-inline: 1rem;
 }
 
@@ -89,15 +90,17 @@ body {
   width: 100%;
   max-width: 840px;
   margin: 0 auto;
-  padding: 3.5rem;
+  padding: 3rem 1.5rem;
   border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
-  background: #FFF;
+  background-color: #FFF;
 }
 
 form {
   position: relative;
+  max-width: 100%;
 }
 form .form-container {
+  max-width: 100%;
   display: flex;
   gap: 1rem;
 }
@@ -155,7 +158,17 @@ form .submit {
   display: flex;
   justify-content: center;
 }
+form .submit::before {
+  content: "";
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+}
 form .submit button {
+  z-index: 1;
   border-radius: 50%;
   width: 6rem;
   aspect-ratio: 1;
@@ -172,18 +185,9 @@ form .submit button {
 form .submit button:hover {
   background-color: hsl(0, 0%, 8%);
 }
-form .submit button::before {
-  content: "";
-  position: absolute;
-  bottom: 3rem;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: hsl(0, 0%, 86%);
-  z-index: -1;
-}
 
 .result {
+  max-width: 100%;
   font-size: 104px;
   font-weight: 800;
 }
@@ -192,6 +196,9 @@ form .submit button::before {
 }
 
 @media (min-width: 768px) {
+  .container {
+    padding: 3.5rem;
+  }
   form .submit {
     justify-content: flex-end;
   }
