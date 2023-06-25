@@ -52,14 +52,46 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.attribution {
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 8%);
+  transition: color 0.3s ease-in-out;
+}
+.attribution a {
+  color: hsl(259, 100%, 65%);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.attribution a:hover {
+  color: hsl(0, 100%, 67%);
+}
+
+@media (min-width: 768px) {
+  .attribution {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    bottom: 1rem;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 94%);
+  display: grid;
+  place-content: center;
+  padding-inline: 1rem;
 }
 
 .container {
-  max-width: 1440px;
+  width: 100%;
+  max-width: 840px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 3.5rem;
+  border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
+  background: #FFF;
 }
 
 form {

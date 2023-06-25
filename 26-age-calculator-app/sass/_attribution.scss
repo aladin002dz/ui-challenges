@@ -6,16 +6,16 @@
      text-align: center;
      font-size: 0.875rem;
      text-decoration: none;
-     color: $very-dark-blue;
+     color: $color-neutral-off-black;
      transition: color 0.3s ease-in-out;
 
      a {
-         color: $blue;
+         color: $color-primary-purple;
          font-weight: 700;
          transition: color 0.3s;
 
          &:hover {
-             color: $red;
+             color: $color-primary-light-red;
          }
      }
  }
