@@ -53,8 +53,12 @@ h6 {
 }
 
 .attribution {
-  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
   text-align: center;
+  margin: auto;
   font-size: 0.875rem;
   text-decoration: none;
   color: hsl(0, 0%, 8%);
@@ -62,21 +66,12 @@ h6 {
 }
 .attribution a {
   color: hsl(259, 100%, 65%);
-  font-weight: 700;
   transition: color 0.3s;
 }
 .attribution a:hover {
   color: hsl(0, 100%, 67%);
 }
 
-@media (min-width: 768px) {
-  .attribution {
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    bottom: 1rem;
-  }
-}
 body {
   font-family: "Poppins", sans-serif;
   background: hsl(0, 0%, 94%);
