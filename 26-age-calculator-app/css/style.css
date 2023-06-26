@@ -88,6 +88,7 @@ body {
 
 .container {
   width: 100%;
+  min-width: 343px;
   max-width: 840px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
@@ -98,6 +99,7 @@ body {
 form {
   position: relative;
   max-width: 100%;
+  margin-bottom: 2rem;
 }
 form .form-container {
   max-width: 100%;
@@ -106,6 +108,7 @@ form .form-container {
 }
 form .input-group {
   width: 32%;
+  max-width: 10rem;
 }
 form .input-group * {
   display: block;
@@ -132,6 +135,7 @@ form .input-group input {
   border: 1px solid hsl(0, 0%, 86%);
   border-radius: 0.5rem;
   background-color: transparent;
+  cursor: pointer;
 }
 form .input-group input::-moz-placeholder {
   color: hsl(0, 1%, 44%);
@@ -155,6 +159,7 @@ form .input-group.error .invalid-feedback {
   display: block;
 }
 form .submit {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -188,7 +193,7 @@ form .submit button:hover {
 
 .result {
   max-width: 100%;
-  font-size: 104px;
+  font-size: 54px;
   font-weight: 800;
 }
 .result .counter {
@@ -199,7 +204,14 @@ form .submit button:hover {
   .container {
     padding: 3.5rem;
   }
+  form {
+    margin-bottom: 0;
+  }
   form .submit {
+    margin-top: 0;
     justify-content: flex-end;
+  }
+  .result {
+    font-size: 104px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -14,6 +14,7 @@ body {
 
 .container {
     width: 100%;
+    min-width: 343px;
     max-width: 840px;
     margin: 0 auto;
     padding: 3rem 1.5rem;
@@ -24,6 +25,7 @@ body {
 form {
     position: relative;
     max-width: 100%;
+    margin-bottom: 2rem;
 
     .form-container {
         max-width: 100%;
@@ -33,6 +35,7 @@ form {
 
     .input-group {
         width: 32%;
+        max-width: 10rem;
 
         * {
             display: block;
@@ -51,7 +54,6 @@ form {
             font-size: 14px;
             font-weight: $font-weight-bold;
             color: $color-neutral-smokey-grey;
-            //margin-bottom: 1rem;
         }
 
         input {
@@ -63,21 +65,17 @@ form {
             border: 1px solid $color-neutral-light-grey;
             border-radius: 0.5rem;
             background-color: transparent;
+            cursor: pointer;
 
-            //padding: 0.5rem 0;
-            //margin-bottom: 1rem;
-            //width: 100%;
             &::placeholder {
                 color: $color-neutral-smokey-grey;
             }
 
             &:focus {
                 border-color: $color-primary-purple;
-                //outline: $color-primary-purple;
             }
 
             &:focus-visible {
-                //border-color: $color-primary-purple;
                 outline: $color-primary-purple;
             }
         }
@@ -99,6 +97,7 @@ form {
     }
 
     .submit {
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
 
@@ -136,7 +135,7 @@ form {
 
 .result {
     max-width: 100%;
-    font-size: 104px;
+    font-size: 54px;
     font-weight: $font-weight-extra-bold;
 
     .counter {
@@ -150,9 +149,15 @@ form {
     }
 
     form {
+        margin-bottom: 0;
+
         .submit {
-            //text-align: right;
+            margin-top: 0;
             justify-content: flex-end;
         }
+    }
+
+    .result {
+        font-size: 104px;
     }
 }
