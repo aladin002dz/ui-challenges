@@ -4,9 +4,15 @@ Challenges from https://www.frontendmentor.io/
 
 ## Demos
 
+### Challenge26
+
+<img src="./26-age-calculator-app/design/desktop-preview.jpg" alt="preview challenge 26" width="200"/>
+
+[Link](https://aladin002dz.github.io/ui-challenges/26-age-calculator-app/)
+
 ### Challenge25
 
-<img src="./25-notifications-page-main/design/desktop-preview.jpg" alt="preview challenge 23" width="200"/>
+<img src="./25-notifications-page-main/design/desktop-preview.jpg" alt="preview challenge 25" width="200"/>
 
 [Link](https://aladin002dz.github.io/ui-challenges/25-notifications-page-main/)
 
