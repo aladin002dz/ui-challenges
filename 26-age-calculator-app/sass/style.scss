@@ -30,7 +30,7 @@ form {
     .form-container {
         max-width: 100%;
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .input-group {
@@ -54,11 +54,14 @@ form {
             font-size: 14px;
             font-weight: $font-weight-bold;
             color: $color-neutral-smokey-grey;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
         }
 
         input {
             max-width: 100%;
-            padding: 0.4rem 0.8rem;
+            padding: 0.4rem 1rem;
             font-size: $font-size-inputs;
             font-weight: $font-weight-bold;
             color: $color-neutral-off-black;
@@ -137,6 +140,8 @@ form {
     max-width: 100%;
     font-size: 54px;
     font-weight: $font-weight-extra-bold;
+    font-style: italic;
+    line-height: 1.1;
 
     .counter {
         color: $color-primary-purple;

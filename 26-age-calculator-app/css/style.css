@@ -99,7 +99,7 @@ form {
 form .form-container {
   max-width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 form .input-group {
   width: 32%;
@@ -120,10 +120,13 @@ form .input-group label {
   font-size: 14px;
   font-weight: 700;
   color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
 }
 form .input-group input {
   max-width: 100%;
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 1rem;
   font-size: 32px;
   font-weight: 700;
   color: hsl(0, 0%, 8%);
@@ -190,6 +193,8 @@ form .submit button:hover {
   max-width: 100%;
   font-size: 54px;
   font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
 }
 .result .counter {
   color: hsl(259, 100%, 65%);

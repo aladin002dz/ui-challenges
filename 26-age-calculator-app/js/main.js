@@ -36,9 +36,9 @@ function main() {
         const ageInDays = Math.floor((ageInMonths - Math.floor(ageInMonths)) * 30);
 
         // Display the age in years, months, and days
-        yearsCounter.textContent = Math.floor(ageInYears);
-        monthsCounter.textContent = Math.floor(ageInMonths);
-        daysCounter.textContent = ageInDays;
+        animateNumber(yearsCounter, Math.floor(ageInYears), 500);
+        animateNumber(monthsCounter, Math.floor(ageInMonths), 500);
+        animateNumber(daysCounter, ageInDays, 500);
     }
 }
 
@@ -97,4 +97,22 @@ function displayError(element) {
 function removeDisplayedError(element) {
     const parent = element.closest('.input-group');
     parent.classList.remove('error');
+}
+
+function animateNumber(element, finalNumber, duration) {
+    const start = performance.now();
+    const initialValue = 0;
+
+    function updateNumber(timestamp) {
+        const progress = timestamp - start;
+        const percentage = Math.min(progress / duration, 1);
+        const currentNumber = initialValue + (finalNumber - initialValue) * percentage;
+        element.innerText = Math.round(currentNumber);
+
+        if (progress < duration) {
+            requestAnimationFrame(updateNumber);
+        }
+    }
+
+    requestAnimationFrame(updateNumber);
 }
