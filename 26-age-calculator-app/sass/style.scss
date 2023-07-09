@@ -71,7 +71,8 @@ form {
             cursor: pointer;
 
             &::placeholder {
-                color: $color-neutral-smokey-grey;
+                color: $color-neutral-off-black;
+                opacity: 0.5;
             }
 
             &:focus {

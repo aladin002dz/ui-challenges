@@ -136,10 +136,12 @@ form .input-group input {
   cursor: pointer;
 }
 form .input-group input::-moz-placeholder {
-  color: hsl(0, 1%, 44%);
+  color: hsl(0, 0%, 8%);
+  opacity: 0.5;
 }
 form .input-group input::placeholder {
-  color: hsl(0, 1%, 44%);
+  color: hsl(0, 0%, 8%);
+  opacity: 0.5;
 }
 form .input-group input:focus {
   border-color: hsl(259, 100%, 65%);
