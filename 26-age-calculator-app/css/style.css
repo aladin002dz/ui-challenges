@@ -99,7 +99,7 @@ form {
 form .form-container {
   max-width: 100%;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 form .input-group {
   width: 32%;
@@ -127,7 +127,7 @@ form .input-group label {
 form .input-group input {
   max-width: 100%;
   padding: 0.4rem 1rem;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   color: hsl(0, 0%, 8%);
   border: 1px solid hsl(0, 0%, 86%);
@@ -166,7 +166,7 @@ form .submit {
 form .submit::before {
   content: "";
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   left: 0;
   right: 0;
   height: 1px;
@@ -175,7 +175,7 @@ form .submit::before {
 form .submit button {
   z-index: 1;
   border-radius: 50%;
-  width: 6rem;
+  width: 4rem;
   aspect-ratio: 1;
   display: grid;
   place-items: center;
@@ -186,6 +186,10 @@ form .submit button {
   background-color: hsl(259, 100%, 65%);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+}
+form .submit button img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 form .submit button:hover {
   background-color: hsl(0, 0%, 8%);
@@ -209,9 +213,22 @@ form .submit button:hover {
   form {
     margin-bottom: 0;
   }
+  form .form-container {
+    gap: 2rem;
+  }
   form .submit {
     margin-top: 0;
     justify-content: flex-end;
+  }
+  form .submit::before {
+    bottom: 3rem;
+  }
+  form .submit button {
+    width: 6rem;
+  }
+  form .submit button img {
+    width: 44px;
+    height: 44px;
   }
   .result {
     font-size: 104px;

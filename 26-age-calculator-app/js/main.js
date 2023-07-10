@@ -27,6 +27,7 @@ function main() {
 
         // Calculate the age in milliseconds
         const birthDate = new Date(yearInput, monthInput - 1, dayInput);
+
         const today = new Date();
         const ageInMilliseconds = today - birthDate;
 
@@ -85,8 +86,46 @@ function validateForm() {
         removeDisplayedError(dayInput);
     }
 
+    // validate the day of month
+    if (!isValidDayOfMonth(year, month, day)) {
+        displayError(dayInput);
+        displayError(monthInput);
+        result = false;
+    } else {
+        removeDisplayedError(dayInput);
+        removeDisplayedError(monthInput);
+    }
+
     // return the result
     return result;
+}
+
+
+function isValidDayOfMonth(year, month, day) {
+    const daysInMonth = [
+        31, // January
+        28, // February (non-leap year)
+        31, // March
+        30, // April
+        31, // May
+        30, // June
+        31, // July
+        31, // August
+        30, // September
+        31, // October
+        30, // November
+        31  // December
+    ];
+
+    if (month === 2 && isLeapYear(year)) {
+        return day <= 29;
+    }
+
+    return day <= daysInMonth[month - 1];
+}
+
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
 
 function displayError(element) {

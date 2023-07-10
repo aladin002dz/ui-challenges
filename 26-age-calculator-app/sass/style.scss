@@ -30,7 +30,7 @@ form {
     .form-container {
         max-width: 100%;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .input-group {
@@ -62,7 +62,7 @@ form {
         input {
             max-width: 100%;
             padding: 0.4rem 1rem;
-            font-size: $font-size-inputs;
+            font-size: $font-size-inputs-mobile;
             font-weight: $font-weight-bold;
             color: $color-neutral-off-black;
             border: 1px solid $color-neutral-light-grey;
@@ -108,7 +108,7 @@ form {
         &::before {
             content: "";
             position: absolute;
-            bottom: 3rem;
+            bottom: 2rem;
             left: 0;
             right: 0;
             height: 1px;
@@ -118,7 +118,7 @@ form {
         button {
             z-index: 1;
             border-radius: 50%;
-            width: 6rem;
+            width: 4rem;
             aspect-ratio: 1;
             display: grid;
             place-items: center;
@@ -129,6 +129,11 @@ form {
             background-color: $color-primary-purple;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
+
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
 
             &:hover {
                 background-color: $color-neutral-off-black;
@@ -157,9 +162,26 @@ form {
     form {
         margin-bottom: 0;
 
+        .form-container {
+            gap: 2rem;
+        }
+
         .submit {
             margin-top: 0;
             justify-content: flex-end;
+
+            &::before {
+                bottom: 3rem;
+            }
+
+            button {
+                width: 6rem;
+
+                img {
+                    width: 44px;
+                    height: 44px;
+                }
+            }
         }
     }
 
