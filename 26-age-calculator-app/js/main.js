@@ -96,6 +96,19 @@ function validateForm() {
         removeDisplayedError(monthInput);
     }
 
+    if (currentDate < new Date(year, month - 1, day)) {
+        displayError(dayInput);
+        displayError(monthInput);
+        displayError(yearInput);
+        result = false;
+    } else {
+        removeDisplayedError(dayInput);
+        removeDisplayedError(monthInput);
+        removeDisplayedError(yearInput);
+    }
+
+
+
     // return the result
     return result;
 }
