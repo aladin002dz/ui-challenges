@@ -1,0 +1,14 @@
+header {
+    background-color: #333;
+    color: red;
+    padding: 2rem;
+
+    nav {
+        width: 50%;
+        margin: 0 auto;
+
+        span {
+            margin: 0 1rem;
+        }
+    }
+}

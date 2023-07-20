@@ -1,0 +1,27 @@
+/* Layout */
+:root {
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+}
+
+/* Colors */
+:root {
+    /* Primary */
+    --color-tomato: hsl(4, 100%, 67%);
+
+    /* Neutral */
+    --color-dark-slate-grey: hsl(234, 29%, 20%);
+    --color-charcoal-grey: hsl(235, 18%, 26%);
+    --dark-navy: hsla(234, 29%, 20%, 1);
+    --pale-navy: hsla(234, 17%, 26%, 1);
+    /*--grey-25: hsla(243, 28%, 13%, 1);*/
+    --color-grey: hsl(231, 7%, 60%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+:root {
+    /* Font */
+    --font-family: "Roboto", sans-serif;
+    --font-weight-bold: 700;
+}

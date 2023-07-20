@@ -1,0 +1,66 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./partials/variables.css";
+
+body {
+    background: var(--pale-navy, #36384D);
+    font-family: var(--font-family, "Roboto", sans-serif);
+}
+
+main {
+    width: 928px;
+    height: 641px;
+
+    .text {
+        padding-block: 97px;
+
+        li::before {
+            /* Adjust the icon size and position as needed */
+            content: "";
+            background-image: url(../assets/images/icon-list.svg);
+            background-size: contain;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        form {
+            >* {
+                display: block;
+            }
+
+            label {
+                color: var(--dark-navy, #242742);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+            }
+
+            input {
+                border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
+
+                &::placeholder {
+                    color: var(--dark-navy, #242742);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    /* Body */
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    /* 24px */
+                    /* Add any other styles for the placeholder text as needed */
+                }
+            }
+
+            button {
+                background: var(--dark-navy, #242742) !important;
+            }
+        }
+    }
+}

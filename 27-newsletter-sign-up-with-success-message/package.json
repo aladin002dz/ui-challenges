@@ -2,14 +2,21 @@
   "name": "27-newsletter-sign-up-with-success-message",
   "version": "1.0.0",
   "description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "tw-dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "postcss ./src/styles.css --dir css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.0",
+    "postcss-preset-env": "^9.0.0",
     "tailwindcss": "^3.3.3"
   }
 }
