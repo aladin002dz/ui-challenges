@@ -1,29 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "./partials/variables.css";
-
-body {
-    background: var(--pale-navy, #36384D);
-    font-family: var(--font-family, "Roboto", sans-serif);
-}
 
 main {
-    width: 928px;
-    height: 641px;
+    max-width: 928px;
+    max-height: 641px;
+    min-width: 375px;
+    min-height: 842px;
 
-    .text {
+    .details {
         padding-block: 97px;
+        padding-inline: 32px;
 
-        li::before {
-            /* Adjust the icon size and position as needed */
-            content: "";
-            background-image: url(../assets/images/icon-list.svg);
-            background-size: contain;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+        ul {
+            * {
+                outline: red solid 1px;
+            }
+
+            li {
+                @apply flex gap-8 p-0 align-top;
+
+                margin: 10px;
+
+                span {
+                    @apply p-0;
+                }
+            }
+
+            li::before {
+                margin-top: 4px;
+                content: "";
+                background-image: url(../assets/images/icon-list.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+
+                width: 21px;
+                /*height: 21px;*/
+            }
         }
 
         form {
@@ -32,7 +48,6 @@ main {
             }
 
             label {
-                color: var(--dark-navy, #242742);
                 font-feature-settings: 'clig' off, 'liga' off;
 
                 font-size: 12px;
@@ -56,10 +71,6 @@ main {
                     /* 24px */
                     /* Add any other styles for the placeholder text as needed */
                 }
-            }
-
-            button {
-                background: var(--dark-navy, #242742) !important;
             }
         }
     }
