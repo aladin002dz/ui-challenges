@@ -9,6 +9,10 @@ module.exports = {
             colors: {
                 'pale-navy': '#36384D',
                 'dark-navy': '#242742'
+            },
+            borderRadius: {
+                'md': '0.5rem',
+                'lg': '1rem',
             }
         },
     },

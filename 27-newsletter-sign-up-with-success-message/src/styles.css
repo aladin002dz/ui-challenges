@@ -9,18 +9,19 @@ main {
     max-height: 641px;
     min-width: 375px;
     min-height: 842px;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
 
     .details {
         padding-block: 97px;
         padding-inline: 32px;
+        /*width: 45%;*/
 
         ul {
-            * {
-                outline: red solid 1px;
-            }
 
             li {
-                @apply flex gap-8 p-0 align-top;
+                @apply flex items-start gap-8 p-0;
 
                 margin: 10px;
 
@@ -37,8 +38,8 @@ main {
                 background-repeat: no-repeat;
                 display: inline-block;
 
-                width: 21px;
-                /*height: 21px;*/
+                width: 21px !important;
+                height: 21px !important;
             }
         }
 
@@ -72,6 +73,22 @@ main {
                     /* Add any other styles for the placeholder text as needed */
                 }
             }
+        }
+    }
+
+    picture {
+        /*width: 45%;
+        max-height: 100%;*/
+        /*object-fit: cover;*/
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            overflow: hidden;
         }
     }
 }
