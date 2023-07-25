@@ -18,7 +18,7 @@
 
   <!-- Sign-up form start -->
   <main class=" bg-white md:shadow-lg overflow-hidden sm:rounded-xl">
-    <section id="sign-up" class="hidden flex flex-col-reverse py-0 md:flex-row md:py-4 md:pr-4">
+    <section id="signup-section" class="hidden flex flex-col-reverse py-0 md:flex-row md:py-4 md:pr-4">
       <div class="details">
         <h1 class="title">
           Stay updated!
@@ -44,7 +44,7 @@
           </li>
         </ul>
 
-        <form>
+        <form id="signup-form">
           <label for="email">
             Email address
           </label>
@@ -63,7 +63,7 @@
 
     </section>
 
-    <section id="success" class="p-16">
+    <section id="success-section" class="p-16">
       <img src="./assets/images/icon-success.svg" widht="64" height="64" alt="">
       <h1 class="title mt-10">
         Thanks for subscribing!
@@ -72,11 +72,12 @@
         A confirmation email has been sent to ash@loremcompany.com.
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button>
+      <button id="dismiss-btn">
         Dismiss message
       </button>
     </section>
   </main>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
