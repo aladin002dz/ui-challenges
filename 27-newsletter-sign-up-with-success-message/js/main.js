@@ -21,16 +21,16 @@ function main() {
 }
 
 function validateEmail() {
-    var emailInput = document.getElementById("email").value;
+    var emailInput = document.getElementById("email");
     var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if (!emailPattern.test(emailInput)) {
-        var errorMessage = document.getElementById("error-message");
+    var errorMessage = document.getElementById("error-message");
+    if (!emailPattern.test(emailInput.value)) {
         errorMessage.textContent = "Valid email required";
-
         emailInput.classList.add("error");
         return false; // Prevent form submission
     }
+    errorMessage.textContent = "";
     emailInput.classList.remove("error");
     return true; // Allow form submission
 }
