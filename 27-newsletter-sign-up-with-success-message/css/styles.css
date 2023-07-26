@@ -539,8 +539,20 @@ video {
   width: 100%;
 }
 
+.max-w-\[30rem\]{
+  max-width: 30rem;
+}
+
+.max-w-\[55rem\]{
+  max-width: 55rem;
+}
+
 .flex-col-reverse{
   flex-direction: column-reverse;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .overflow-hidden{
@@ -643,8 +655,6 @@ main #signup-section .content {
             padding-bottom: 97px;
             padding-left: 32px;
             padding-right: 32px;
-
-            /*width: 45%;*/
         }
 
 main #signup-section .content ul li{
@@ -675,10 +685,6 @@ main #signup-section .content ul li::before {
                     display: inline-block;
                 }
 
-main #signup-section .content form >* {
-                    display: block;
-                }
-
 main #signup-section .content form label {
                     font-feature-settings: 'clig' off, 'liga' off;
 
@@ -686,6 +692,21 @@ main #signup-section .content form label {
                     font-style: normal;
                     font-weight: 700;
                     line-height: 150%;
+                }
+
+main #signup-section .content form #error-message {
+                    color: #FF6155;
+                    color: var(--vermellion, #FF6155);
+                    text-align: right;
+                    font-feature-settings: 'clig' off, 'liga' off;
+
+                    /* Body Small */
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                    /* 18px */
                 }
 
 main #signup-section .content form input {
@@ -697,29 +718,40 @@ main #signup-section .content form input::-moz-placeholder {
                         color: #242742;
                         color: var(--dark-navy, #242742);
                         font-feature-settings: 'clig' off, 'liga' off;
-                        /* Body */
                         font-family: Roboto;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 150%;
-                        /* 24px */
-                        /* Add any other styles for the placeholder text as needed */
                     }
 
 main #signup-section .content form input::placeholder {
                         color: #242742;
                         color: var(--dark-navy, #242742);
                         font-feature-settings: 'clig' off, 'liga' off;
-                        /* Body */
                         font-family: Roboto;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 150%;
-                        /* 24px */
-                        /* Add any other styles for the placeholder text as needed */
                     }
+
+main #signup-section .content form input.error {
+                        border: 1px solid #FF6155;
+                        border: 1px solid var(--vermellion, #FF6155);
+                        background: rgba(255, 97, 85, 0.15);
+                        color: #ff6155;
+                    }
+
+main #signup-section .content form input.error::-moz-placeholder {
+                            color: #FF6155;
+                            color: var(--vermellion, #FF6155);
+                        }
+
+main #signup-section .content form input.error::placeholder {
+                            color: #FF6155;
+                            color: var(--vermellion, #FF6155);
+                        }
 
 main #signup-section picture {
             display: block;
@@ -758,12 +790,12 @@ main #success-section {
     height: auto;
   }
 
-  .md\:w-5\/12{
-    width: 41.666667%;
+  .md\:w-\[46\%\]{
+    width: 46%;
   }
 
-  .md\:w-6\/12{
-    width: 50%;
+  .md\:w-\[54\%\]{
+    width: 54%;
   }
 
   .md\:flex-row{

@@ -2,16 +2,24 @@ main();
 function main() {
     const singupSection = document.querySelector('#signup-section');
     const successSection = document.querySelector('#success-section');
+    const emailInput = document.querySelector('#email');
+    const errorMessage = document.querySelector('#error-message');
     const signupForm = document.querySelector('#signup-form');
     signupForm.addEventListener('submit', function (e) {
         e.preventDefault();
         if (!validateEmail()) {
             return;
         }
-
+        emailInput.value = "";
         singupSection.classList.toggle('hidden');
         successSection.classList.toggle('hidden');
     });
+
+    emailInput.addEventListener('input', function () {
+        errorMessage.textContent = "";
+        emailInput.classList.remove("error");
+    });
+
 
     const dismissBtn = document.querySelector('#dismiss-btn');
     dismissBtn.addEventListener('click', function () {
