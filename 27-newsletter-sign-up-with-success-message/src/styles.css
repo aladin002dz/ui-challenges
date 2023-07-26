@@ -6,14 +6,7 @@
 
 main {
     max-width: 928px;
-    max-height: 641px;
-
     min-width: 375px;
-    /*min-height: 842px;*/
-
-    display: flex;
-    align-items: stretch;
-    overflow: hidden;
 
     .title {
         @apply text-4xl font-bold;
@@ -23,10 +16,11 @@ main {
         @apply w-full py-3 text-white rounded-md bg-dark-navy;
     }
 
-    #sign-up {
-        .details {
+    #signup-section {
+        .content {
             padding-block: 97px;
             padding-inline: 32px;
+
             /*width: 45%;*/
 
             ul {
@@ -88,11 +82,10 @@ main {
         }
 
         picture {
-            /*width: 45%;
-        max-height: 100%;*/
-            /*object-fit: cover;*/
             display: block;
             overflow: hidden;
+            height: 100%;
+            max-height: 613px;
 
             img {
                 width: 100%;
@@ -105,7 +98,7 @@ main {
 
     }
 
-    #success {
+    #success-section {
         max-width: 504px;
     }
 }

@@ -614,23 +614,9 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.shadow-lg{
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
-}
-
 main {
     max-width: 928px;
-    max-height: 641px;
-
     min-width: 375px;
-    /*min-height: 842px;*/
-
-    display: flex;
-    align-items: stretch;
-    overflow: hidden;
 }
 
 main .title{
@@ -652,15 +638,16 @@ main button{
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-main #sign-up .details {
+main #signup-section .content {
             padding-top: 97px;
             padding-bottom: 97px;
             padding-left: 32px;
             padding-right: 32px;
+
             /*width: 45%;*/
         }
 
-main #sign-up .details ul li{
+main #signup-section .content ul li{
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -669,17 +656,17 @@ main #sign-up .details ul li{
                     margin: 10px;
 }
 
-main #sign-up .details ul li span{
+main #signup-section .content ul li span{
   padding: 0px;
 }
 
-main #sign-up .details ul li::before {
+main #signup-section .content ul li::before {
 
                     width: 21px !important;
                     height: 21px !important;
                 }
 
-main #sign-up .details ul li::before {
+main #signup-section .content ul li::before {
                     margin-top: 4px;
                     content: "";
                     background-image: url(../assets/images/icon-list.svg);
@@ -688,11 +675,11 @@ main #sign-up .details ul li::before {
                     display: inline-block;
                 }
 
-main #sign-up .details form >* {
+main #signup-section .content form >* {
                     display: block;
                 }
 
-main #sign-up .details form label {
+main #signup-section .content form label {
                     font-feature-settings: 'clig' off, 'liga' off;
 
                     font-size: 12px;
@@ -701,12 +688,12 @@ main #sign-up .details form label {
                     line-height: 150%;
                 }
 
-main #sign-up .details form input {
+main #signup-section .content form input {
                     border: 1px solid rgba(25, 24, 43, 0.25);
                     border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
                 }
 
-main #sign-up .details form input::-moz-placeholder {
+main #signup-section .content form input::-moz-placeholder {
                         color: #242742;
                         color: var(--dark-navy, #242742);
                         font-feature-settings: 'clig' off, 'liga' off;
@@ -720,7 +707,7 @@ main #sign-up .details form input::-moz-placeholder {
                         /* Add any other styles for the placeholder text as needed */
                     }
 
-main #sign-up .details form input::placeholder {
+main #signup-section .content form input::placeholder {
                         color: #242742;
                         color: var(--dark-navy, #242742);
                         font-feature-settings: 'clig' off, 'liga' off;
@@ -734,15 +721,14 @@ main #sign-up .details form input::placeholder {
                         /* Add any other styles for the placeholder text as needed */
                     }
 
-main #sign-up picture {
-            /*object-fit: cover;*/
+main #signup-section picture {
             display: block;
             overflow: hidden;
-            /*width: 45%;
-        max-height: 100%;*/
+            height: 100%;
+            max-height: 613px;
         }
 
-main #sign-up picture img {
+main #signup-section picture img {
                 width: 100%;
                 height: 100%;
                 -o-object-fit: cover;
@@ -751,7 +737,7 @@ main #sign-up picture img {
                 overflow: hidden;
             }
 
-main #success {
+main #success-section {
         max-width: 504px;
     }
 
@@ -770,6 +756,14 @@ main #success {
 
   .md\:h-auto{
     height: auto;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .md\:w-6\/12{
+    width: 50%;
   }
 
   .md\:flex-row{
@@ -796,13 +790,8 @@ main #success {
     background-color: rgba(54, 56, 77, var(--tw-bg-opacity));
   }
 
-  .md\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:pr-4{
-    padding-right: 1rem;
+  .md\:p-4{
+    padding: 1rem;
   }
 
   .md\:shadow-lg{
