@@ -7,7 +7,7 @@ function main() {
     const signupForm = document.querySelector('#signup-form');
     signupForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        if (!validateEmail()) {
+        if (!validateEmail(emailInput, errorMessage)) {
             return;
         }
         emailInput.value = "";
@@ -28,11 +28,9 @@ function main() {
     });
 }
 
-function validateEmail() {
-    var emailInput = document.getElementById("email");
+function validateEmail(emailInput, errorMessage) {
     var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    var errorMessage = document.getElementById("error-message");
     if (!emailPattern.test(emailInput.value)) {
         errorMessage.textContent = "Valid email required";
         emailInput.classList.add("error");
