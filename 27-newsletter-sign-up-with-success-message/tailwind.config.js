@@ -11,8 +11,7 @@ module.exports = {
                 'dark-navy': '#242742'
             },
             borderRadius: {
-                'md': '0.5rem',
-                'lg': '1rem',
+                'xl': '2.25rem',
             }
         },
     },

@@ -560,15 +560,15 @@ video {
 }
 
 .rounded-md{
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
 }
 
 .rounded-bl-lg{
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .rounded-br-lg{
-  border-bottom-right-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .bg-dark-navy{
@@ -639,7 +639,7 @@ main .title{
 
 main button{
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgba(36, 39, 66, 1);
   background-color: rgba(36, 39, 66, var(--tw-bg-opacity));
@@ -776,7 +776,7 @@ main #success-section {
 @media (min-width: 640px){
 
   .sm\:rounded-xl{
-    border-radius: 0.75rem;
+    border-radius: 2.25rem;
   }
 }
 
@@ -809,11 +809,11 @@ main #success-section {
   }
 
   .md\:rounded-tl-lg{
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0.5rem;
   }
 
   .md\:rounded-tr-lg{
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0.5rem;
   }
 
   .md\:bg-pale-navy{
