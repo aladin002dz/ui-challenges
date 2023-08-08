@@ -4,6 +4,44 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+.btn {
+    @apply w-full py-3 text-white rounded-md;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%) !important;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+
+    .btn-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+    }
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242742 !important;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover::after {
+    opacity: 0;
+}
+
+.btn:hover {
+    /*transition: background-image 1.3s ease-in-out;*/
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+
+
 main {
     max-width: 928px;
     min-width: 375px;
@@ -12,16 +50,6 @@ main {
         @apply text-4xl font-bold;
     }
 
-    button {
-        @apply w-full py-3 text-white rounded-md bg-dark-navy;
-    }
-
-    button:hover {
-        border-radius: 8px;
-        background: var(--gradient-1, linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%));
-        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
-        transition: all 0.3s ease-in-out;
-    }
 
 
 
