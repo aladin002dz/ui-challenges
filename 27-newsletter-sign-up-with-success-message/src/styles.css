@@ -16,6 +16,15 @@ main {
         @apply w-full py-3 text-white rounded-md bg-dark-navy;
     }
 
+    button:hover {
+        border-radius: 8px;
+        background: var(--gradient-1, linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%));
+        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
     #signup-section {
         .content {
             padding-block: 97px;
@@ -37,12 +46,12 @@ main {
                     margin-top: 4px;
                     content: "";
                     background-image: url(../assets/images/icon-list.svg);
-                    background-size: contain;
+                    background-size: 19px 19px;
                     background-repeat: no-repeat;
-                    display: inline-block;
+                    display: block;
 
-                    width: 21px !important;
-                    height: 21px !important;
+                    width: 25px !important;
+                    height: 25px !important;
                 }
             }
 
@@ -95,6 +104,7 @@ main {
                     }
                 }
             }
+
         }
 
         picture {

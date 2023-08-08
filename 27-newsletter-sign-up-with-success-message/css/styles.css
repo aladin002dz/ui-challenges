@@ -650,11 +650,20 @@ main button{
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+main button:hover {
+        border-radius: 8px;
+        background: linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%);
+        background: var(--gradient-1, linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%));
+        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+        transition: all 0.3s ease-in-out;
+    }
+
 main #signup-section .content {
             padding-top: 97px;
             padding-bottom: 97px;
             padding-left: 32px;
             padding-right: 32px;
+
         }
 
 main #signup-section .content ul li{
@@ -672,17 +681,17 @@ main #signup-section .content ul li span{
 
 main #signup-section .content ul li::before {
 
-                    width: 21px !important;
-                    height: 21px !important;
+                    width: 25px !important;
+                    height: 25px !important;
                 }
 
 main #signup-section .content ul li::before {
                     margin-top: 4px;
                     content: "";
                     background-image: url(../assets/images/icon-list.svg);
-                    background-size: contain;
+                    background-size: 19px 19px;
                     background-repeat: no-repeat;
-                    display: inline-block;
+                    display: block;
                 }
 
 main #signup-section .content form label {
