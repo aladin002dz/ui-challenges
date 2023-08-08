@@ -37,7 +37,6 @@
 }
 
 .btn:hover {
-    /*transition: background-image 1.3s ease-in-out;*/
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
 }
 
