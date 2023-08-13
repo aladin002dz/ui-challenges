@@ -503,8 +503,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
+.mb-9{
+  margin-bottom: 2.25rem;
 }
 
 .mt-10{
@@ -614,6 +614,8 @@ video {
   color: rgba(36, 39, 66, var(--tw-text-opacity));
 }
 
+/* Button */
+
 .btn{
     background: linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%) !important;
 }
@@ -673,25 +675,30 @@ main .title{
 }
 
 main #signup-section .content {
-            padding-top: 97px;
-            padding-bottom: 97px;
+            padding-top: 83px;
+            padding-bottom: 83px;
             padding-left: 32px;
             padding-right: 32px;
+            margin-right: 30px;
 
         }
 
 main #signup-section .content ul li{
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0px;
 
-                    margin: 10px;
+                    margin-bottom: 4px;
 }
 
 main #signup-section .content ul li span{
   padding: 0px;
 }
+
+main #signup-section .content ul li:last-child {
+                    margin-bottom: 0;
+                }
 
 main #signup-section .content ul li::before {
 
@@ -813,12 +820,20 @@ main #success-section {
     height: auto;
   }
 
-  .md\:w-\[46\%\]{
-    width: 46%;
-  }
-
   .md\:w-\[54\%\]{
     width: 54%;
+  }
+
+  .md\:w-\[58\%\]{
+    width: 58%;
+  }
+
+  .md\:w-\[45\%\]{
+    width: 45%;
+  }
+
+  .md\:w-\[55\%\]{
+    width: 55%;
   }
 
   .md\:flex-row{
@@ -829,6 +844,10 @@ main #success-section {
     align-items: center;
     justify-items: center;
     place-items: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:rounded-tl-lg{
