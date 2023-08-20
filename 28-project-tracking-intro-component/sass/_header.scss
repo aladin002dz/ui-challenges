@@ -1,0 +1,141 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    padding-right: 1rem;
+    height: 3rem;
+    color: $color-very-dark-blue;
+    font-size: 145%;
+    margin: 0 auto;
+    max-width: 70rem;
+
+    .logo {
+        height: 2rem;
+        width: auto;
+    }
+
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url("../images/icon-hamburger.svg");
+        background-size: cover;
+    }
+
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+
+        ul {
+            padding: 10rem 2rem;
+            padding-inline: 1.5rem;
+            flex-grow: 1;
+            width: 14rem;
+            background-color: white;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+
+            li {
+                margin-bottom: 1.6rem;
+
+                a {
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $color-red;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-menu-open {
+        .hamburger {
+            background-image: url("../images/icon-close.svg");
+        }
+
+        .navbar-collapse {
+            background-color: hsla(240, 100%, 5%, 0.5);
+            opacity: 1;
+
+            ul {
+                transform: translateX(0%);
+            }
+
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    header {
+        margin-top: 4.5rem;
+        margin-bottom: 3rem;
+        padding: 0;
+        font-size: 1rem;
+        text-align: center;
+
+        .logo {
+            height: 2.5rem;
+            width: auto;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .navbar-collapse {
+            position: relative;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            opacity: 1;
+            height: auto;
+            background-color: white;
+            width: auto;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                transform: translateX(0);
+                overflow: visible;
+                padding: 0;
+
+                li {
+                    margin-left: 2.7rem;
+                    margin-bottom: 0;
+                    position: relative;
+                }
+            }
+
+        }
+
+        &.is-menu-open {
+            .navbar-collapse {
+                background-color: white;
+            }
+        }
+
+    }
+}

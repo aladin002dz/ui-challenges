@@ -1,0 +1,26 @@
+// Colors
+
+// Primary Colors
+$color-red: hsl(0, 100%, 68%);
+
+// Neutral Colors
+$color-very-dark-blue: hsl(230, 29%, 20%);
+$color-dark-grayish-blue: hsl(230, 11%, 40%);
+$color-grayish-blue: hsl(231, 7%, 65%);
+$color-light-grayish-blue: hsl(207, 33%, 95%);
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+// Body Copy
+$font-size-body: 18px;
+
+// Headings, Call-to-actions, Navigation
+$font-family-barlow-condensed: 'Barlow Condensed', sans-serif;
+
+
+// Body
+$font-family-barlow: 'Barlow', sans-serif;
+
+body {
+    font-family: $font-family-barlow;
+}
