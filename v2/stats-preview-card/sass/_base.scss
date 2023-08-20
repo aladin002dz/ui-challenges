@@ -1,0 +1,140 @@
+// Primary Colors
+$color-very-dark-blue: hsl(233, 47%, 7%);
+$color-dark-desaturated-blue: hsl(244, 38%, 16%);
+$color-soft-violet: hsl(277, 64%, 61%);
+
+// Neutral Colors
+$color-white: hsl(0, 0%, 100%);
+$color-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+$color-slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+
+// Typography
+$font-size-body: 15px;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+$font-family-inter: 'Inter', sans-serif;
+$font-weights-inter: 400, 700;
+
+$font-family-lexend-deca: 'Lexend Deca', sans-serif;
+$font-weights-lexend-deca: 400;
+
+
+body {
+    font-family: $font-family-inter;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: $color-very-dark-blue;
+    padding-inline: 24px;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 1110px;
+    min-width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-white;
+    border-radius: 8px;
+    background: $color-dark-desaturated-blue;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.20);
+
+    /* styles.css */
+    .image-wrapper {
+        position: relative;
+        /* Establish a positioning context */
+        display: inline-block;
+        /* Adjust according to your layout */
+    }
+
+    picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        filter: brightness(50%);
+        height: 100%;
+    }
+
+    .image-wrapper::before {
+        content: '';
+        /* Create the pseudo-element content */
+        position: absolute;
+        /* Position the overlay */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #AB5CDB;
+        opacity: 0.6;
+        /* Overlay gradient mask */
+        pointer-events: none;
+        /* Allow clicking through the overlay */
+        z-index: 1;
+    }
+
+
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+
+        span {
+            color: #AB5CDB;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stat {
+            text-align: center;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p {
+                font-family: Lexend Deca;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media (min-width:678px) {
+    .card {
+        flex-direction: row-reverse;
+        align-items: stretch;
+
+        .content {
+            padding: 71px 0 59px 71px;
+            max-width: 483px;
+        }
+
+        .stats {
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+
+}

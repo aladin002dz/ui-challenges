@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: hsl(233, 47%, 7%);
+  padding-inline: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 1110px;
+  min-width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  background: hsl(244, 38%, 16%);
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+  /* styles.css */
+}
+.card .image-wrapper {
+  position: relative;
+  /* Establish a positioning context */
+  display: inline-block;
+  /* Adjust according to your layout */
+}
+.card picture {
+  width: 100%;
+  height: 100%;
+}
+.card img {
+  filter: brightness(50%);
+  height: 100%;
+}
+.card .image-wrapper::before {
+  content: "";
+  /* Create the pseudo-element content */
+  position: absolute;
+  /* Position the overlay */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #AB5CDB;
+  opacity: 0.6;
+  /* Overlay gradient mask */
+  pointer-events: none;
+  /* Allow clicking through the overlay */
+  z-index: 1;
+}
+.card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.card h1 span {
+  color: #AB5CDB;
+}
+.card p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.card .stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .stats .stat {
+  text-align: center;
+}
+.card .stats .stat h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+.card .stats .stat p {
+  font-family: Lexend Deca;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 678px) {
+  .card {
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+  .card .content {
+    padding: 71px 0 59px 71px;
+    max-width: 483px;
+  }
+  .card .stats {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
