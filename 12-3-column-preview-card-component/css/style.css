@@ -55,7 +55,6 @@ h6 {
 .attribution {
   width: 100%;
   text-align: center;
-  position: relative;
   bottom: 0.5rem;
   font-size: 11px;
 }
@@ -69,19 +68,13 @@ h6 {
     position: absolute;
   }
 }
-h3 {
-  font-family: "Big Shoulders Display", cursive;
-  text-transform: uppercase;
-  font-size: 250%;
-}
-
 body {
   font-family: "Lexend Deca", sans-serif;
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background-color: var(--very-light-gray);
-  padding: 0 1.5rem;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1.5rem;
 }
 
 .cards-container {
@@ -91,16 +84,22 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
-.cards-container img {
-  height: 40px;
-  width: 65px;
-}
 .cards-container .card {
   padding: 50px;
   height: 500px;
   width: 327px;
 }
+.cards-container .card img {
+  height: 40px;
+  width: 65px;
+}
 .cards-container .card h3 {
+  color: hsl(0, 0%, 95%);
+  font-family: Big Shoulders Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
   margin-top: 35px;
   margin-bottom: 29px;
 }
@@ -109,8 +108,9 @@ body {
   max-height: 100px;
   font-size: 93%;
   line-height: 1.62;
+  color: hsla(0, 0%, 100%, 0.75);
 }
-.cards-container .btn {
+.cards-container .card .btn {
   border-radius: 3rem;
   text-decoration: none;
   background-color: hsl(0, 0%, 95%);
@@ -118,9 +118,9 @@ body {
   width: 150px;
   padding: 1rem 0;
   text-align: center;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.cards-container .btn:hover {
+.cards-container .card .btn:hover {
   cursor: pointer;
   color: hsl(0, 0%, 95%) !important;
   background-color: transparent;

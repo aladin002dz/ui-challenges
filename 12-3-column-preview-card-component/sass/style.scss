@@ -4,19 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 
-h3 {
-  font-family: "Big Shoulders Display", cursive;
-  text-transform: uppercase;
-  font-size: 250%;
-}
-
 body {
   font-family: "Lexend Deca", sans-serif;
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background-color: var(--very-light-gray);
-  padding: 0 1.5rem;
+  background-color: $very-light-gray;
+  padding: 1.5rem;
 }
 
 .cards-container {
@@ -26,17 +20,23 @@ body {
   border-radius: 8px;
   overflow: hidden;
 
-  img {
-    height: 40px;
-    width: 65px;
-  }
-
   .card {
     padding: 50px;
     height: 500px;
     width: 327px;
 
+    img {
+      height: 40px;
+      width: 65px;
+    }
+
     h3 {
+      color: $very-light-gray;
+      font-family: Big Shoulders Display;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
       margin-top: 35px;
       margin-bottom: 29px;
     }
@@ -46,49 +46,53 @@ body {
       max-height: 100px;
       font-size: 93%;
       line-height: 1.62;
+      color: $transparent-white;
     }
-  }
 
-  .btn {
-    border-radius: 3rem;
-    text-decoration: none;
-    background-color: $very-light-gray;
-    display: block;
-    width: 150px;
-    padding: 1rem 0;
-    text-align: center;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-      cursor: pointer;
-      color: $very-light-gray !important;
-      background-color: transparent;
-      border: 2px solid $very-light-gray;
-    }
-  }
-
-  .card:first-child {
-    background-color: $bright-orange;
 
     .btn {
-      color: $bright-orange;
+      border-radius: 3rem;
+      text-decoration: none;
+      background-color: $very-light-gray;
+      display: block;
+      width: 150px;
+      padding: 1rem 0;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $very-light-gray !important;
+        background-color: transparent;
+        border: 2px solid $very-light-gray;
+      }
+
     }
-  }
 
-  .card:nth-child(2) {
-    background-color: $dark-cyan;
+    &:first-child {
+      background-color: $bright-orange;
 
-    .btn {
-      color: $dark-cyan;
+      .btn {
+        color: $bright-orange;
+      }
     }
-  }
 
-  .card:last-child {
-    background-color: $very-dark-cyan;
+    &:nth-child(2) {
+      background-color: $dark-cyan;
 
-    .btn {
-      color: $very-dark-cyan;
+      .btn {
+        color: $dark-cyan;
+      }
     }
+
+    &:last-child {
+      background-color: $very-dark-cyan;
+
+      .btn {
+        color: $very-dark-cyan;
+      }
+    }
+
   }
 }
 
