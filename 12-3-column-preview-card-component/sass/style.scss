@@ -1,24 +1,8 @@
+@import "./reset";
+@import "./variables";
+@import "./attribution";
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
-:root {
-  /*Colors*/
-  /*Primary*/
-  --bright-orange: hsl(31, 77%, 52%);
-  --dark-cyan: hsl(184, 100%, 22%);
-  --very-dark-cyan: hsl(179, 100%, 13%);
-
-  /*Neutral*/
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
-  --very-light-gray: hsl(0, 0%, 95%);
-
-  --border-radius: 10px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 h3 {
   font-family: "Big Shoulders Display", cursive;
@@ -29,32 +13,34 @@ h3 {
 body {
   font-family: "Lexend Deca", sans-serif;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-content: center;
   background-color: var(--very-light-gray);
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .cards-container {
   display: flex;
-  max-width: 920px;
-  border-radius: 15px;
-  color: var(--very-light-gray);
-  border-radius: var(--border-radius);
+  flex-direction: column;
+  max-width: 921px;
+  border-radius: 8px;
   overflow: hidden;
+
   img {
     height: 40px;
     width: 65px;
   }
+
   .card {
     padding: 50px;
     height: 500px;
+    width: 327px;
+
     h3 {
       margin-top: 35px;
       margin-bottom: 29px;
     }
+
     p {
       margin-bottom: 103px;
       max-height: 100px;
@@ -66,79 +52,55 @@ body {
   .btn {
     border-radius: 3rem;
     text-decoration: none;
-    background-color: var(--very-light-gray);
+    background-color: $very-light-gray;
     display: block;
     width: 150px;
     padding: 1rem 0;
     text-align: center;
+    transition: background-color 0.3s ease-in-out;
+
     &:hover {
       cursor: pointer;
-      color: var(--very-light-gray) !important;
+      color: $very-light-gray !important;
       background-color: transparent;
-      border: 2px solid var(--very-light-gray);
+      border: 2px solid $very-light-gray;
     }
   }
 
   .card:first-child {
-    background-color: var(--bright-orange);
+    background-color: $bright-orange;
+
     .btn {
-      color: var(--bright-orange);
+      color: $bright-orange;
     }
   }
+
   .card:nth-child(2) {
-    background-color: var(--dark-cyan);
+    background-color: $dark-cyan;
+
     .btn {
-      color: var(--dark-cyan);
+      color: $dark-cyan;
     }
   }
+
   .card:last-child {
-    background-color: var(--very-dark-cyan);
+    background-color: $very-dark-cyan;
+
     .btn {
-      color: var(--very-dark-cyan);
+      color: $very-dark-cyan;
     }
   }
 }
 
-.attribution {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0.5rem;
-  font-size: 11px;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 0 1rem;
-  }
+@media (min-width: 992px) {
 
   .cards-container {
-    margin: 3rem auto;
-    flex-direction: column;
-    width: 325px;
+    flex-direction: row;
+
     .card {
-      height: 443px;
-      h3 {
-        margin-top: 30px;
-      }
-      p {
-        margin-bottom: 45px;
-      }
-    }
-    .card:first-child {
-      border-bottom-left-radius: 0;
+      width: 307px;
     }
 
-    .card:last-child {
-      border-top-right-radius: 0;
-    }
   }
 
-  .attribution {
-    position: relative;
-  }
 }
