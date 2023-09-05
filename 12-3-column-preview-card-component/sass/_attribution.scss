@@ -1,8 +1,9 @@
 .attribution {
     width: 100%;
     text-align: center;
-    bottom: 0.5rem;
-    font-size: 11px;
+    //font-size: 11px;
+    position: relative;
+    margin-block: 0.5rem;
 }
 
 .attribution a {
@@ -13,5 +14,6 @@
 
     .attribution {
         position: absolute;
+        bottom: 0.5rem;
     }
 }
