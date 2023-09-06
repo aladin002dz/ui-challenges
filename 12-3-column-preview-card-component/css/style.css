@@ -85,14 +85,13 @@ body {
   border-radius: 8px;
   overflow: hidden;
   min-width: 327px;
+  max-width: 921px;
   height: -moz-fit-content;
   height: fit-content;
 }
 .cards-container .card {
+  flex: 1;
   padding: 50px;
-  height: 500px;
-  width: 100%;
-  min-width: 327px;
 }
 .cards-container .card img {
   height: 40px;
@@ -103,7 +102,6 @@ body {
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
   margin-top: 35px;
   margin-bottom: 29px;
@@ -148,13 +146,4 @@ body {
 }
 .cards-container .card:last-child .btn {
   color: hsl(179, 100%, 13%);
-}
-
-@media (min-width: 992px) {
-  .cards-container {
-    flex-direction: row;
-  }
-  .cards-container .card {
-    width: 307px;
-  }
 }/*# sourceMappingURL=style.css.map */
