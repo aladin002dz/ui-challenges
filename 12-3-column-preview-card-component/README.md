@@ -23,9 +23,9 @@ Your users should be able to:
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-### Live Site URL
+## Live Site URL
 
-[Demo Link](https://aladin002dz.github.io/ui-challenges/12-3-column-preview-card-component/)
+**[Demo Link](https://aladin002dz.github.io/ui-challenges/12-3-column-preview-card-component/)**
 
 ### Built with
 
